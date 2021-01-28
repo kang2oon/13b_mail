@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>아동돌봄플랫폼</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/care_map.css" />
+</head>
+<body>
+<div class="container fluid">
+	<div class="header">13b HEADER 영역</div>
+	<div class="map-wrap">
+		<div id="map"></div>
+		<div class="org-wrap">
+			<div>
+				<div class="side_toggle"></div>
+				<div class="top_toggle">
+					<div class="search on">검색</div>
+					<div class="list">목록</div>
+				</div>
+				<div class="search-wrap">
+					<form onsubmit="searchPlaces(); return false;">
+						<input type="text" id="keyword" placeholder="검색어를 입력하세요.">
+						<button type="submit">검색하기</button>
+					</form>
+					<div class="location-wrap">
+						<select id="loc_lv1">
+							<option>시군구 선택</option>
+							<option>전체</option>
+							<option>가평군</option>
+							<option>고양시 덕양구</option>
+							<option>고양시 일산동구</option>
+							<option>고양시 일산서구</option>
+							<option>과천시</option>
+							<option>광명시</option>
+							<option>광주시</option>
+							<option>구리시</option>
+						</select>
+						<select id="loc_lv2">
+							<option>읍면동 선택</option>
+							<option>전체</option>
+						</select>
+						<button onclick="currentLocation();">내 위치</button>
+					</div>
+					<div class="org_kind">
+						<ul>
+							<li>
+								<label class="cst_input org01">
+									다함께돌봄센터
+									<input type="checkbox" name="org">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class="cst_input org02">
+									돌봄형작은도서관
+									<input type="checkbox" name="org">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class="cst_input org03">
+									시 자체 돌봄센터
+									<input type="checkbox" name="org">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class="cst_input org04">
+									아동돌봄공동체
+									<input type="checkbox" name="org">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class="cst_input org05">
+									아이러브맘카페
+									<input type="checkbox" name="org">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class="cst_input org06">
+									육아나눔터
+									<input type="checkbox" name="org">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class="cst_input org07">
+									육아종합지원센터
+									<input type="checkbox" name="org">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class="cst_input org08">
+									지역아동센터
+									<input type="checkbox" name="org">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class="cst_input org09">
+									청소년방과후아카데미
+									<input type="checkbox" name="org">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class="cst_input org10">
+									초등돌봄교실
+									<input type="checkbox" name="org">
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+						<div class="select_toggle">
+							<button onclick="orgAll()">전체 선택</button>
+							<button onclick="orgNone()">전체 해제</button>
+						</div>
+					</div>
+				</div>
+				<div class="orglist-wrap">
+					<ul>
+						<li>
+							<h3 class="org_nm org10">창영초등학교<span></span></h3>
+							경기도 부천시 은성로 109-26(괴안동 창영초등학교)
+							<a href="tel:070-7099-4673" class="tel">070-7099-4673</a>
+							<button class="btn_dtl">상세정보</button>
+							<button class="btn_app" value="https://www.gov.kr/portal/onestopSvc">신청하기</button>
+						</li>
+						<li>
+							<h3 class="org_nm org03">중흥초등학교<span></span></h3>
+							경기도 부천시 계남로 214(중동 중흥초등학교)
+							<a href="tel:070-7095-9073" class="tel">070-7095-9073</a>
+							<button class="btn_dtl">상세정보</button>
+							<button class="btn_app" value="https://www.gov.kr/portal/onestopSvc">신청하기</button>
+						</li>
+						<li>
+							<h3 class="org_nm org02">중동초등학교<span></span></h3>
+							경기도 부천시 원미구 심중로75번길 37(중동)
+							<a href="tel:070-7016-4107" class="tel">070-7016-4107</a>
+							<button class="btn_dtl">상세정보</button>
+							<button class="btn_app" value="https://www.gov.kr/portal/onestopSvc">신청하기</button>
+						</li>
+						<li>
+							<h3 class="org_nm org06">원종초등학교<span></span></h3>
+							경기도 부천시 삼작로410번길 38(원종동 원종초등학교)
+							<a href="tel:070-7099-3807" class="tel">070-7099-3807</a>
+							<button class="btn_dtl">상세정보</button>
+							<button class="btn_app" value="https://www.gov.kr/portal/onestopSvc">신청하기</button>
+						</li>
+						<li>
+							<h3 class="org_nm org09">원미초등학교<span></span></h3>
+							경기도 부천시 부흥로 423 원미초등학교 (심곡동)
+							<a href="tel:070-7099-6660" class="tel">070-7099-6660</a>
+							<button class="btn_dtl">상세정보</button>
+							<button class="btn_app" value="https://www.gov.kr/portal/onestopSvc">신청하기</button>
+						</li>
+						
+						<li>
+							<h3 class="org_nm org01">창영초등학교<span></span></h3>
+							경기도 부천시 은성로 109-26(괴안동 창영초등학교)
+							<a href="tel:070-7099-4673" class="tel">070-7099-4673</a>
+							<button class="btn_dtl">상세정보</button>
+							<button class="btn_app" value="https://www.gov.kr/portal/onestopSvc">신청하기</button>
+						</li>
+						<li>
+							<h3 class="org_nm org05">중흥초등학교<span></span></h3>
+							경기도 부천시 계남로 214(중동 중흥초등학교)
+							<a href="tel:070-7095-9073" class="tel">070-7095-9073</a>
+							<button class="btn_dtl">상세정보</button>
+							<button class="btn_app" value="https://www.gov.kr/portal/onestopSvc">신청하기</button>
+						</li>
+						<li>
+							<h3 class="org_nm org08">중동초등학교<span></span></h3>
+							경기도 부천시 원미구 심중로75번길 37(중동)
+							<a href="tel:070-7016-4107" class="tel">070-7016-4107</a>
+							<button class="btn_dtl">상세정보</button>
+							<button class="btn_app" value="https://www.gov.kr/portal/onestopSvc">신청하기</button>
+						</li>
+						<li>
+							<h3 class="org_nm org04">원종초등학교<span></span></h3>
+							경기도 부천시 삼작로410번길 38(원종동 원종초등학교)
+							<a href="tel:070-7099-3807" class="tel">070-7099-3807</a>
+							<button class="btn_dtl">상세정보</button>
+							<button class="btn_app" value="https://www.gov.kr/portal/onestopSvc">신청하기</button>
+						</li>
+						<li>
+							<h3 class="org_nm org07">원미초등학교<span></span></h3>
+							경기도 부천시 부흥로 423 원미초등학교 (심곡동)
+							<a href="tel:070-7099-6660" class="tel">070-7099-6660</a>
+							<button class="btn_dtl">상세정보</button>
+							<button class="btn_app" value="https://www.gov.kr/portal/onestopSvc">신청하기</button>
+						</li>
+					</ul>
+				</div>
+				<div class="bnr-wrap">
+					<a href="https://www.idolbom.go.kr/front/main/main.do" target="_blank" class="goto">
+						<img src="images/ico_goto.gif" alt="" /> 집으로 찾아오는 <span>아이돌봄 서비스</span>
+					</a>
+					<a href="https://13b.gg.go.kr/api/getImage/5c49d2f7-43e5-4be9-8d9d-d5bc92622859.pdf" target="_blank" class="info">
+						<img src="images/ico_info.gif" alt="" /> 아동돌봄 <span>지원안내 브로슈어</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--div class="footer">13b FOOTER 영역</div-->
+	
+	<div class="modal-wrap">
+		<div>
+			<h2>
+				상세정보
+				<div class="close_modal"><img src="images/ico_close.png" alt="닫기" /></div>
+			</h2>
+			<div class="dtl_info">
+				<table class="tbl">
+				<tbody>
+				<tr>
+					<th>시설명</th>
+					<td>창영초등학교</td>
+				</tr>
+				<tr>
+					<th>도로명 주소</th>
+					<td>경기도 부천시 은성로 109-26 (괴안동 창영초등학교)</td>
+				</tr>
+				<tr>
+					<th>지번 주소</th>
+					<td>경기도 부천시 괴안동 238-11번지 창영초등학교</td>
+				</tr>
+				<tr>
+					<th>분류</th>
+					<td>초등돌봄교실</td>
+				</tr>
+				<tr>
+					<th>연락처</th>
+					<td><a href="tel:070-7099-4673">070-7099-4673</a></td>
+				</tr>
+				<tr>
+					<th>사이트</th>
+					<td><a href="http://changyoung.es.kr/smain.html" target="_blank">http://changyoung.es.kr/smain.html</a></td>
+				</tr>
+				<tr>
+					<th>이용연령</th>
+					<td>6세 ~ 12세</td>
+				</tr>
+				<tr>
+					<th>자격요건</th>
+					<td>초등 1~2학년 우선 맞벌이, 저소득층, 한부모 가정 우선</td>
+				</tr>
+				<tr>
+					<th>운영시간</th>
+					<td>학기 중 : 방과 후 ~ 17:00(시간연장은 별도문의) 방학 : 09:00~17:00</td>
+				</tr>
+				<tr>
+					<th>이용요금</th>
+					<td>간식 수익자 부담 (교육비지원 대상자 무료)</td>
+				</tr>
+				<tr>
+					<th>지원내용</th>
+					<td>개인활동(숙제, 일기, 독서 등), 단체활동(특기적성 프로그램 활동)</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+</div>
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" ></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9d95bcfbfb814230ec2f047987e8f8c6&libraries=services,clusterer"></script>
+<script src="js/map.js" ></script>
+<script>
+	$(document).ready(function(){
+		$('.side_toggle').click(function(){
+			$('.org-wrap').toggleClass('hide');
+		});
+		
+		$('.btn_dtl').click(function(){
+			$('.modal-wrap').css('display','flex');
+		});
+		$('.close_modal').click(function(){
+			$('.modal-wrap').css('display','none');
+		});
+		$('.btn_app').click(function(){
+			var url = $(this).val();
+			window.open(url);
+			return false;
+		});
+		
+		$('.top_toggle .search').click(function(){
+			
+			if($(this).is('.on')){
+				$(this).removeClass('on');
+				$('.org-wrap').css('bottom', '-50vh');
+				$('.search-wrap, .orglist-wrap, .bnr-wrap').hide();
+			}else{
+				$('.top_toggle > div').removeClass('on');
+				$(this).addClass('on');
+				$('.org-wrap').css('bottom', 0);
+				$('.orglist-wrap').hide();
+				$('.search-wrap, .bnr-wrap').show();
+			}
+		});
+		$('.top_toggle .list').click(function(){
+			
+			if($(this).is('.on')){
+				$(this).removeClass('on');
+				$('.org-wrap').css('bottom', '-50vh');
+				$('.search-wrap, .orglist-wrap, .bnr-wrap').hide();
+			}else{
+				$('.top_toggle > div').removeClass('on');
+				$(this).addClass('on');
+				$('.org-wrap').css('bottom', 0);
+				$('.orglist-wrap').show();
+				$('.search-wrap, .bnr-wrap').hide();
+			}
+		});
+	});
+	
+	function orgAll(){
+		$('input[name=org]').prop('checked',true);
+	}
+	function orgNone(){
+		$('input[name=org]').prop('checked',false);
+	}
+</script>
+</body>
+</html>
