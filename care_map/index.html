@@ -207,6 +207,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="org-open-btn hide"><img src="images/ico_search.png" alt="" /></div>
 	</div>
 	<!--div class="footer">13b FOOTER 영역</div-->
 	
@@ -276,8 +277,9 @@
 <script src="js/map.js" ></script>
 <script>
 	$(document).ready(function(){
-		$('.side_toggle').click(function(){
+		$('.side_toggle, .org-open-btn').click(function(){
 			$('.org-wrap').toggleClass('hide');
+			$('.org-open-btn').toggleClass('hide');
 		});
 		
 		$('.btn_dtl').click(function(){
