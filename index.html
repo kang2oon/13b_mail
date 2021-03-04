@@ -3,67 +3,93 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,user-scalable=no"/>
-	<title>13b 웹진용</title>
+	<title>13b 퍼블리싱</title>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
 <div class="container">
 	<h1>
-		워라밸 링크 웹진 목록
+		워라밸 링크 퍼블리싱 목록
 		<div class="git"><a href="https://github.com/kang2oon/13b_mail" target="_blank">GitHub 페이지 바로가기</a></div>
 	</h1>
 	<table class="tbl_list">
 	<thead>
 	<tr>
 		<th>NO</th>
-		<th>웹진명</th>
+		<th>
+			<select>
+				<option value="all">구분</option>
+				<option value="webzine">웹진</option>
+				<option value="theme">테마</option>
+				<option value="event">이벤트</option>
+				<option value="page">페이지</option>
+				<option value="popup">팝업</option>
+			</select>
+		</th>
+		<th>페이지명</th>
 	</tr>
 	</thead>
 	<tbody>
-	<tr>
+	<tr class="webzine">
 		<td></td>
+		<td>웹진</td>
+		<td><a href="/webzine/01_1.html" class="preview" target="_blank">[1호] 출산&middot;육아 지원정책 혜택받고 더 나은 삶을 살아보세요!</a></td>
+	</tr>
+	<tr class="webzine">
+		<td></td>
+		<td>웹진</td>
+		<td><a href="/webzine/02.html" class="preview" target="_blank">[2호] 2020 연말정산, 바뀐 것들 체크하고 똑똑하게 처리하세요</a></td>
+	</tr>
+	<tr class="webzine">
+		<td></td>
+		<td>웹진</td>
+		<td><a href="/webzine/03.html" class="preview" target="_blank">[3호] 명절에 집콕하면서 즐기는 워라밸 Activity!</a></td>
+	</tr>
+	<tr class="webzine">
+		<td></td>
+		<td>웹진</td>
+		<td><a href="/webzine/04.html" class="preview" target="_blank">[4호] 워라밸 일자리 장려금으로 Winwin 노사관계 형성!</a></td>
+	</tr>
+	<tr class="webzine">
+		<td></td>
+		<td>웹진</td>
+		<td><a href="/webzine/05.html" class="preview" target="_blank">[5호] 나에게 맞는 워라밸 활동으로 일상에 생기를 불어 넣어 보세요!</a></td>
+	</tr>
+	<tr class="theme">
+		<td></td>
+		<td>테마</td>
+		<td><a href="/theme/tm_01.html" class="preview" target="_blank">[1호] 편리하다 + 프리미엄, 편리미엄이 바꿔놓은 일상</a></td>
+	</tr>
+	<tr class="theme">
+		<td></td>
+		<td>테마</td>
+		<td><a href="/theme/tm_02.html" class="preview" target="_blank">[2호] 2021 '워라밸'을 위한 재직지원 정책</a></td>
+	</tr>
+	<tr class="event">
+		<td></td>
+		<td>이벤트</td>
+		<td><a href="/event/ev01.html" class="preview" target="_blank">앱 다운로드</a></td>
+	</tr>
+	<tr class="page">
+		<td></td>
+		<td>페이지</td>
 		<td><a href="/dont_receive.html" class="preview" target="_blank">수신거부</a></td>
 	</tr>
-	<tr>
+	<tr class="page">
 		<td></td>
-		<td><a href="/webzine/01_1.html" class="preview" target="_blank">[웹진/1호] 출산&middot;육아 지원정책 혜택받고 더 나은 삶을 살아보세요!</a></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td><a href="/webzine/02.html" class="preview" target="_blank">[웹진/2호] 2020 연말정산, 바뀐 것들 체크하고 똑똑하게 처리하세요</a></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td><a href="/webzine/03.html" class="preview" target="_blank">[웹진/3호] 명절에 집콕하면서 즐기는 워라밸 Activity!</a></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td><a href="/webzine/04.html" class="preview" target="_blank">[웹진/4호] 워라밸 일자리 장려금으로 Winwin 노사관계 형성!</a></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td><a href="/webzine/05.html" class="preview" target="_blank">[웹진/5호] 나에게 맞는 워라밸 활동으로 일상에 생기를 불어 넣어 보세요!</a></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td><a href="/theme/tm_01.html" class="preview" target="_blank">[테마/1호] 편리하다 + 프리미엄, 편리미엄이 바꿔놓은 일상</a></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td><a href="/theme/tm_02.html" class="preview" target="_blank">[테마/2호] 2021 '워라밸'을 위한 재직지원 정책</a></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td><a href="/event/ev01.html" class="preview" target="_blank">[이벤트] 앱 다운로드</a></td>
-	</tr>
-	<tr>
-		<td></td>
+		<td>페이지</td>
 		<td><a href="/care_map/" class="preview" target="_blank">아동돌봄플랫폼</a></td>
 	</tr>
-	<tr>
+	<tr class="page">
 		<td></td>
-		<td><a href="/popup/newyear.html" class="preview" target="_blank">[팝업] 구정 명절</a></td>
+		<td>페이지</td>
+		<td><a href="/edu/" class="preview" target="_blank">직장교육관</a></td>
+	</tr>
+	<tr class="popup">
+		<td></td>
+		<td>팝업</td>
+		<td><a href="/popup/newyear.html" class="preview" target="_blank">구정 명절</a></td>
 	</tr>
 	</tbody>
 	</table>
@@ -75,6 +101,17 @@
 		$('.tbl_list tbody tr').each(function(){
 			var idx = $(this).index();
 			$(this).find('td:first-child').append(idx + 1);
+		});
+
+		$('.tbl_list thead select').change(function(){
+			var cate = $(this).val();
+			console.log(cate);
+			if(cate == 'all'){
+				$('.tbl_list tbody tr').show();
+			} else {
+				$('.tbl_list tbody tr').hide();
+				$('.tbl_list tbody tr.'+cate).show();
+			}
 		});
 	});
 </script>
