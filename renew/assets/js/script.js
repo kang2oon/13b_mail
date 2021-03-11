@@ -64,10 +64,10 @@ $(document).ready(function(){
         bnrMain.autoplay.stop();
     });
 
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
+    // $('.counter').counterUp({
+    //     delay: 10,
+    //     time: 1000
+    // });
 
     $('.recomm_wrap .condition li span').click(function(){
         $(this).parent().remove();
