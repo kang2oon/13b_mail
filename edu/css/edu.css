@@ -30,7 +30,7 @@ a{text-decoration:none;color:inherit;}
     .edu_wrap h1{font-size:20px;margin:0;padding:0;}
     .edu_wrap .header_box{
         background-color:#eff5fa;border:1px solid #e9ecf7;border-radius:10px;margin:20px auto 35px;padding:40px 30px;
-        background-image:url(../images/bg_header_box.png);background-repeat:no-repeat;background-position:calc(100% - 25px) calc(100% - 25px);
+        background-image:url(../images/bg_header_box1.png);background-repeat:no-repeat;background-position:calc(100% - 45px) 100%;
     }
     .edu_wrap .header_box .tit{font-size:22px;color:#053c74;font-weight:700;line-height:1.8;}
     .edu_wrap .header_box .tit span{display:block;font-size:14px;color:#0051a4;font-weight:400;}
@@ -73,7 +73,7 @@ a{text-decoration:none;color:inherit;}
     .edu_wrap .goto_edu_wrap{margin:70px 0 0;text-align:center;}
 
 @media (max-width: 768px){
-    .edu_wrap .header_box{background-size:250px;}
+    .edu_wrap .header_box{background-size:210px;background-position:calc(100% - 25px) 100%;}
     .edu_wrap .header_box ul{max-width:480px;}
     .edu_wrap .info_row > div:nth-child(2) table td{padding:20px;}
     .edu_wrap .edu_step{flex-wrap:wrap;}
@@ -83,7 +83,7 @@ a{text-decoration:none;color:inherit;}
 }
 
 @media (max-width: 480px){
-    .edu_wrap .header_box{padding-bottom:180px;background-size:200px;}
+    .edu_wrap .header_box{padding-bottom:180px;background-size:180px;background-position:calc(100% - 20px) 100%;}
     .edu_wrap .info_row{flex-wrap:wrap;}
     .edu_wrap .info_row > div:nth-child(1){width:100%;margin-bottom:7px;}
     .edu_wrap .edu_step > div:nth-child(odd){width:100%;}
