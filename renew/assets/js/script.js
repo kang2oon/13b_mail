@@ -159,11 +159,11 @@ $(document).ready(function () {
             },
             320: {
                 slidesPerView: 1,
-                slidesPerColumn: 1,
+                slidesPerColumn: 2,
             },
             0: {
                 slidesPerView: 1,
-                slidesPerColumn: 1,
+                slidesPerColumn: 2,
             }
 
         }

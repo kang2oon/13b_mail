@@ -103,6 +103,7 @@
     .notice_wrap .article .date{float:right;color:var(--wbl-color-dark-gray-lignten1);}
 .together_wrap{margin:70px auto 0;}
     .together_wrap li{float:left;margin-bottom:30px;width:calc(20% - 20px);text-align:center;}
+    .together_wrap li a {word-break: keep-all}
     .together_wrap li + li{margin-left:25px;}
     .together_wrap li:nth-child(6){margin-left:0;}
     .together_wrap li .logo{border:1px solid var(--wbl-color-light-gray-lighten1);margin-bottom:10px;padding:7px 0;border-radius:10px;}
@@ -154,9 +155,10 @@
     
 .together_wrap .together_inner {width: 100%;overflow-x: auto}
     
-    .together_wrap ul{white-space: nowrap;}
-    .together_wrap ul li {float: none;display: inline-block;width: 170px;margin-bottom: 0;margin-left: 5px}
-    .together_wrap ul li:first-child{margin-left: 0}
+
+    .together_wrap ul li {width: calc(25% - 15px);margin-right: 20px}
+    .together_wrap ul li:nth-child(4n) {margin-right:0}
+    .together_wrap ul li + li {margin-left: 0}
    
     
 }
@@ -172,7 +174,7 @@
     .condition_result_wrap .btn_slider .swiper-button-prev2 {left: -25px}
     .condition_result_wrap .btn_slider .swiper-button-next2 {right: -25px}
     
-.quick_menu_wrap {padding:0 30px;margin: 30px 0}    
+.quick_menu_wrap {padding:30px 0;margin: 30px 0}    
     .quick_menu_wrap .container > a span {width: 80px;height: 80px;margin-bottom: 5px}
     .quick_menu_wrap .container > a:nth-child(1) span i {background-size: 35px}
     .quick_menu_wrap .container > a:nth-child(2) span i {background-size: 35px}
@@ -190,6 +192,11 @@
     
     .notice_wrap .title{margin-bottom: 20px}
     .notice_wrap .article {float: none;width: 100%;}
+    
+    .together_wrap ul li {width: calc(33.333% - 15px);margin-right: 20px}
+    .together_wrap ul li:nth-child(4n) {margin-right:20px}
+    .together_wrap ul li:nth-child(3n) {margin-right:0}
+    .together_wrap ul li + li {margin-left: 0}
     
     
 }
@@ -213,7 +220,7 @@
     
     .condition_result .swiper-slide .category {margin: 20px 20px 10px}
     .condition_result_wrap {width: 85%}
-    .condition_result {height: auto}
+    .condition_result {height: 584px;}
     .condition_result .swiper-slide .thumb {height: 150px;}
     .condition_result .swiper-slide {height:283px}
     .condition_result_wrap .btn_slider .swiper-button-prev2 {left: -20px}
@@ -237,7 +244,7 @@
     .news_wrap {padding: 30px 0}
     .new_wbl ul {margin-bottom: 20px;float: none;}
     .new_wbl .new_cont > div {height: 100px}
-    .new_wbl .new_cont .thumb {width: 125px;height: 100px;}
+    .new_wbl .new_cont .thumb {width: 100px;height: 90px;}
     .new_wbl .new_cont .cont .category{margin-top: 0}
     .new_wbl .new_cont .cont{width: calc(100% - 143px)}
     .new_wbl ul li + li:before {margin-left: 3px;padding-left: 3px;display: block;float: left;}
@@ -247,6 +254,14 @@
     .together_wrap {margin: 30px auto}    
 .theme_wrap {display: block;float: none;margin-bottom: 30px;width: 100%}
     .theme_wrap img{width: 100%}    
+    
+     .together_wrap ul li {width: calc(50% - 10px);margin-right: 10px}
+    .together_wrap ul li:nth-child(4n) {margin-right:10px}
+    .together_wrap ul li:nth-child(3n) {margin-right:10px}
+    .together_wrap ul li:nth-child(2n) {margin-right:0}
+    .together_wrap ul li + li {margin-left: 0}
+    .together_wrap ul li:nth-child(9),
+    .together_wrap ul li:nth-child(10){margin-bottom: 0}
     
    
     
