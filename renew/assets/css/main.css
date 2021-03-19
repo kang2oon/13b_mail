@@ -136,9 +136,8 @@
     .quick_menu_wrap .container {flex-wrap: wrap}
     .quick_menu_wrap a {width: 25%}
     .quick_menu_wrap .container > a span {margin: 15px auto}
-    .bnr_main_wrap .btn_slider div {}
     .bnr_main_wrap .btn_slider div {background-size: 25px;width: 12.5px;}
-    .bnr_main_wrap .btn_slider .swiper-button-prev {left: -30px}
+    .bnr_main_wrap .btn_slider .swiper-button-prev {background-position: left center;left: -30px}
     .bnr_main_wrap .btn_slider .swiper-button-next {background-position: right center;right: -30px}
     .recomm_wrap button{width: calc(23% - 20px)}
     .recomm_wrap select {width: 38.5%}
@@ -146,7 +145,7 @@
     .condition_result .swiper-slide .category{margin: 20px 20px 10px}
     .condition_result .swiper-slide {height: 348px}
     .condition_result_wrap .btn_slider div {background-size: 25px;width: 12.5px;}
-    .condition_result_wrap .btn_slider .swiper-button-prev2{left: -30px}
+    .condition_result_wrap .btn_slider .swiper-button-prev2{left: -30px;background-position: left center;}
     .condition_result_wrap .btn_slider .swiper-button-next2{right: -30px;background-position: right center;}
     
     .notice_wrap {padding: 30px 20px}
