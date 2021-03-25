@@ -49,7 +49,7 @@ $(document).ready(function () {
     });
 
     /* 팝업 스크롤 막기*/
- 
+
 
     // 본문 스크롤 불가능
     function scrollDisable() {
@@ -134,6 +134,7 @@ $(document).ready(function () {
 
     $('.like_btn').click(function () {
         $(this).toggleClass('on');
+
     });
 
     var recommResult = new Swiper('.condition_result', {
@@ -184,4 +185,67 @@ $(document).ready(function () {
         $('.new_wbl ul li').removeClass('on');
         $(this).addClass('on');
     });
+
+
+    /* 서브페이지 start */
+    /* 서브 메뉴 */
+    $('.main_section #snb li').click(function () {
+        $(this).addClass('on');
+        $(this).siblings().removeClass('on');
+    });
+
+    $('.tab li').click(function () {
+        $(this).addClass('on');
+        $(this).siblings().removeClass('on');
+    });
+
+    var subBanner = new Swiper('.sub_banner .swiper-container', {
+        loop: true,
+        autoplay: {
+            delay: 3000
+        },
+        pagination: {
+            el: '.sb-swiper-pagination',
+            clickable: true,
+
+        },
+    })
+
+    $('.sub_banner .page_function .autoplay.play').click(function () {
+        $('.sub_banner .page_function .autoplay').toggleClass('hide');
+        bnrMain.autoplay.start();
+    });
+    $('.sub_banner .page_function .autoplay.stop').click(function () {
+        $('.sub_banner .page_function .autoplay').toggleClass('hide');
+        bnrMain.autoplay.stop();
+    });
+    
+ 
+    $('.cs_btn li').click(function () {
+        $(this).toggleClass('on');
+        if ($(this).hasClass("on")) {
+            $(this).parent().parent().siblings('.like_btn').addClass('on');
+        } else if (!$(this).hasClass("on")) {
+            $(this).parent().parent().siblings('.like_btn').removeClass('on');
+        }
+    });
+    
+    // 하트 on 상태일때
+    $('.condition_result > .like_btn').each(function(){
+     if ($(this).hasClass("on")) {
+            $(this).parent().find('.like').addClass('on')
+        }else {
+          $(this).parent().find('.like').removeClass('on')
+        }
+        })
+    
+    // 게시판 ico
+    $('.info_ico button').click(function(){
+       $(this).toggleClass('on'); 
+    });
+    
+
+    
+  
 });
+
