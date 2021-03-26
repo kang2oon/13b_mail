@@ -9,7 +9,7 @@ a{text-decoration:none;color:inherit;}
 
 .container{position:relative;width:1080px;margin:0 auto;font-size:16px;}
 .container.fluid{width:100%;}
-.kakao_ev_bg{background:url(../images/kakao_event_bg.png) #4199f8 no-repeat top;background-size:cover;}
+.kakao_ev_bg{background:#4199f8 url(../images/kakao_event_bg.png)  no-repeat top;background-size:cover;}
 .kakao_ev_wrap .bold {font-weight: bold;}
 .kakao_ev_wrap .f30 {font-size: 30px;}
 .kakao_ev_wrap .f22 {font-size: 22px;}
