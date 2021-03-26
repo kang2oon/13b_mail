@@ -1,0 +1,224 @@
+{"menus":[
+    {
+        "title":"워라밸 +",
+        "d2":[
+            {
+                "name":"가족과 건강",
+                "link":"/family/",
+                "target":"_self"
+            },
+            {
+                "name":"여가와 관계",
+                "link":"/life/",
+                "target":"_self"
+            },
+            {
+                "name":"직업과 재무",
+                "link":"/job/",
+                "target":"_self"
+            }
+        ]
+    },{
+        "title":"아동돌봄플랫폼",
+        "d2":[
+            {
+                "name":"아동돌봄플랫폼",
+                "link":"/caremap/",
+                "target":"_self"
+            }
+        ]
+    },{
+        "title":"우리회사 +",
+        "d2":[
+            {
+                "name":"가족친화경영 소개",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"가족친화경영 유형소개",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"경기도 가족친화기업 인증제도",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"인증기업 사례",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"직장교육",
+                "link":"/edu/",
+                "target":"_self"
+            }
+        ]
+    },{
+        "title":"우리동네 +",
+        "d2":[
+            {
+                "name":"지역별 일생활균형지원사업",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"우리동네 가사서비스 기관",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"우리동네 정보",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            }
+        ]
+    },{
+        "title":"정보창고",
+        "d2":[
+            {
+                "name":"법ㆍ제도 안내",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"경기도 정책",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"중앙정부 정책",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"워라밸 정보",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"테마정보",
+                "link":"/thema/",
+                "target":"_self"
+            },
+            {
+                "name":"웹진",
+                "link":"/webzine/",
+                "target":"_self"
+            }
+        ]
+    },{
+        "title":"참여/소통",
+        "d2":[
+            {
+                "name":"공지사항",
+                "link":"/notice/",
+                "target":"_self"
+            },
+            {
+                "name":"온라인상담",
+                "link":"/help/",
+                "target":"_self"
+            },
+            {
+                "name":"전문가 칼럼",
+                "link":"/expertColumn/",
+                "target":"_self"
+            },
+            {
+                "name":"이용후기",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"정보나눔",
+                "link":"/infoShare/",
+                "target":"_self"
+            },
+            {
+                "name":"FAQ",
+                "link":"/faq/",
+                "target":"_self"
+            },
+            {
+                "name":"이벤트",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            }
+        ]
+    },{
+        "title":"서비스 소개",
+        "d2":[
+            {
+                "name":"워라밸링크 소개",
+                "link":"/intro/userguide/",
+                "target":"_self"
+            },
+            {
+                "name":"이용약관",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"개인정보보호방침",
+                "link":"/privateinfoguide/",
+                "target":"_self"
+            },
+            {
+                "name":"API 이용신청",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"사용자 가이드",
+                "link":"javascript:void(0)",
+                "target":"_blank"
+            }
+        ]
+    },{
+        "title":"회원서비스",
+        "d2":[
+            {
+                "name":"로그인",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"회원가입",
+                "link":"/register/",
+                "target":"_self"
+            },
+            {
+                "name":"아이디 찾기",
+                "link":"/find/id/",
+                "target":"_self"
+            },
+            {
+                "name":"비밀번호 찾기",
+                "link":"/find/password/",
+                "target":"_self"
+            },
+            {
+                "name":"고객센터",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            }
+        ]
+    },{
+        "title":"마이페이지",
+        "d2":[
+            {
+                "name":"이용현황",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"나의 정보관리",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            }
+        ]
+    }
+]}
