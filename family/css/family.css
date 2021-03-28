@@ -68,6 +68,7 @@ a{text-decoration:none;color:inherit;}
 .family_wrap .flex_box .brown_box_inner {position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);width: 100%;padding:0 20px ;}
 .family_wrap .flex_box > div:nth-child(3n) {margin-right: 0}
 .family_wrap .flex_box .brown_box {position: relative;letter-spacing: -.5px;height: 136px}
+.family_wrap .flex_box .brown_box .f16 {margin-bottom: 10px;}
 
 /* 탭메뉴 */
 .family_wrap .tabs ul{display: table;width: 100%;table-layout: fixed}
@@ -101,8 +102,8 @@ a{text-decoration:none;color:inherit;}
 }
 
 
-.family_wrap .chart_wrap .brown_bar{background: #aa8223;bottom: 0;left: 50px}
-.family_wrap .chart_wrap .blue_bar{background: #0051a4;bottom: 0;right: 50px}
+.family_wrap .chart_wrap .brown_bar{background: #aa8223;bottom: 0;right: 50px}
+.family_wrap .chart_wrap .blue_bar{background: #0051a4;bottom: 0;left: 50px}
 .family_wrap .chart_wrap p {position: absolute;bottom: -30px;width: 100%;text-align: center;}
 
 /* 테이블 */
@@ -215,8 +216,8 @@ a{text-decoration:none;color:inherit;}
     
     .family_wrap .chart_wrap {width: 440px;margin: auto;}
     .family_wrap .chart_wrap .bar_area {width: 35px}
-    .family_wrap .chart_wrap .brown_bar{left:20%}
-    .family_wrap .chart_wrap .blue_bar{right: 20%}
+    .family_wrap .chart_wrap .brown_bar{right:20%}
+    .family_wrap .chart_wrap .blue_bar{left: 20%}
     .family_wrap .tab_container .tab_move {display: none}
     .family_wrap .header_box strong br{display: none}
     .family_wrap .header_box strong{width:100%}
@@ -246,8 +247,8 @@ a{text-decoration:none;color:inherit;}
     .family_wrap .chart_wrap .chart {height: 250px}
     .family_wrap .chart_wrap .chart_group:first-child{margin-left: 30px}
     .family_wrap .chart_wrap .bar_area {width: 30px}
-    .family_wrap .chart_wrap .brown_bar {left: 10%}
-    .family_wrap .chart_wrap .blue_bar {right: 10%}
+    .family_wrap .chart_wrap .brown_bar {right: 10%}
+    .family_wrap .chart_wrap .blue_bar {left: 10%}
     .family_wrap .chart_wrap p{left: 7%;bottom: -40px}
     .family_wrap .gray_box {padding: 20px}
     .family_wrap .tabs li {padding: 10px}
@@ -274,8 +275,8 @@ a{text-decoration:none;color:inherit;}
     .family_wrap .chart_wrap .chart_group {width: 33%;margin-right: 0;}
     .family_wrap .chart_wrap .chart_group:first-child{margin-left: 0}
     .family_wrap .chart_wrap .bar_area {width: 20px}
-    .family_wrap .chart_wrap .brown_bar {left: 25%}
-    .family_wrap .chart_wrap .blue_bar {right: auto;left: calc(25% + 20px)}
+    .family_wrap .chart_wrap .brown_bar {right: 25%}
+    .family_wrap .chart_wrap .blue_bar {left: auto;right: calc(25% + 20px)}
     .family_wrap .chart_wrap .chart_group{padding:0;}
     .family_wrap .chart_wrap p{left: -5px}
     .family_wrap .gray_box {padding: 20px}
