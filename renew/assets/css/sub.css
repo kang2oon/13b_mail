@@ -130,7 +130,7 @@ select.select_style::-ms-expand {display: none;}
 .main_section .condition_result_wrap > div:nth-child(4n) {margin-right: 0}
 .main_section .condition_result {height: auto}
 .main_section .condition_result {position: relative;border:1px solid var(--wbl-color-light-gray-lighten1);border-radius:10px;overflow:hidden;width:calc(25% - 15px); height:280px;}
-.main_section .condition_result .thumb{width:100%;height:160px;}
+.main_section .condition_result .thumb{width:100%;height:161px;}
 .main_section .condition_result .thumb img {width: 100%;height: 100%;}
 
 .main_section .condition_result .category{display:inline-block;margin: 10px 20px;font-size:var(--wbl-font-sz-ms1);border:1px solid var(--wbl-color-main);border-radius:15px;color:var(--wbl-color-main);padding:1px 13px;}
@@ -294,18 +294,19 @@ select.select_style::-ms-expand {display: none;}
 /* 갤러리형 목록*/
 .main_section .condition_result_wrap {}    
 .main_section .condition_result_wrap > div {margin-top: 15px;margin-right: 15px}   
-.main_section .condition_result_wrap:not(.not_rw) .condition_result {width: calc(33.333% - 10px);height:260px}
+.main_section .condition_result_wrap:not(.not_rw) .condition_result {width: calc(33.333% - 10px);}
+.main_section .condition_result_wrap .condition_result {height:265px}
 .main_section .condition_result_wrap:not(.not_rw) > div:nth-child(4n) {margin-right: 15px}
 .main_section .condition_result_wrap:not(.not_rw) > div:nth-child(3n) {margin-right: 0}
 .main_section .condition_result .category {margin: 10px} 
-.main_section .condition_result .thumb {height: 140px}
+.main_section .condition_result .thumb {height: 150px}
     
 /* 게시글 상세 썸네일*/  
 .board_view .view_thumb .img {width: 220px;height: 160px;margin-right: 20px}    
 .board_view .view_thumb .txt {width: calc(100% - 240px)}    
 
 /* 유사한 정보 & 추천정보 */    
-.main_section .condition_result_wrap.not_rw .condition_result {width: calc(50% - 10px);height:260px}
+.main_section .condition_result_wrap.not_rw .condition_result {width: calc(50% - 10px);}
 .main_section .condition_result_wrap.not_rw > div:nth-child(3n) {margin-right: 15px}
 .main_section .condition_result_wrap.not_rw > div:nth-child(2n) {margin-right: 0}
     
@@ -329,15 +330,14 @@ select.select_style::-ms-expand {display: none;}
 .main_section .snb_wrap {display: none;}
     
 /* 갤러리형 목록*/    
-.main_section .condition_result_wrap:not(.not_rw) .condition_result {width: calc(50% - 10px);height:245px;padding-bottom: 20px}
+.main_section .condition_result_wrap:not(.not_rw) .condition_result {width: calc(50% - 10px);padding-bottom: 20px}
+    .main_section .condition_result_wrap .condition_result {height:290px;}
 .main_section .condition_result_wrap:not(.not_rw) > div:nth-child(3n) {margin-right: 15px}
 .main_section .condition_result_wrap:not(.not_rw) > div:nth-child(2n) {margin-right: 0}
-
+.main_section .condition_result .thumb {height: 180px}
 /* 갤러리형 상세*/
 .board_view .board_reference .tit_area p{font-size: 17px}    
     
-/* 유사정보 & 추천정보 */
-.main_section .condition_result_wrap.not_rw .condition_result {height:245px }
     
 
 /* 게시글 상단*/

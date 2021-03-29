@@ -270,15 +270,18 @@ $(document).ready(function () {
     });
     
  
-    $('.cs_btn li').click(function () {
+    $('.cs_btn .view').click(function () {
         $(this).toggleClass('on');
+    });
+    
+    $('.cs_btn .like').click(function () {
+     $(this).toggleClass('on');
         if ($(this).hasClass("on")) {
             $(this).parent().parent().siblings('.like_btn').addClass('on');
         } else if (!$(this).hasClass("on")) {
             $(this).parent().parent().siblings('.like_btn').removeClass('on');
         }
     });
-    
     // 하트 on 상태일때
     $('.condition_result > .like_btn').each(function(){
      if ($(this).hasClass("on")) {
@@ -293,7 +296,6 @@ $(document).ready(function () {
        $(this).toggleClass('on'); 
     });
     
-
     
   
 });
