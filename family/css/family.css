@@ -27,11 +27,12 @@ a{text-decoration:none;color:inherit;}
 /* 기존 코드 E : 복사할 필요 없음 */
 
 /* 폰트 공통*/
-.family_wrap .bold {font-weight: 500}
-.family_wrap .f14 {font-size: 14px}
-.family_wrap .f16 {font-size: 16px}
-.family_wrap .f18 {font-size: 18px}
-.family_wrap .f20 {font-size: 20px}
+.family_wrap .bold {font-weight: 500 !important}
+.family_wrap .nomal {font-weight: 400 !important}
+.family_wrap .f14 {font-size: 14px  !important}
+.family_wrap .f16 {font-size: 16px !important}
+.family_wrap .f18 {font-size: 18px !important}
+.family_wrap .f20 {font-size: 20px !important}
 .family_wrap .blue {color: #0051a4}
 .family_wrap .red {color: #ff3d00}
 .family_wrap .dark_gray {color: #666}
@@ -42,11 +43,13 @@ a{text-decoration:none;color:inherit;}
 .family_wrap p {margin: 0;}
 .family_wrap .tct {text-align: center}
 /* 마진 */
+.family_wrap .mt0 {margin-top: 0px !important}
 .family_wrap .mt5 {margin-top: 5px}
 .family_wrap .mt10 {margin-top: 10px}
 .family_wrap .mt15 {margin-top: 15px}
 .family_wrap .mt30 {margin-top: 30px}
 .family_wrap .mt40 {margin-top: 40px}
+.family_wrap .mb0 {margin-bottom: 0px}
 .family_wrap .mb5 {margin-bottom: 5px}
 .family_wrap .mb10 {margin-bottom: 10px}
 
@@ -127,7 +130,7 @@ a{text-decoration:none;color:inherit;}
 .family_wrap .popup .popup_cont {max-height: 698px;overflow-y: auto;}
 .family_wrap .popup h3 {font-size: 20px;float: left;margin: 0;}
 .family_wrap .popup .close{float: right;display: block;background: url(../images/fm_close_btn.png) no-repeat center;width: 16px;height: 16px;text-indent: -9999px;}
-
+body.not_scroll{position: absolute;width: 100%;height: 100%;overflow: hidden;}
 /* 팝업안에 슬라이드 */
 .family_wrap .mySlides {width: 100%}
 .family_wrap .slideshow_wrap h2 {margin-top: 0}
@@ -191,6 +194,10 @@ a{text-decoration:none;color:inherit;}
 .family_wrap .pdf_view .pdf_item .img {max-width: 768px;overflow: hidden;}
 .family_wrap .pdf_view .pdf_item .txt {padding: 20px;font-weight: 500;font-size: 18px;width: 100%;}
 
+.family_wrap .a_active{display: inline-block}
+.family_wrap .a_active:active{text-decoration: underline}
+.family_wrap .a_link {text-decoration: underline}
+
 @media (max-width: 1024px){
     .family_wrap p{word-break: keep-all}
     .family_wrap .flex_box .gray_box br{display: none}
@@ -202,18 +209,21 @@ a{text-decoration:none;color:inherit;}
 }
 
 @media (max-width: 768px){
-.family_wrap .f14 {font-size: 13px}
-.family_wrap .f16 {font-size: 15px}
-.family_wrap .f18 {font-size: 16px}
-.family_wrap .f20 {font-size: 18px}
+.family_wrap .f14 {font-size: 13px !important}
+.family_wrap .f16 {font-size: 15px !important}
+.family_wrap .f18 {font-size: 16px !important}
+.family_wrap .f20 {font-size: 18px !important}
     
-    
+    .family_wrap  h2 {word-break: keep-all}
+    .family_wrap .sub03_cont #tab3 h2 span {display: block;}
     .family_wrap .header_box {background-size: 300px;background-position: right bottom}
     .family_wrap .flex_box > div {width: calc(50% - 10px)}
     .family_wrap .flex_box > div:nth-child(2n) {margin-right: 0 !important}
     .family_wrap .flex_box > div:nth-child(3n) {margin-right: 15px}
     .family_wrap .tabs li {padding: 15px}
     
+    .family_wrap .pdf_view .pdf_item .img {max-width: 100%}
+    .family_wrap .pdf_view .pdf_item img {width: 100%}
     .family_wrap .chart_wrap {width: 440px;margin: auto;}
     .family_wrap .chart_wrap .bar_area {width: 35px}
     .family_wrap .chart_wrap .brown_bar{right:20%}
@@ -223,7 +233,11 @@ a{text-decoration:none;color:inherit;}
     .family_wrap .header_box strong{width:100%}
     .family_wrap  .tabs {width: 100%;overflow-x: auto;-ms-overflow-style: none;scrollbar-width: none;}
     .family_wrap  .tabs ul{white-space: nowrap;table-layout: fixed;min-width: 100%;width: auto;}
-    
+    .family_wrap .table_style01 th,
+    .family_wrap .table_style01 td {padding: 10px;}
+    .family_wrap .sub03_cont .mw768 {min-width: 768px;width: auto;max-width: inherit}
+    .family_wrap .sub03_cont  .table_style01 th,
+    .family_wrap .sub03_cont .table_style01 td {word-break:normal}
     .family_wrap .family_step {flex-wrap: wrap}    
     .family_wrap .family_step > .fs_cont {width: calc(50% - 30px)}
     .family_wrap .family_step > .fs_cont:nth-child(1){margin-bottom: 30px}
@@ -256,8 +270,8 @@ a{text-decoration:none;color:inherit;}
     .family_wrap .popup {top: 20px;transform: translate(-50%,0);height: calc(100vh - 40px);overflow: hidden;padding: 20px}
     .family_wrap .popup .popup_cont {max-height: 100%;height: 100%;padding-bottom: 30px}
     .family_wrap .popup h3{width: calc(100% - 50px);word-break: keep-all;font-size: 16px}
-    .family_wrap .table_style01 {width: 100%;overflow-x: auto;-ms-overflow-style: none;scrollbar-width: none;}
-    .family_wrap  .table_style01 table{width: auto;table-layout: fixed}
+    .family_wrap .table_style01 {width: 100%;overflow-x: auto;}
+    .family_wrap  .table_style01 table{width: auto;table-layout: fixed;word-break: keep-all}
     .family_wrap .var_area > p:first-child:after {display: none;}
     .family_wrap .var_area > p {margin-bottom: 2px}
     .family_wrap .header_box{/*background: #eff5fa*/;background-size: 180px;background-position: bottom right ; }
