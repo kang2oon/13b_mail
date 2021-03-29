@@ -16,6 +16,11 @@
                 "name":"직업과 재무",
                 "link":"/job/",
                 "target":"_self"
+            },
+            {
+                "name":"정책 참여",
+                "link":"/joinPolicy/",
+                "target":"_self"
             }
         ]
     },{
