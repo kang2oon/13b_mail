@@ -91,7 +91,7 @@ select.select_style {
     .sub_banner .sb-swiper-pagination  .swiper-pagination-bullet{width: 10px;height: 10px;opacity: 1;border: 1px solid #999;background: #fff;margin:0 5px}
     .sub_banner .sb-swiper-pagination .swiper-pagination-bullet-active {background: #999 !important;}
     .sub_banner .autoplay.hide {display: none}
-    .sub_banner .autoplay  {position: relative;background:url(../images/play_btn.png) no-repeat center;width: 10px;height: 13px;display: inline-block;cursor: pointer;}
+    .sub_banner .autoplay  {position: relative;background:url(../images/play_btn.png) no-repeat center;width: 10px;height: 10px;display: inline-block;cursor: pointer;background-size:contain}
     .sub_banner .page_function .autoplay.stop {background: url(../images/stop_btn.png) no-repeat center}
     
     /* 서브 콘텐츠 레이아웃*/
