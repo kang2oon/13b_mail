@@ -117,11 +117,12 @@ a{text-decoration:none;color:inherit;}
     #footer #fnb_wrap #fnb li.private{color:var(--wbl-color-red);font-weight:500;}
     #footer .family_site{
         float:right;border:none;background:transparent;font-size:var(--wbl-font-sz-ms1);color:var(--wbl-color-dark-gray);padding-right:25px;
-        background:url(../images/bg_select.png) no-repeat 100% 50%;
+        background:url(../images/bg_select.png) no-repeat center right;
         -webkit-appearance: none;
            -moz-appearance: none;
                 appearance: none;
     }
+    #footer .family_site::-ms-expand {display: none;} 
     #footer .copy_wrap{margin:40px auto 50px;}
     #footer .copy_wrap .copy{float:left;}
     #footer .copy_wrap .copy .cscenter{margin-bottom:20px;}

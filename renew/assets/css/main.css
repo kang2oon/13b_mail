@@ -43,11 +43,12 @@
 .recomm_wrap{margin:65px auto;}
     .recomm_wrap select{
         border:1px solid var(--wbl-color-light-gray-lighten1);border-radius:5px;padding:16px;font-size:var(--wbl-font-sz-default);color:var(--wbl-color-dark-gray);
-        background:url(../images/bg_select.png) no-repeat calc(100% - 16px) 50%;width:40%;float:left;
+        background:url(../images/bg_select.png) no-repeat center right 16px;width:40%;float:left;
         -webkit-appearance: none;
            -moz-appearance: none;
                 appearance: none;
     }
+    .recomm_wrap select::-ms-expand {display: none;} 
     .recomm_wrap select + select{margin-left:10px;}
     .recomm_wrap button{
         float:right;width:calc(20% - 20px);border:none;border-radius:5px;background:var(--wbl-color-main);color:var(--wbl-color-white);
