@@ -89,10 +89,10 @@ select.select_style {
     .sub_banner .page_function {position: relative;text-align: center;width: 100%;}
     .sub_banner .sb-swiper-pagination  {position: relative;display: inline-block;bottom: 0;left: auto;width: auto;}
     .sub_banner .sb-swiper-pagination  .swiper-pagination-bullet{width: 10px;height: 10px;opacity: 1;border: 1px solid #999;background: #fff;margin:0 5px}
-    .sub_banner .sb-swiper-pagination .swiper-pagination-bullet-active {background: #999;}
+    .sub_banner .sb-swiper-pagination .swiper-pagination-bullet-active {background: #999 !important;}
     .sub_banner .autoplay.hide {display: none}
-    .sub_banner .autoplay  {position: relative;background:url(../images/play_btn.png) no-repeat center;width: 10px;height: 10px;background-size: 10px;display: inline-block;cursor: pointer;}
-    .sub_banner .page_function .autoplay.stop {background: url(../images/stop_btn.png) no-repeat}
+    .sub_banner .autoplay  {position: relative;background:url(../images/play_btn.png) no-repeat center;width: 10px;height: 13px;display: inline-block;cursor: pointer;}
+    .sub_banner .page_function .autoplay.stop {background: url(../images/stop_btn.png) no-repeat center}
     
     /* 서브 콘텐츠 레이아웃*/
     .main_section .sub_cont_wrap {width: calc(100% - 320px)}
