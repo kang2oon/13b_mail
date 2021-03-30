@@ -69,6 +69,8 @@ select.select_style {
     .main_section .snb_wrap h2 {font-size: var(--wbl-font-sz-ps3);font-weight: 500}
     .main_section .snb_wrap .snb_search {background: #f6f7f9 ;padding: 15px 20px;border-radius: 5px;margin: 30px 0}
     .main_section .snb_wrap .snb_search input[type="text"]{background: transparent;border: 0;font-size: var(--wbl-font-sz-default);float: left;width: calc(100% - 40px)}
+    .main_section .snb_wrap .snb_search input[type="text"]::placeholder{font-size: var(--wbl-font-sz-default)}
+    .main_section .snb_wrap .snb_search input[type="text"]::-moz-placeholder{font-size: var(--wbl-font-sz-default)}
     .main_section .snb_wrap .snb_search input[type="submit"] {width: 30px;height: 30px;float: right;background: url(../images/sub_sch.png) no-repeat center;text-indent: -9999px;border: 0;}
     .main_section  #snb {border-top: 1px solid var( --wbl-color-light-gray-lighten1);border-bottom: 1px solid var( --wbl-color-light-gray-lighten1);padding: 30px 20px;min-height: 180px;;margin-bottom: 30px}
     
@@ -93,18 +95,21 @@ select.select_style {
     .sub_banner .page_function .autoplay.stop {background: url(../images/stop_btn.png) no-repeat}
     
     /* 서브 콘텐츠 레이아웃*/
-    .main_section .sub_cont_wrap {width: 100%;padding-bottom: 70px}
+    .main_section .sub_cont_wrap {width: calc(100% - 320px)}
     .main_section .sub_tit {text-align: center;font-size: var(--wbl-font-sz-ps2);margin-bottom: 30px;font-weight: 500}
     
     /* 탭메뉴 */
     .tab {}
-    .tab ul{display: table;table-layout:fixed;min-width: 100%;max-width: 100%;border-collapse: collapse}
+    .tab ul{display: table;width: 100%;table-layout: fixed;border-collapse: collapse;}
     .tab ul > li{display: table-cell;vertical-align: middle;text-align: center;padding: 20px;background: #f6f7f9;border: 1px solid #ccc;border-right: 0;box-sizing: border-box;border-bottom: 1px solid #212121;}
+    .tab ul.clearfix:before,
+    .tab ul.clearfix:after{display: none;}
     .tab ul > li:last-child {border-right: 1px solid #ccc}
     .tab ul > li.on{background: #fff;border: 1px solid #212121;border-bottom:0;color: var(--wbl-color-main);font-weight: 500;}
+
     .tab ul > li:hover,
     .tab ul > li:active,
-    .tab ul > li:focus{background: #fff;border: 1px solid #212121;border-bottom:0;color: var(--wbl-color-main);font-weight: 500;z-index: 555;position: relative}
+    .tab ul > li:focus{background: #fff;border-left: 1px solid #212121;border-top:1px solid #212121;border-right:1px solid #212121;border-bottom:0;color: var(--wbl-color-main);font-weight: 500;}
     .tab ul > li a{display: block;width: 100%;height: 100%;font-size: var(--wbl-font-sz-default)}
     
     /* 필터 */
@@ -283,6 +288,7 @@ select.select_style {
         
     /* 서브 메뉴*/
     .main_section .snb_wrap {width: 220px;margin: 0 30px 0 0}
+    .main_section .sub_cont_wrap {width: calc(100% - 250px);}
     
     .main_section .condition_result {height: 240px}
     .main_section .condition_result .thumb {height: 130px}    
@@ -331,6 +337,7 @@ select.select_style {
     .f20 {font-size: 18px}    
     /* 서브 메뉴*/
     .main_section .snb_wrap {display: none;}
+    .main_section .sub_cont_wrap {width:100%}
         
     /* 갤러리형 목록*/    
     .main_section .condition_result_wrap:not(.not_rw) .condition_result {width: calc(50% - 10px);padding-bottom: 20px}
@@ -357,7 +364,7 @@ select.select_style {
         
     /* 탭 scroll */
     .tab {width: 100%;overflow-y: auto;}    
-    .tab ul{width: auto}
+    .tab ul{width: auto;min-width: 100%;}
         
     }
     

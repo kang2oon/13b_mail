@@ -132,7 +132,7 @@ a{text-decoration:none;color:inherit;}
     #footer .copy_wrap .address span{font-size:var(--wbl-font-sz-ms2);}
     #footer .copy_wrap .catchphrase{float:right;}
 
-#content{padding:50px 0;}
+#content{padding:50px 0;overflow: hidden;}
     #content h2{font-size:var(--wbl-font-sz-ps2);font-weight:400;margin:0 0 30px;}
 
 
