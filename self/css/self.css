@@ -79,7 +79,6 @@ a{text-decoration:none;color:inherit;}
 .self_wrap .table_style01  .self_check input[type=radio]{opacity: 0;width: 0;height: 0;overflow: hidden;text-indent: -9999px;display: none;}
 .self_wrap .tbl_gray {background: #f6f7f9}
 .self_wrap .highLight{color: #333;display: inline;position: relative;z-index: 1;font-weight: 400;box-shadow: 0 -7px 0  0   #cee9ff inset }
- }
 .self_wrap .btn {display: inline-block;font-size: 16px;border-radius: 8px;padding: 12px 50px;border: 0;}
 .self_wrap .btn.orange_btn{background: #ff5628;color: #fff;cursor: pointer}
 .self_wrap .btn.orange_btn:disabled{background: #999;cursor: default}
