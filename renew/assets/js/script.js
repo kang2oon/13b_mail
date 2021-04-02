@@ -282,6 +282,7 @@ $(document).ready(function () {
             $(this).parent().parent().siblings('.like_btn').removeClass('on');
         }
     });
+    
     // 하트 on 상태일때
     $('.condition_result > .like_btn').each(function(){
      if ($(this).hasClass("on")) {
@@ -292,10 +293,15 @@ $(document).ready(function () {
         })
     
     // 게시판 ico
-    $('.info_ico button').click(function(){
+    $('.info_ico button.bookmark').click(function(){
        $(this).toggleClass('on'); 
     });
     
+        $('.popLayer .close').click(function() {
+            $(this).parent().parent().fadeOut(300);
+            $('.shadow').fadeOut(300);
+             $("html, body").removeClass("not_scroll");
+        });
     
   
 });

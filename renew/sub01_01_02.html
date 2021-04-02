@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width,user-scalable=no" />
     <title>워라밸링크</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/kgoon.reset.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/sub.css" />
     <!-- ie css 변수적용 -->
-    <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');</script>
+    <script>
+        window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');
+    </script>
 </head>
+
 <body>
     <div class="container fluid skip_navi">
         <a href="#content">본문 바로가기</a>
@@ -76,25 +79,25 @@
             </div>
         </div>
         <!-- 사이트맵 -->
-            <div class="menu_site mb_ms pop_ns" tabindex="0">
-                <div class="shadow"></div>
-                <div class="ms_inner">
-                    <div class="ms_top clearfix">
-                        <h2>사이트맵</h2>
-                    </div>
-                    <div class="pc_hide">
-                        <ul class="mb_log clearfix">
-                            <li class="login_btn"><a href="#">로그인</a></li>
-                            <li class="join_btn"><a href="#">회원가입</a></li>
-                        </ul>
-                    </div>
-                    <div class="pc_hide">
-                        <div class="bnr_mb"></div>
-                    </div>
-                    <ul id="siteMap" class="menu_wrap clearfix"></ul>
-                    <a href="#" class="close bnt_close">닫기</a>
+        <div class="menu_site mb_ms pop_ns" tabindex="0">
+            <div class="shadow"></div>
+            <div class="ms_inner">
+                <div class="ms_top clearfix">
+                    <h2>사이트맵</h2>
                 </div>
+                <div class="pc_hide">
+                    <ul class="mb_log clearfix">
+                        <li class="login_btn"><a href="#">로그인</a></li>
+                        <li class="join_btn"><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+                <div class="pc_hide">
+                    <div class="bnr_mb"></div>
+                </div>
+                <ul id="siteMap" class="menu_wrap clearfix"></ul>
+                <a href="#" class="close bnt_close">닫기</a>
             </div>
+        </div>
         <!-- //사이트맵 -->
         <div class="mega_wrap">
             <div class="shadow"></div>
@@ -186,11 +189,49 @@
                             <div class="fright">
                                 <div class="info_ico">
                                     <button class="bookmark">즐겨찾기</button>
-                                    <button class="share">공유하기</button>
+                                    <button onClick="openModal('share_layer');" class="share">공유하기</button>
                                 </div>
                             </div>
                         </div>
                         <!-- //상세 상단-->
+
+                        <!--share_layer-->
+                        <div class="pop_wrap">
+                          <div class="shadow"></div>
+                        <div class="popLayer share_layer">
+                            <div class="popTop clearFix">
+                                <p class="tit">공유하기</p>
+                                <a href="#" class="close">닫기</a>
+                            </div>
+                            <div class="popCont">
+                                <ul class="share_list">
+                                    <li>
+                                        <a href="#">
+                                            <span class="facebook"></span>
+                                            페이스북
+                                        </a>
+                                    </li>
+                                    <li><a href="#">
+                                            <span class="kakao"></span>
+                                            카카오톡
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="twitter"></span>
+                                            트위터
+                                        </a>
+                                    </li>
+                                    <li><a href="#">
+                                            <span class="copy"></span>
+                                            URL 복사
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        <!--//share_layer-->
 
                         <!-- 상세 중간 -->
                         <div class="board_middle">
@@ -306,106 +347,106 @@
 
                         <!-- 유사한 정보 -->
                         <div class="recommend_list_wrap">
-                          <div class="recommend_list">
-                           <p class="bold f20">이 정보와 유사한 정보</p>
-                            <div class="condition_result_wrap not_rw">
-                                <div class="condition_result">
-                                    <div class="thumb imgFill">
-                                        <img src="./assets/images/@fml_thumb1.png">
-                                    </div>
-                                    <div class="like_btn on"></div>
-                                    <div class="category">자녀교육</div>
-                                    <div class="title">용인시 다함께돌봄센터 6호점 이용아동 모집...</div>
-                                </div>
-
-                                <div class="condition_result">
-                                    <div class="thumb imgFill">
-                                        <img src="./assets/images/@fml_thumb2.png">
-                                    </div>
-                                    <div class="like_btn"></div>
-                                    <div class="category">보육돌봄</div>
-                                    <div class="title">과천시 부림동 마을돌봄
-                                        나눔터 신규 이용...
-                                    </div>
-                                </div>
-
-                                <div class="condition_result">
-                                    <div class="thumb imgFill">
-                                        <img src="./assets/images/@fml_thumb3.png">
-                                    </div>
-                                    <div class="like_btn"></div>
-                                    <div class="category">보육돌봄</div>
-                                    <div class="title">코로나극복 프로젝트
-                                        – 에코놀이
-                                    </div>
-                                </div>
-
-                                <div class="condition_result">
-                                    <div class="thumb imgFill">
-                                        <img src="./assets/images/@fml_thumb4.png">
-                                    </div>
-                                    <div class="like_btn"></div>
-                                    <div class="category">자녀교육</div>
-                                    <div class="title">자녀 생활 서비스(방문교
-                                        육서비스)
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- 인기정보 -->
                             <div class="recommend_list">
-                           <p class="bold f20">최고 인기 정보</p>
-                            <div class="condition_result_wrap not_rw">
-                                <div class="condition_result">
-                                    <div class="thumb imgFill">
-                                        <img src="./assets/images/@fml_thumb5.png">
+                                <p class="bold f20">이 정보와 유사한 정보</p>
+                                <div class="condition_result_wrap not_rw">
+                                    <div class="condition_result">
+                                        <div class="thumb imgFill">
+                                            <img src="./assets/images/@fml_thumb1.png">
+                                        </div>
+                                        <div class="like_btn on"></div>
+                                        <div class="category">자녀교육</div>
+                                        <div class="title">용인시 다함께돌봄센터 6호점 이용아동 모집...</div>
                                     </div>
-                                    <div class="like_btn on"></div>
-                                    <div class="category">자녀교육</div>
-                                    <div class="title">용인시 다함께돌봄센터 6호점 이용아동 모집...</div>
+
+                                    <div class="condition_result">
+                                        <div class="thumb imgFill">
+                                            <img src="./assets/images/@fml_thumb2.png">
+                                        </div>
+                                        <div class="like_btn"></div>
+                                        <div class="category">보육돌봄</div>
+                                        <div class="title">과천시 부림동 마을돌봄
+                                            나눔터 신규 이용...
+                                        </div>
+                                    </div>
+
+                                    <div class="condition_result">
+                                        <div class="thumb imgFill">
+                                            <img src="./assets/images/@fml_thumb3.png">
+                                        </div>
+                                        <div class="like_btn"></div>
+                                        <div class="category">보육돌봄</div>
+                                        <div class="title">코로나극복 프로젝트
+                                            – 에코놀이
+                                        </div>
+                                    </div>
+
+                                    <div class="condition_result">
+                                        <div class="thumb imgFill">
+                                            <img src="./assets/images/@fml_thumb4.png">
+                                        </div>
+                                        <div class="like_btn"></div>
+                                        <div class="category">자녀교육</div>
+                                        <div class="title">자녀 생활 서비스(방문교
+                                            육서비스)
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <div class="condition_result">
-                                    <div class="thumb imgFill">
-                                        <img src="./assets/images/@fml_thumb6.png">
-                                    </div>
-                                    <div class="like_btn"></div>
-                                    <div class="category">보육돌봄</div>
-                                    <div class="title">과천시 부림동 마을돌봄
-                                        나눔터 신규 이용...
-                                    </div>
-                                </div>
+                                <!-- 인기정보 -->
+                                <div class="recommend_list">
+                                    <p class="bold f20">최고 인기 정보</p>
+                                    <div class="condition_result_wrap not_rw">
+                                        <div class="condition_result">
+                                            <div class="thumb imgFill">
+                                                <img src="./assets/images/@fml_thumb5.png">
+                                            </div>
+                                            <div class="like_btn on"></div>
+                                            <div class="category">자녀교육</div>
+                                            <div class="title">용인시 다함께돌봄센터 6호점 이용아동 모집...</div>
+                                        </div>
 
-                                <div class="condition_result">
-                                    <div class="thumb imgFill">
-                                        <img src="./assets/images/@fml_thumb7.png">
-                                    </div>
-                                    <div class="like_btn"></div>
-                                    <div class="category">보육돌봄</div>
-                                    <div class="title">코로나극복 프로젝트
-                                        – 에코놀이
-                                    </div>
-                                </div>
+                                        <div class="condition_result">
+                                            <div class="thumb imgFill">
+                                                <img src="./assets/images/@fml_thumb6.png">
+                                            </div>
+                                            <div class="like_btn"></div>
+                                            <div class="category">보육돌봄</div>
+                                            <div class="title">과천시 부림동 마을돌봄
+                                                나눔터 신규 이용...
+                                            </div>
+                                        </div>
 
-                                <div class="condition_result">
-                                    <div class="thumb imgFill">
-                                        <img src="./assets/images/@fml_thumb8.png">
-                                    </div>
-                                    <div class="like_btn"></div>
-                                    <div class="category">자녀교육</div>
-                                    <div class="title">자녀 생활 서비스(방문교
-                                        육서비스)
+                                        <div class="condition_result">
+                                            <div class="thumb imgFill">
+                                                <img src="./assets/images/@fml_thumb7.png">
+                                            </div>
+                                            <div class="like_btn"></div>
+                                            <div class="category">보육돌봄</div>
+                                            <div class="title">코로나극복 프로젝트
+                                                – 에코놀이
+                                            </div>
+                                        </div>
+
+                                        <div class="condition_result">
+                                            <div class="thumb imgFill">
+                                                <img src="./assets/images/@fml_thumb8.png">
+                                            </div>
+                                            <div class="like_btn"></div>
+                                            <div class="category">자녀교육</div>
+                                            <div class="title">자녀 생활 서비스(방문교
+                                                육서비스)
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        </div><!-- //최고 인기 정보-->
+                            </div><!-- //최고 인기 정보-->
                         </div>
                         <div class="view_btn tct mt30">
-                                <a href="#" class="white_btn btn_style">목록</a>
-                                <a href="#" class="blue_btn btn_style">홈페이지 바로가기</a>
-                            </div>
-                        
+                            <a href="#" class="white_btn btn_style">목록</a>
+                            <a href="#" class="blue_btn btn_style">홈페이지 바로가기</a>
+                        </div>
+
                     </div>
                     <!-- //게시글 상세 -->
 
@@ -472,4 +513,25 @@
     <script src="assets/js/jquery.counterup.min.js"></script>
     <script src="assets/js/imgLiquid-min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script>
+        //팝업
+        function openModal(modalname) {
+            document.get
+            $("html, body").addClass("not_scroll");
+            $("." + modalname).fadeIn(300);
+            $('.shadow').show();
+        }
+        
+        // 팝업
+         $(document).mouseup(function(e) {
+            var container = $(".popLayer");
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                container.css("display", "none");
+                $('.shadow').hide();
+                $("html, body").removeClass("not_scroll");
+            }
+
+       
+        });
+    </script>
 </body></html>
