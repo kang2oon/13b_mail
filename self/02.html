@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <title>워라밸 자가진단</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/self.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+</head>
+
+<body>
+    <div id="contents_wrap" class="contents_wrap white">
+        <div class="inner ">
+            <div class="page_navi">
+                <ul>
+                    <li>
+                        <router-link to="/">홈</router-link>
+                    </li>
+                    <li>
+                        <router-link to>워라밸 자가진단</router-link>
+                    </li>
+                </ul>
+            </div>
+            <div class="self_wrap">
+                <h1>워라밸 자가진단 결과
+                </h1>
+                <div class="header_box02">
+                    <div class="chart_wrap">
+                        <!-- 방사형 차트-->
+                        <canvas id="radorChart" width="10" height="10"></canvas>
+                    </div>
+                    <div class="txt">
+                        <strong class="bold f22 blue">사상누각 형
+                        </strong>
+                        <p class="f16 mt10">
+                            바람만 불어도 무너질 정도로 위태위태!<br />
+                            시간을 가지고 균형된 삶의 대한 노력이 필요해요!
+                        </p>
+                    </div>
+
+                </div>
+
+                <h2>나의 워라밸 지수</h2>
+                <div class="bar_chart_wrap">
+                    <!-- <canvas id="mybarChart01" width="10" height="3"></canvas>-->
+
+                    <div class="chart_area_wrap">
+                        <div class="chart_area">
+                            <div class="progress-bar horizontal">
+                                <div class="progress-track">
+                                    <div class="progress-fill">
+                                        <span class="num">60.5</span>
+                                    </div>
+                                </div>
+                                <p>전국 평균</p>
+                            </div>
+
+                            <div class="progress-bar horizontal">
+                                <div class="progress-track">
+                                    <div class="progress-fill">
+                                        <span>58.8</span>
+                                    </div>
+                                </div>
+                                <p>최상위 지역</p>
+                            </div>
+
+                            <div class="progress-bar horizontal">
+                                <div class="progress-track">
+                                    <div class="progress-fill">
+                                        <span>43.3</span>
+                                    </div>
+                                </div>
+                                <p>최하위 지역</p>
+                            </div>
+
+                            <div class="progress-bar horizontal">
+                                <div class="progress-track">
+                                    <div class="progress-fill">
+                                        <span>50.5</span>
+                                    </div>
+                                </div>
+                                <p>경기도 평균</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="chart_area_wrap">
+                        <div class="chart_area">
+                            <div class="progress-bar horizontal active">
+                                <div class="progress-track">
+                                    <div class="progress-fill">
+                                        <span class="num">60.2</span>
+                                    </div>
+                                </div>
+                                <p>나의 워라밸 지수</p>
+                            </div>
+
+                            <div class="progress-bar horizontal">
+                                <div class="progress-track">
+                                    <div class="progress-fill">
+                                        <span>56.7</span>
+                                    </div>
+                                </div>
+                                <p>회원 평균</p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <p class="f14 dark_gray">
+                    ※ 데이터 출처 : 2019년 지역별 일ㆍ생활 균형지수(2020-12, 고용노동부)
+                </p>
+                <p class="f14 dark_gray">
+                    ※ 워라밸 링크 사이트의 지수(점수)와 고용노동부 점수는 진단 문항의 차이로 동일한 기준으로 해석하기 보다 참고용으로 활용
+                </p>
+
+                <hr class="gray_line">
+
+                <h2>워라밸 지수 향상 솔루션</h2>
+                <div class="solution_wrap">
+
+                    <div class="solution_item">
+                        <a href="#none">
+                            <div class="img">
+                                <img src="./images/self_img01.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <strong>아동돌봄플랫폼</strong>
+                                <p>가정의 아동돌봄을 지원하여 아이의 복지증진 및
+                                    보호자의 일ㆍ가정 양립을 통한 가족구성원의
+                                    삶의 질 향상</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="solution_item">
+                        <a href="#none">
+                            <div class="img">
+                                <img src="./images/self_img02.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <strong>온라인 상담
+                                </strong>
+                                <p>직장노무, 세무회계, 커리어, 마음심리, 자녀교육 등
+                                    여러분의 고민 또는 궁금한 점을 문의해 주세요.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="solution_item">
+                        <a href="#none">
+                            <div class="img">
+                                <img src="./images/self_img03.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <strong>아동돌봄</strong>
+                                <p>일과 가정, 삶에 대한 가치관을 정립하고 일과
+                                    가정의 양립이 필요함을 인식할 수 있는 교육 과정
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+                <hr class="gray_line">
+
+                <h2>추천 정보</h2>
+
+                <!-- 갤러리형 리스트 목록 -->
+                <div class="condition_result_wrap">
+                    <div class="condition_result">
+                        <div class="thumb imgFill">
+                            <img src="./images/self_img04.png">
+                        </div>
+                        <div class="like_btn on"></div>
+                        <div class="category">일상생활</div>
+                        <div class="title">용인시 다함께돌봄센터 6호점 이용아동 모집...</div>
+                    </div>
+
+                    <div class="condition_result">
+                        <div class="thumb imgFill">
+                            <img src="./images/self_img05.png">
+                        </div>
+                        <div class="like_btn"></div>
+                        <div class="category">일상생활</div>
+                        <div class="title">용인시 다함께돌봄센터 6호점 이용아동 모집...</div>
+                    </div>
+
+                    <div class="condition_result">
+                        <div class="thumb imgFill">
+                            <img src="./images/self_img06.png">
+                        </div>
+                        <div class="like_btn"></div>
+                        <div class="category">일상생활</div>
+                        <div class="title">용인시 다함께돌봄센터 6호점 이용아동 모집...</div>
+                    </div>
+
+                    <div class="condition_result">
+                        <div class="thumb imgFill">
+                            <img src="./images/self_img07.png">
+                        </div>
+                        <div class="like_btn"></div>
+                        <div class="category">일상생활</div>
+                        <div class="title">용인시 다함께돌봄센터 6호점 이용아동 모집...</div>
+                    </div>
+
+                    <div class="condition_result">
+                        <div class="thumb imgFill">
+                            <img src="./images/self_img04.png">
+                        </div>
+                        <div class="like_btn on"></div>
+                        <div class="category">일상생활</div>
+                        <div class="title">용인시 다함께돌봄센터 6호점 이용아동 모집...</div>
+                    </div>
+
+                    <div class="condition_result">
+                        <div class="thumb imgFill">
+                            <img src="./images/self_img05.png">
+                        </div>
+                        <div class="like_btn"></div>
+                        <div class="category">일상생활</div>
+                        <div class="title">용인시 다함께돌봄센터 6호점 이용아동 모집...</div>
+                    </div>
+
+                    <div class="condition_result">
+                        <div class="thumb imgFill">
+                            <img src="./images/self_img06.png">
+                        </div>
+                        <div class="like_btn"></div>
+                        <div class="category">일상생활</div>
+                        <div class="title">용인시 다함께돌봄센터 6호점 이용아동 모집...</div>
+                    </div>
+
+                    <div class="condition_result">
+                        <div class="thumb imgFill">
+                            <img src="./images/self_img07.png">
+                        </div>
+                        <div class="like_btn"></div>
+                        <div class="category">일상생활</div>
+                        <div class="title">용인시 다함께돌봄센터 6호점 이용아동 모집...</div>
+                    </div>
+
+
+                </div>
+                <!-- //갤러리형 리스트 목록 -->
+
+            </div><!-- //self_wrap -->
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
+    <script src="./js/imgLiquid-min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+
+            $('.chart_area .progress-fill span').each(function() {
+                var percent = $(this).html() + "%";;
+                var pTop = 100 - (percent.slice(0, percent.length - 1)) + "%";
+                $(this).parent().css({
+                    'height': percent,
+                });
+            });
+
+
+
+
+
+            var ctx = $("#radorChart");
+            var data = {
+                labels: ['일', '생활', '지역'],
+                datasets: [{
+                    label: "DATA1",
+                    fill: false,
+                    borderColor: [
+                        'rgba(255, 86, 40, 1)',
+                        'rgba(255, 86, 40, 1)',
+                        'rgba(255, 86, 40, 1)'
+                    ],
+                    pointBackgroundColor: "#34b44a",
+                    data: [3, 3, 4],
+                    borderWidth: 3,
+                    pointStyle: 'line',
+                    pointRadius: 0,
+                    datalabels: {
+                        labels: {
+                            display: false
+                        }
+                    }
+
+                }, ]
+            };
+
+            var options = {
+
+                title: {
+                    display: false,
+                    fontColor: '#999',
+                    fontStyle: 'regular',
+                    fullWidth: false,
+                },
+                legend: {
+                    display: false
+                },
+                elements: {
+                    line: {}
+                },
+                scale: {
+                    angleLines: {
+                        color: '#b5c8d8'
+                    },
+                    gridLines: {
+                        color: '#b5c8d8'
+                    },
+                    pointLabels: {
+                        fontColor: '#2c5176',
+                        fontSize: 16,
+                        fontStyle: 'bold'
+
+                    },
+                    ticks: {
+                        beginAtZero: true,
+                        min: 0,
+                        max: 8,
+                        stepSize: 2,
+                        backdropColor: "transparent",
+                        fontColor: '#506c8b',
+                       fontSize:13
+                        
+                        
+                    }
+                },
+                tooltips: {
+                    enabled: false
+                }
+            };
+
+            var myRadarChart = new Chart(ctx, {
+                type: 'radar',
+                data: data,
+                options: options
+            });
+
+
+
+
+            var ctx = document.getElementById("mybarChart01");
+            var data = {
+                labels: ["전국 평균", "최상위 지역", "최하위 지역", "경기도 평균", "나의 워라밸 지수", "회원 평균"],
+                datasets: [{
+                    data: [50.5, 58.8, 43.3, 50, 50.5, 60.2, 56.7],
+                    backgroundColor: ['#d4d4d4',
+                        '#d4d4d4',
+                        '#d4d4d4',
+                        '#d4d4d4',
+                        '#0051a4',
+                        '#d4d4d4',
+
+                    ],
+                    fillColor: ['#fff', 'red']
+                }],
+
+
+            }
+            //            
+            //            var mybarChart = new Chart(ctx, {
+            //                type: 'bar',
+            //                data: data,
+            //                options: {
+            //                    layout: {
+            //                        padding: {
+            //                            bottom: 20
+            //                        }
+            //                    },
+            //                    plugins: {
+            //                        // Change options for ALL labels of THIS CHART
+            //                        datalabels: {
+            //                            color: ['#333', '#333', '#333', '#333', '#0051a4', '#333'],
+            //                            align: 'top',
+            //                            anchor: 'end',
+            //                            font: {
+            //                                weight: 'bold',
+            //                                size: '14'
+            //                            },
+            //                        },
+            //                    },
+            //                    legend: {
+            //                        "display": false
+            //                    },
+            //                    tooltips: {
+            //                        "enabled": false
+            //                    },
+            //                    scales: {
+            //                        yAxes: [{
+            //                            display: false,
+            //                            gridLines: {
+            //                                display: false
+            //                            },
+            //                            ticks: {
+            //                                max: 100,
+            //                                display: false,
+            //                                beginAtZero: true,
+            //
+            //                            }
+            //                        }],
+            //                        xAxes: [{
+            //                            gridLines: {
+            //                                display: false,
+            //                                color: '#333',
+            //                                drawBorder: true
+            //                            },
+            //                            ticks: {
+            //                                beginAtZero: true,
+            //                                fontSize: 14,
+            //                                fontColor: ['#333', 'red'],
+            //                                fontStyle: 'bold',
+            //                                padding: 10,
+            //                            },
+            //                            barThickness: 50,
+            //
+            //                        }]
+            //                    }
+            //                }
+            //            });
+
+            $('.like_btn').click(function() {
+                $(this).toggleClass('on');
+            });
+            $(".imgFill").imgLiquid();
+
+        });
+    </script>
+</body></html>

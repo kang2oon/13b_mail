@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <title>워라밸 자가진단</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/self.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+</head>
+
+<body>
+    <div id="contents_wrap" class="contents_wrap white">
+        <div class="inner ">
+            <div class="page_navi">
+                <ul>
+                    <li>
+                        <router-link to="/">홈</router-link>
+                    </li>
+                    <li>
+                        <router-link to>워라밸 자가진단</router-link>
+                    </li>
+                </ul>
+            </div>
+            <div class="self_wrap">
+                <h1>워라밸 자가진단
+                </h1>
+                <div class="header_box">
+                    <div>
+                        <strong class="bold f16 blue">일ㆍ생활 균형을 위해 우리 회사, 나는 잘 하고 있을까?
+                        </strong>
+                        <p class="f14 mt10">개인의 주관적 인식과 체감도, 더 나아가 일ㆍ생활 균형이 개인의 일과 삶의 만족도,
+                            기업의 경영활동 성과, 사회적 가치성과와 어떤지를 비교ㆍ진단해보고
+                            평균지표와 나의 워라밸 수준을 비교해 보자!</p>
+                    </div>
+                </div>
+
+                <div class="table_style01">
+                    <form action="" class="self_form">
+                        <table>
+                            <caption>워라밸 자가진단</caption>
+                            <colgroup>
+                                <col class="col1" style="width: 21%" />
+                                <col />
+                                <col class="col2" style="width:10%" />
+                                <col class="col3"  style="width:10%" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" rowspan="2" class="tlt">1. 법정근로 이행정도</th>
+                                    <td>Q. 정시 출퇴근을 할 수 있다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="ridio1" name="question1">
+                                            <label for="ridio1">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio2" name="question1">
+                                            <label for="radio2">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tr_line">
+                                    <td>Q. 법정공휴일 및 토,일요일 모두 쉴 수 있다.
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio3" name="question2">
+                                            <label for="radio3">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio4" name="question2">
+                                            <label for="radio4">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="tbl_gray">
+                                    <th scope="row" rowspan="5" class="tlt">2. 직장 내 분위기
+                                    </th>
+                                    <td>Q. 집안 일이 있으면 회식에 참여하지 않아도 되는 허용적인 분위기다.
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio5" name="question3">
+                                            <label for="radio5">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio6" name="question3">
+                                            <label for="radio6">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tbl_gray">
+                                    <td>Q. 가족을 돌보는 일로 휴가를 써도 나의 상사는 업무상 불이익을 주지 않는다.
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio7" name="question4">
+                                            <label for="radio7">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio8" name="question4">
+                                            <label for="radio8">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tbl_gray">
+                                    <td>Q. 가족을 돌보아야 하는 일이 생기면 나의 상사는 내 일정을 조정해 준다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio11" name="question6">
+                                            <label for="radio11">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio12" name="question6">
+                                            <label for="radio12">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="tbl_gray">
+                                    <td>Q. 나의 상사는 정규업무 시간 외 추가 근무를 시키지 않으려고 노력한다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio13" name="question7">
+                                            <label for="radio13">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio14" name="question7">
+                                            <label for="radio14">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="tbl_gray tr_line">
+                                    <td>Q. 내가 가족의 일을 돌보아야 하는 일이 생기면 나의 동료는 내 일정 조정에 협조적이다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio15" name="question8">
+                                            <label for="radio15">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio16" name="question8">
+                                            <label for="radio16">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tlt" scope="row" rowspan="4">3. 선택적근무제도 가능성</th>
+                                    <td>Q. 시차출퇴근제를 시행하고 있으신가요?</td>
+
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio17" name="question8">
+                                            <label for="radio17">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio18" name="question8">
+                                            <label for="radio18">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Q. 재택근무제를 시행하고 있으신가요?</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio19" name="question9">
+                                            <label for="radio19">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio20" name="question9">
+                                            <label for="radio20">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Q. 압축근무제를 시행하고 있으신가요?</td>
+
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio21" name="question11">
+                                            <label for="radio21">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio22" name="question11">
+                                            <label for="radio22">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tr_line">
+                                    <td>Q. 직무대체제를 시행하고 있으신가요?</td>
+
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio23" name="question12">
+                                            <label for="radio23">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio24" name="question12">
+                                            <label for="radio24">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tbl_gray">
+                                    <th class="tlt" scope="row" rowspan="4">4. 가족환경</th>
+                                    <td>Q. 자녀들을 돌보는 일이 나에게 주로 부과되고 있다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio25" name="question13">
+                                            <label for="radio25">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio26" name="question13">
+                                            <label for="radio26">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tbl_gray">
+                                    <td>Q. 부모가 아플 때 보살피는 일이 나에게 주로 부과되고 있다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio27" name="question14">
+                                            <label for="radio27">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio28" name="question14">
+                                            <label for="radio28">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tbl_gray">
+                                    <td><span>Q. 가족에 일이 생기면 내 직장 스케줄을 우선 조정하는 것을 당연하게 여긴다.</span></td>
+
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio29" name="question15">
+                                            <label for="radio29">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio30" name="question15">
+                                            <label for="radio30">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tr_line tbl_gray">
+                                    <td><span>Q. 집안일을 주로 내가 담당하는 것을 당연하게 여긴다.</span></td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio31" name="question16">
+                                            <label for="radio31">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio32" name="question16">
+                                            <label for="radio32">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="6" class="tlt">5. 지역사회내 돌봄서비스</th>
+                                    <td>Q. 아동을 위한 보육서비스나 시설을 가깝게 찾을 수 있다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio33" name="question17">
+                                            <label for="radio33">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio34" name="question17">
+                                            <label for="radio34">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Q. 아동을 위한 보육서비스나 시설 이용가격이 적당하다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio35" name="question18">
+                                            <label for="radio35">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio36" name="question18">
+                                            <label for="radio36">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Q. 아동을 위한 방과후 보육서비스나 시설을 가깝게 찾을 수 있다.</td>
+
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio37" name="question19">
+                                            <label for="radio37">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio38" name="question19">
+                                            <label for="radio38">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Q. 아동을 위한 방과후 서비스나 시설 이용가격이 적당하다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio39" name="question20">
+                                            <label for="radio39">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio40" name="question20">
+                                            <label for="radio40">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Q. 노인을 돌보는 서비스나 시설을 가깝게 찾을 수 있다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio41" name="question21">
+                                            <label for="radio41">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio42" name="question21">
+                                            <label for="radio42">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tr_line">
+                                    <td>Q. 노인을 돌보는 서비스나 시설 이용가격이 적당하다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio43" name="question22">
+                                            <label for="radio43">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio44" name="question22">
+                                            <label for="radio44">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tbl_gray">
+                                    <th scope="row" class="tlt" rowspan="2">6. 지역사회내 사회적지지</th>
+                                    <td>Q. 나는 급한 일이 생기면 우리 집의 어린 아이나 수발이 필요한 부모님을 잠깐씩 돌봐줄 수 있는 친척이 있다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio45" name="question23">
+                                            <label for="radio45">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio46" name="question23">
+                                            <label for="radio46">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tr_line tbl_gray">
+                                    <td>Q. 나는 급한 일이 생기면 우리 집의 어린 아이나 수발이 필요한 부모님을 잠깐씩 돌봐줄 수 있는 이웃이 있다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio47" name="question24">
+                                            <label for="radio47">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio48" name="question24">
+                                            <label for="radio48">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tlt" scope="row" rowspan="3">7. 직장내시간부족/갈등</th>
+                                    <td>Q. 나는 집안일이 많아서 직장 내 업무를 자주 쫓긴다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio49" name="question25">
+                                            <label for="radio49">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio50" name="question25">
+                                            <label for="radio50">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Q. 나는 집안일로 인해 직장 동료 및 상사와의 업무회의에 빠지게 되는 경우가 종종 있다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio51" name="question26">
+                                            <label for="radio51">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio52" name="question26">
+                                            <label for="radio52">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tr_line">
+                                    <td>Q. 나는 집안일 때문에 직장에 오면 너무 피곤해서 직장일을 잘 수행할 수 없을때가 자주 있다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio53" name="question27">
+                                            <label for="radio53">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio54" name="question27">
+                                            <label for="radio54">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tbl_gray">
+                                    <th class="tlt" scope="row" rowspan="6">8. 가족내시간부족/갈등</th>
+                                    <td>Q. 나는 가족과 함께하는 시간이 절대적으로 부족하다고 느낀다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio55" name="question28">
+                                            <label for="radio55">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio56" name="question28">
+                                            <label for="radio56">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tbl_gray">
+                                    <td>Q. 나는 직장일이 많아서 가족을 위해 수행하는 일에 자주 쫓긴다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio57" name="question29">
+                                            <label for="radio57">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio58" name="question29">
+                                            <label for="radio58">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tbl_gray">
+                                    <td>Q. 나는 직장일로 인해 가족들에게 종종 소홀할 때가 있다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio59" name="question30">
+                                            <label for="radio59">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio60" name="question30">
+                                            <label for="radio60">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tbl_gray">
+                                    <td>Q. 나는 직장일 때문에 집에 오면 너무 피곤해서 집안일을 할 수 없을때가 자주 있다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio61" name="question31">
+                                            <label for="radio61">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio62" name="question31">
+                                            <label for="radio62">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tbl_gray">
+                                    <td>Q. 나는 일가족생활을 병행하느라 자주 스트레스를 느낀다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio63" name="question32">
+                                            <label for="radio63">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio64" name="question32">
+                                            <label for="radio64">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tr_line tbl_gray">
+                                    <td>Q. 나는 일가족생활을 병행하느라 수면부족과 만성피로와 같은 경미한 건강문제를 자주 겪는다.</td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio65" name="question33">
+                                            <label for="radio65">
+                                                그렇다
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="self_check">
+                                            <input type="radio" id="radio66" name="question33">
+                                            <label for="radio66">
+                                                아니다
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="tct mt30">
+                            <button type="submit" class="orange_btn btn" rel="tooltip" onclick="onsubmit()">진단결과 보기</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <hr class="gray_line mt40">
+                
+                <h2>진단이력</h2>
+                <div class="table_style02">
+                    <table>
+                        <caption>진단이력</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">진단일</th>
+                                <th scope="col">유형</th>
+                                <th scope="col">점수</th>
+                                <th scope="col">진단결과</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2021-03-31</td>
+                                <td>사상누각 형</td>
+                                <td>60.2</td>
+                                <td>
+                                <a href="#" class="blue_btn">결과 보기</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2021-03-31</td>
+                                <td>사상누각 형</td>
+                                <td>60.2</td>
+                                <td>
+                                <a href="#" class="blue_btn">결과 보기</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                
+                
+                
+            </div><!-- //self_wrap -->
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            // 그렇다 아니오 선택시 이벤트
+            $('.self_form input[type=radio]:checked').each(function() {
+                $(this).parent().parent().parent().children('td:first').find('span').addClass('highLight')
+            })
+
+            $('.self_form input').change(function() {
+                $(this).parent().parent().parent().children('td:first').wrapInner('<span class="highLight"></span>')
+            })
+
+
+
+        });
+    </script>
+</body></html>
