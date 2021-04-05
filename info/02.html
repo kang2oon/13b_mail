@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <title>정보창고</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/info.css" />
+</head>
+
+<body>
+    <div id="contents_wrap" class="contents_wrap white">
+        <div class="inner">
+            <div class="page_navi">
+                <ul>
+                    <li>
+                        <router-link to="/">홈</router-link>
+                    </li>
+                    <li>
+                        <router-link to>경기도 정책</router-link>
+                    </li>
+                </ul>
+            </div>
+            <div class="info_wrap">
+                <h1>경기도 정책
+                </h1>
+                <p class="f16 bold">일ㆍ생활균형문화 조성 및 지원을 위한 경기도의 정책을 소개합니다.
+                </p>
+
+
+                <!--탭 메뉴 영역 -->
+                <div class="tabs mt30">
+                    <ul>
+                        <li class="active"><a href="#tab1">보육 · 돌봄</a></li>
+                        <li><a href="#tab2">가족</a></li>
+                        <li><a href="#tab3">여성 사회참여</a></li>
+                    </ul>
+                </div>
+
+                <!--탭 콘텐츠 영역 -->
+                <div class="tab_container">
+                    <!-- 탭 이동 -->
+
+                    <!-- //탭 이동 -->
+                    <!-- tab1 -->
+                    <div id="tab1" class="tab_content">
+                        <div class="borded">
+                            <h3 class="headtit">다함께돌봄센터 운영</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 만6세~12세(초등학생)</li>
+                                <li><span class="bold">지원내용 :</span> 초등학생 방과후 돌봄 지원(학기중 14시~19시, 방학 9시~18시)</li>
+                                <li><span class="bold">이용방법 :</span> 다함께돌봄센터 전화 및 방문</li>
+                                <li><span class="bold">특이사항 :</span> 센터 설치 시군 확인 필요(<a href="tel:031-8008-3076" class="link">031-8008-3076</a>)</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8008-3076"><span></span>아동돌봄과(031-8008-3076)</a></p>
+                        </div>
+                        <div class="borded">
+                            <h3 class="headtit">공동육아나눔터 운영</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 만18세 미만 자녀 및 부모, 맞벌이 부부</li>
+                                <li><span class="bold">지원내용 :</span> 돌봄 활동을 위한 장소 제공 및 육아정보 나눔 기회 제공</li>
+                                <li><span class="bold">신청방법 :</span> 건강가정지원센터 홈페이지(<a href="http://www.familynet.or.kr" class="link" target="_blank">http://www.familynet.or.kr</a>)신청</li>
+                                <li><span class="bold">연락처 :</span> 건강가정지원센터(<a href="tel:1577-9337" class="link">1577-9337</a>)</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8008-4409"><span></span>가족다문화과 (031-8008-4409)</a></p>
+                        </div>
+                        <div class="borded">
+                            <h3 class="headtit">경기육아나눔터 운영</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 초등학교 저학년 이하 자녀 및 부모</li>
+                                <li><span class="bold">지원내용 :</span> 돌봄 활동을 위한 장소 제공 및 육아정보 나눔 기회 제공</li>
+                                <li><span class="bold">신청방법 :</span> 건강가정지원센터 홈페이지 (<a href="http://www.familynet.or.kr" class="link" target="_blank">http://www.familynet.or.kr</a>) 신청</li>
+                                <li><span class="bold">연락처 :</span> 건강가정지원센터(<a href="tel:1577-9337" class="link">1577-9337</a>)</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8008-4409"><span></span>가족다문화과(031-8008-4409)</a></p>
+                        </div>
+                        <div class="borded">
+                            <h3 class="headtit">경기도육아종합지원센터 운영</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 경기도 내 영유아 및 부모, 보육교직원 등</li>
+                                <li><span class="bold">지원내용 :</span>가정양육지원, 보육정보 제공, 어린이집 지원 등</li>
+                                <li><span class="bold">신청방법 :</span> 경기도육아종합지원센터 방문, 전화, 온라인(<a href="http://gyeonggi.childcare.go.kr" class="link" target="_blank">http://gyeonggi.childcare.go.kr</a>)</li>
+                                <li><span class="bold">연락처 :</span> 경기도육아종합지원센터(<a href="tel:031-258-1485" class="link">031-258-1485</a>)</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8008-4720"><span></span>보육정책과(031-8008-4720)</a></p>
+                        </div>
+                        <div class="borded">
+                            <h3 class="headtit">시간제보육서비스 제공</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 6~36개월 미만 양육수당 수급 영아</li>
+                                <li><span class="bold">지원내용 :</span> 시간당 3천원 지원</li>
+                                <li><span class="bold">신청방법 :</span> 온라인(<a href="http://www.childcare.go.kr" class="link" target="_blank">http://www.childcare.go.kr</a>), 전화(<a href="tel:1661-9361" class="link">1661-9361</a>)</li>
+                                <li><span class="bold">구비서류 :</span> 이용신청서, 운영규정서약서, 신분증, 가족관계증명서</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8008-4715"><span></span>보육정책과(031-8008-4715)</a></p>
+                        </div>
+                        <div class="borded">
+                            <h3 class="headtit">가정양육수당 지원</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 86개월 미만 영유아</li>
+                                <li><span class="bold">지원내용 :</span> 1인당 월100~200천원 지원</li>
+                                <li><span class="bold">신청방법 :</span> 관할 주민센터 방문, 온라인(<a href="http://www.bokjiro.go.kr" class="link" target="_blank">http://www.bokjiro.go.kr</a>)</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8008-2573"><span></span>보육정책과(031-8008-2573)</a></p>
+                        </div>
+                        <div class="borded">
+                            <h3 class="headtit">영유아 보육료 지원</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 만0세~2세 영유아</li>
+                                <li><span class="bold">지원내용 :</span> 1인당 월179천원~939천원 지원</li>
+                                <li><span class="bold">신청방법 :</span> 관할 주민센터 방문, 온라인신청(<a href="http://www.bokjiro.go.kr" class="link" target="_blank">http://www.bokjiro.go.kr</a>)</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8008-2573"><span></span>보육정책과(031-8008-2573)</a></p>
+                        </div>
+                        <div class="borded">
+                            <h3 class="headtit">아동수당 지급</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 만7세 미만 모든 아동</li>
+                                <li><span class="bold">지원내용 :</span> 1인당 월 10만원 지원</li>
+                                <li><span class="bold">신청방법 :</span> 관할 주민센터 방문, 온라인(<a href="http://www.bokjiro.go.kr" class="link" target="_blank">http://www.bokjiro.go.kr</a>)</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8008-3076"><span></span>아동돌봄과(031-8008-3076)</a></p>
+                        </div>
+                        <div class="borded">
+                            <h3 class="headtit">아동발달지원계좌 지원</h3>
+                            <ul>
+                                <li> <span class="bold">대상자</span> <br>- 보호대상아동 : 만18세미만의 아동복지시설 보호아동, 가정위탁 보호아동, 장애인 생활시설 아동, 소년소녀가정 아동 <br>- 기초생활수급가구 아동 : 중위소득 40% 이하의 수급(생계, 의료급여) 아동 중 신규선정(만12세~만17세)하여 만 18세 미만까지 지원 </li>
+                                <li><span class="bold">지원내용 :</span> 아동의 보호자(후원자)와 정부 1:1 매칭지원(월 4만원 限)</li>
+                                <li><span class="bold">신청방법 :</span> 관할 주민센터 방문</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8008-2588"><span></span>아동돌봄과(031-8008-2588)</a></p>
+                        </div>
+                        <div class="borded">
+                            <h3 class="headtit">아이돌봄 지원</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 만12세 이하 아동을 둔 가정</li>
+                                <li><span class="bold">지원내용 :</span> 시간제, 종일제로 가정에 아이돌보미를 파견하여 아이돌봄 서비스 제공</li>
+                                <li><span class="bold">신청방법 :</span> 관할 주민센터 방문 및 소득판정 후 홈페이지(<a href="http://www.idolbom.go.kr" class="link" target="_blank">www.idolbom.go.kr</a>)에서 서비스 신청</li>
+                                <li><span class="bold">연락처 :</span> 아이돌봄서비스 종합안내(<a href="tel:1577-8136" class="link">1577-8136</a>)</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8008-8009"><span></span>아동돌봄과(031-8008-8009)</a></p>
+                        </div>
+                    </div>
+                    <!-- //tab1 -->
+
+                    <!-- tab2 -->
+                    <div id="tab2" class="tab_content">
+                        <div class="borded" style="">
+                            <h3 class="headtit">건강가정(다문화가족)지원센터 운영</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 다양한 유형의 가족</li>
+                                <li><span class="bold">지원내용 :</span> 가족관계, 가족돌봄, 가족생활, 지역공동체 프로그램 제공 등</li>
+                                <li><span class="bold">신청방법 :</span> 건강가정지원센터 홈페이지(<a href="http://www.familynet.or.kr" class="link" target="_blank">http://www.familynet.or.kr</a>) 신청</li>
+                                <li><span class="bold">연락처 :</span> 건강가정지원센터(<a href="tel:1577-9337" class="link">1577-9337</a>)</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8008-4409"><span></span>가족다문화과(031-8008-4409)</a></p>
+                        </div>
+                        <div class="borded" style="">
+                            <h3 class="headtit">취약위기가족 지원</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 기준중위소득 72%이하인 (손)자녀를 둔 취약가족 / 가정폭력, 이혼, 자살, 사망, 사고 등으로 인한 긴급위기 가족</li>
+                                <li><span class="bold">지원내용 :</span> 자녀학습·정서지원, 심리정서지원, 긴급가족돌봄지원, 전문상담사 및 기관 연계, 교육·문화프로그램 지원</li>
+                                <li><span class="bold">구비서류 :</span> 주민등록등본, 가족관계증명서, 건강보험납입증명서 등</li>
+                                <li><span class="bold">신청방법 :</span> 해당 시군 건강가정지원센터 문의(전화 · 방문 · 인터넷)</li>
+                                 <li><span class="bold">연락처 :</span> 건강가정지원센터(<a href="tel:1577-9337" class="link">1577-9337</a>)</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8008-2487"><span></span>가족다문화과(031-8008-2487)</a></p>
+                        </div>
+                        <div class="borded" style="">
+                            <h3 class="headtit">행복한 가족 프로그램</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 경기도민 누구나</li>
+                                <li><span class="bold">지원내용 :</span> 인구특성·수요에 따른 생애주기별, 주제별 맞춤형 가족 프로그램</li>
+                                <li><span class="bold">신청방법 :</span> 해당 시군 건강가정지원센터 문의(전화 · 방문 · 인터넷)</li>
+                                 <li><span class="bold">연락처 :</span> 건강가정지원센터(<a href="tel:1577-9337" class="link">1577-9337</a>)</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8008-2487"><span></span>가족다문화과(031-8008-2487)</a></p>
+                        </div>
+                        <div class="borded" style="">
+                            <h3 class="headtit">저소득 한부모가족 지원</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 기준중위소득 60%이하 청소년 한부모 가족</li>
+                                <li><span class="bold">지원내용 :</span> 아동양육비, 검정고시학습비, 고교생 학비, 자립수당</li>
+                                <li><span class="bold">신청방법 :</span> 관할 주민센터 및 온라인 신청(<a href="http://bokjiro.go.kr" class="link" target="_blank">http://bokjiro.go.kr</a>)</li>
+                                <li><span class="bold">구비서류 :</span> 신청서, 소득․재산신고서, 금융정보 등 제공동의서, 가족관계기록에 관한 증명서, 청소년 한부모 자립지원 제공신청서 등</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8008-3489"><span></span>가족다문화과(031-8008-3489)</a></p>
+                        </div>
+                        <div class="borded" style="">
+                            <h3 class="headtit">출산장려금 지원</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 출생일 기준 부 또는 모가 일정기간(시군별 차등, 6개월~1년) 이상 주민등록 두고 경기도 거주</li>
+                                <li><span class="bold">지원내용 :</span> 시군 자체 출산장려 조례에 따라 5~1000만원 지급</li>
+                                <li><span class="bold">신청방법 :</span> 관할 주민센터 방문(출생신고 시) 또는 온라인신청(<a href="http://www.gov.kr" class="link" target="_blank">http://www.gov.kr</a>)</li>
+                                <li><span class="bold">구비서류 :</span> 출산장려금 신청서, 신분증, 주민등록등본, 통장사본</li>
+                                <li><span class="bold">특이사항 :</span> 시군별·자녀수별 액수 차등</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8008-3168"><span></span>인구정책담당관(031-8008-3168)</a></p>
+                        </div>
+                        <div class="borded" style="">
+                            <h3 class="headtit">다자녀우대(경기i-plus카드)사업</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 경기도 거주 2자녀이상 가정(막내자녀가 만 15세 이하)</li>
+                                <li><span class="bold">지원내용 :</span> 협력가맹점 및 BC카드가맹점 이용 시 할인혜택 부여</li>
+                                <li><span class="bold">신청방법 :</span> 전국 농협 영업점 방문 신청</li>
+                                <li><span class="bold">구비서류 :</span> 신분증, 주민등록부등본</li>
+                                <li><span class="bold">홈페이지 : </span> <a href="http://ggiplus.bccard.com" class="link" target="_blank">http://ggiplus.bccard.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="borded" style="">
+                            <h3 class="headtit">조손가족 손자녀 대학교교육비 지원</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 저소득 조손가족 손자녀 대학교 신입생</li>
+                                <li><span class="bold">지원내용 :</span> 1인당 최대 5백만원 이내</li>
+                                <li><span class="bold">신청방법 :</span> 관할 주민센터</li>
+                                <li><span class="bold">구비서류 :</span> 신청서, 재학증명서, 등록금납부확인서, 통장사본</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8008-3489"><span></span>가족다문화과(031-8008-3489)</a></p>
+                        </div>
+                        <div class="borded" style="">
+                            <h3 class="headtit">다문화가족지원센터 운영</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 다문화가족</li>
+                                <li><span class="bold">지원내용 :</span> 국내적응, 이중언어 교육, 이주배경 청소년 진로상담, 결혼이민자 취업교육 지원 등</li>
+                                <li><span class="bold">신청방법 :</span> 시군 다문화가족지원센터 방문 및 전화</li>
+                                <li><span class="bold">연락처 :</span> 다문화가족지원포털 다누리(<a href="http://www.liveinkorea.kr" class="link" target="_blank">http://www.liveinkorea.kr</a>) 참조</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8008-3489"><span></span>가족다문화과(031-8008-3354)</a></p>
+                        </div>
+
+                        <div class="borded">
+                            <h3 class="headtit">입양숙려기간 모자지원</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 출산(예정) 40일전 또는 후 7일 이내에 미혼, 이혼 한부모</li>
+                                <li><span class="bold">지원내용 :</span> 가정 내 보호지원, 산후조리원보호 지원(최대 700천원)</li>
+                                <li><span class="bold">신청방법 :</span> 관할 시군구 담당부서 방문, 우편, 팩스</li>
+                                <li><span class="bold">구비서류 :</span> 신청서, 혼인관계증명서, 출산(예정)일 증빙서류, 통장사본, 미혼모자가족시설 등 입소사실 확인서, 신청인과의 관계증명서</li>
+                            </ul>
+                             <p class="contact"><a href="tel:031-8008-4315"><span></span>아동돌봄과(031-8008-4315)</a></p>
+                        </div>
+                    </div>
+
+                    <!-- tab3 -->
+                    <div id="tab3" class="tab_content">
+                        <div class="borded" style="">
+                            <h3 class="headtit">여성고용안정지원</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 경기도 내 취업여성, 직장부모, 여성자영업자, 프리랜서 등</li>
+                                <li><span class="bold">지원내용 :</span> 일하는 여성 고충상담 지원, 여성생애주기별 1:1 심층상담, 여성경력유지를 위한 그룹코칭, 직장인 대상 찾아가는 멘토링</li>
+                                <li><span class="bold">신청방법 :</span> 온라인(<a href="http://13b.gg.go.kr" class="link" target="_blank">http://13b.gg.go.kr</a>), 전화(<a href="tel:031-8008-4388" class="link">031-8008-4388</a>)</li>
+
+                            </ul>
+                            <p class="contact"><a href="tel:031-8030-4323"><span></span>일가정지원과(031-8030-4323)</a></p>
+                        </div>
+                        <div class="borded" style="">
+                            <h3 class="headtit">여성창업지원</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 경기도 내 여성(예비)창업자</li>
+                                <li><span class="bold">지원내용 :</span> 창업플랫폼 이용, 창업교육, 창업보육센터·성장센터 입주 제공</li>
+                                <li><span class="bold">신청방법 :</span> 온라인(<a href="http://www.dreammaru.or.kr" class="link" target="_blank">http://www.dreammaru.or.kr</a>)</li>
+                                <li><span class="bold">구비서류 :</span> 신청서, 사업계획서</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8030-4324"><span></span>일가정지원과(031-8030-4324)</a></p>
+                        </div>
+                        <div class="borded" style="">
+                            <h3 class="headtit">온라인경력개발센터 운영</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 전국 경력단절여성 등 취업희망여성 누구나</li>
+                                <li><span class="bold">지원내용 :</span> 경력단절여성 등 취업희망여성을 위한 온라인 진단, 상담, 교육, 코칭의 종합경력개발서비스 제공</li>
+                                <li><span class="bold">신청방법 :</span> 온라인(<a href="http://www.dream.go.kr" class="link" target="_blank">http://www.dream.go.kr</a>)</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8030-3115"><span></span>일가정지원과(031-8030-3115)</a></p>
+                        </div>
+                        <div class="borded" style="">
+                            <h3 class="headtit">여성새로일하기센터 운영</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 경기도 내 취업(구직) 희망 여성</li>
+                                <li><span class="bold">지원내용 :</span> 취업상담, 직업교육훈련, 취업알선 등</li>
+                                <li><span class="bold">이용방법 :</span> 방문, 전화(1544-1199)</li>
+                                <li><span class="bold">구비서류 :</span> 신분증, 구인·구직 신청서</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8030-3233"><span></span>일가정지원과(031-8030-3233,4)</a></p>
+                        </div>
+                        <div class="borded" style="">
+                            <h3 class="headtit">여성인력개발센터 운영</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 경기도 내 경력단절여성</li>
+                                <li><span class="bold">지원내용 :</span> 직업훈련교육, 직무능력향상교육, 사회문화교육 등</li>
+                                <li><span class="bold">신청방법 :</span> 온라인, 전화, 방문</li>
+                            </ul>
+                            <div class="brdbox">
+                                <h3 class="intitle mb5">여성인력개발센터 현황</h3>
+                                <ul>
+                                    <li>
+                                        <p class="bold">수원</p>
+                                        <p><a class="link" href="http://www.vocationplus.com" target="_blank">http://www.vocationplus.com</a></p>
+                                        <a href="tel:031- 206-1949" class="tel">031) 206-1949</a>
+                                    </li>
+                                    <li>
+                                        <p class="bold">성남</p>
+                                        <p><a class="link" href="http://www.snw.or.kr" target="_blank">http://www.snw.or.kr</a></p>
+                                        <a href="tel:031-718-6696" class="tel">031) 718-6696</a>
+                                    </li>
+                                    <li>
+                                        <p class="bold">안양</p>
+                                        <p><a class="link" href="http://www.anyangcenter.or.kr" target="_blank">http://www.anyangcenter.or.kr</a></p>
+                                        <a href="tel:031-453-4360" class="tel">031) 453-4360</a>
+                                    </li>
+                                    <li>
+                                        <p class="bold">안산</p>
+                                        <p><a class="link" href="http://www.ansanwomen.or.kr" target="_blank">http://www.ansanwomen.or.kr</a></p>
+                                        <a href="tel:031-031-439-206" class="tel">031) 031-439-2060</a>
+                                    </li>
+                                    <li>
+                                        <p class="bold">시흥</p>
+                                        <p><a class="link" href="http://www.shwomen.or.kr" target="_blank">http://www.shwomen.or.kr</a></p>
+                                        <a href="tel:031- 326-3004:" class="tel">031) 326-3004</a>
+                                    </li>
+                                    <li>
+                                        <p class="bold">부천</p>
+                                        <p><a class="link" href="http://www.ilwoman.or.kr" target="_blank">http://www.ilwoman.or.kr</a></p>
+                                        <a href="tel:032- 326-3004" class="tel">032) 326-3004</a>
+                                    </li>
+                                    <li>
+                                        <p class="bold">고양</p>
+                                        <p><a class="link" href="http://www.kycenter.or.kr" target="_blank">http://www.kycenter.or.kr</a></p>
+                                        <a href="tel:031- 912-8555" class="tel">031) 912-8555</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="contact"><a href="tel:031-8030-4322"><span></span>일가정지원과(031-8030-4322)</a></p>
+                        </div>
+                        <div class="borded" style="">
+                            <h3 class="headtit">워킹맘 주거공간개선(정리수납) 지원</h3>
+                            <ul>
+                                <li><span class="bold">대상자 :</span> 미성년 자녀가 있는 중위소득 100% 이하 워킹맘 가정</li>
+                                <li><span class="bold">지원내용 :</span> 워킹맘 가정 방문 후 물건, 공간 정리 서비스 제공</li>
+                                <li><span class="bold">신청방법 :</span> 온라인, 전화, 방문</li>
+                                <li><span class="bold">구비서류 :</span> 서비스신청서, 건강보험납부 영수증, 경제활동 증빙자료 등</li>
+                                <li><span class="bold">특이사항 :</span> 서비스 지원 시군 확인 필요(031-8030-3233)</li>
+                            </ul>
+                            <p class="contact"><a href="tel:031-8030-3233"><span></span>일가정지원과(031-8030-3233)</a></p>
+                        </div>
+                    </div>
+
+
+                </div><!-- //tab_container -->
+
+            </div><!-- //family_wrap -->
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+
+            /* 탭 */
+            $(".tab_content").hide();
+            $(".tabs li:first").addClass("active").show(); //Activate first tab
+            $(".tab_content:first").show();
+
+            $(".tabs li").click(function() {
+                $(".tabs li").removeClass("active");
+                $(this).addClass("active");
+                $(".tab_content").hide();
+                var activeTab = $(this).find("a").attr("href");
+                $(activeTab).fadeIn();
+                return false;
+            });
+
+            // 탭 화살표 이동
+            $(".next.tab_move:not(.off)").click(function() {
+                $(this).parent().hide();
+                $(this).parent().next().fadeIn();
+            });
+
+            $(".prev.tab_move:not(.off)").click(function() {
+
+                $(this).parent().hide();
+                $(this).parent().prev().fadeIn();
+            });
+
+        });
+
+        $('.tab_content .next').click(function(e) {
+            e.preventDefault();
+            $('li.active').next('li').trigger('click');
+            $('.prev').first().addClass('off');
+        });
+        $('.tab_content .prev').click(function(e) {
+            e.preventDefault();
+            $('li.active').prev('li').trigger('click');
+            $('.next').last().addClass('off');
+        });
+    </script>
+</body></html>
