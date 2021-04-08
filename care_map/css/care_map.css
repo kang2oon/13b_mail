@@ -33,12 +33,11 @@ a{text-decoration:none;color:inherit;}
 	.top_toggle{display:none;}
 	.org-wrap.hide .side_toggle{background-image:url(../images/ico_arrow_right.png);}
 .search-wrap{border-bottom:1px solid #e5e5e5;}
-	.search-wrap form{display:flex;}
-	.search-wrap form input[type='text']{flex-grow:1;background:#f6f7f9;padding:10px 8px;border:1px #e5e5e5;border-style:solid none solid solid;border-radius:3px 0 0 3px;}
+	.search-wrap form{display:flex;border:1px solid #e5e5e5;border-radius: 3px;overflow: hidden;}
+	.search-wrap form input[type='text']{flex-grow:1;background:#f6f7f9;padding:10px 8px;border:0}
 	.search-wrap form input::placeholder{color:#d1d2d4;}
 	.search-wrap form button[type='submit']{
-		flex-shrink:0;width:40px;background:#f6f7f9 url(../images/ico_search.png) no-repeat 50% 50%;background-size:16px;
-		border:1px #e5e5e5;border-style:solid solid solid none;border-radius:0 3px 3px 0;text-indent:-999999px;		
+		flex-shrink:0;width:45px;background:#0051a4 url(../images/ico_search.png) no-repeat center;background-size:16px;border:0;text-indent:-99999px;position: relative;
 	}
 	.location-wrap{display:flex;margin:8px 0;}
 	.location-wrap select{
@@ -48,15 +47,20 @@ a{text-decoration:none;color:inherit;}
 		   -moz-appearance: none;
 			    appearance: none;
 	}
-	.location-wrap button{flex-shrink:0;width:65px;padding:10px 8px;border:1px solid #0051a4;color:#0051a4;border-radius:3px;background:#fff;}
+.location-wrap select:last-child{margin-right: 0}
+
+    /*수정*/
+	.place_btn button{flex-shrink:0;width:65px;padding:10px 8px;border:1px solid #0051a4;color:#0051a4;border-radius:3px;background:#fff;width: 100%;background: url(../images/place_ico.png) no-repeat 40% center;background-size: 12px}
+
+
 	.org_kind{margin-top:13px;padding:13px 0;border-top:1px solid #e5e5e5;}
 	.org_kind ul{display:flex;flex-wrap:wrap;}
 	.org_kind ul li{flex:1 1 50%;margin-bottom:8px;}
 	.org_kind .select_toggle{display:flex;flex-wrap:wrap;margin-top:5px;}
-	.org_kind .select_toggle button{flex:1 1 50%;border:1px solid #0051a4;background:#fff;color:#0051a4;padding:10px 8px;}
+	.org_kind .select_toggle button{flex:1;border:1px solid #0051a4;background:#fff;color:#0051a4;padding:10px 8px;}
 	.org_kind .select_toggle button:nth-child(1){background:#0051a4;color:#fff;border-right:none;border-radius:3px 0 0 3px;}
 	.org_kind .select_toggle button:nth-child(2){border-radius:0 3px 3px 0;}
-.orglist-wrap{height:calc(100% - 418px);overflow:auto;overflow-x:hidden;}
+.orglist-wrap{height:calc(100% - 466px);overflow:auto;overflow-x:hidden;}
 	.orglist-wrap::-webkit-scrollbar{width:6px;}
 	.orglist-wrap::-webkit-scrollbar-thumb{background:rgba(0,0,0,.25);border-radius:3px;}
 	.orglist-wrap::-webkit-scrollbar-track{background:rgba(0,0,0,.05);border-radius:3px;}
