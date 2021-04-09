@@ -36,9 +36,6 @@ a{text-decoration:none;color:inherit;}
 	.search-wrap form{display:flex;border:1px solid #e5e5e5;border-radius: 3px;overflow: hidden;}
 	.search-wrap form input[type='text']{flex-grow:1;background:#f6f7f9;padding:10px 8px;border:0}
 	.search-wrap form input::placeholder{color:#d1d2d4;}
-	.search-wrap form button[type='submit']{
-		flex-shrink:0;width:45px;background:#0051a4 url(../images/ico_search.png) no-repeat center;background-size:16px;border:0;text-indent:-99999px;position: relative;
-	}
 	.location-wrap{display:flex;margin:8px 0;}
 	.location-wrap select{
 		flex-grow:1;margin-right:8px;padding:10px 8px;border:1px solid #e5e5e5;border-radius:3px;
@@ -50,8 +47,10 @@ a{text-decoration:none;color:inherit;}
 .location-wrap select:last-child{margin-right: 0}
 
     /*수정*/
-	.place_btn button{flex-shrink:0;width:65px;padding:10px 8px;border:1px solid #0051a4;color:#0051a4;border-radius:3px;background:#fff;width: 100%;background: url(../images/place_ico.png) no-repeat 40% center;background-size: 12px}
-
+	.place_btn button{flex-shrink:0;width:65px;padding:10px 8px;border:1px solid #0051a4;color:#0051a4;border-radius:3px;background:#fff;width: 100%;background: url(../images/place_ico.png) no-repeat 32% center;background-size: 12px}
+    .search_area{float: left;width: calc(100% - 90px);margin-right: 10px;}
+    .search_btn {float: right;}
+    .search_btn button[type='submit']{width:80px;height: 90px; background:#0051a4 url(../images/ico_search.png) no-repeat center;border: 0; background-size:32px;text-indent:-99999px;position: relative;border-radius: 5px;cursor: pointer}
 
 	.org_kind{margin-top:13px;padding:13px 0;border-top:1px solid #e5e5e5;}
 	.org_kind ul{display:flex;flex-wrap:wrap;}
@@ -65,7 +64,7 @@ a{text-decoration:none;color:inherit;}
 	.orglist-wrap::-webkit-scrollbar-thumb{background:rgba(0,0,0,.25);border-radius:3px;}
 	.orglist-wrap::-webkit-scrollbar-track{background:rgba(0,0,0,.05);border-radius:3px;}
 	.orglist-wrap ul{height:100%;}
-	.orglist-wrap ul li{padding:20px 20px 20px 10px;font-size:14px;color:#666;line-height:1.6;}
+	.orglist-wrap ul li{padding:20px 20px 20px 10px;font-size:14px;color:#666;line-height:1.6;text-align: left !important}
 	.orglist-wrap ul li:hover{background:rgba(0,0,0,.02);}
 	.orglist-wrap ul li+li{border-top:1px dashed #e5e5e5;}
 	.orglist-wrap ul li .org_nm{font-size:16px;font-weight:400;color:#000;margin:0 0 10px;}
