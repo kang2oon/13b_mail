@@ -50,7 +50,7 @@ a{text-decoration:none;color:inherit;}
 	.place_btn button{flex-shrink:0;width:65px;padding:10px 8px;border:1px solid #0051a4;color:#0051a4;border-radius:3px;background:#fff;width: 100%;background: url(../images/place_ico.png) no-repeat 32% center;background-size: 12px}
     .search_area{float: left;width: calc(100% - 90px);margin-right: 10px;}
     .search_btn {float: right;}
-    .search_btn button[type='submit']{width:80px;height: 90px; background:#0051a4 url(../images/ico_search.png) no-repeat center;border: 0; background-size:22px;text-indent:-99999px;position: relative;border-radius: 5px;cursor: pointer}
+    .search_btn button[type='submit']{width:80px;height: 90px; background:#0051a4 url(../images/ico_search.png) no-repeat center;border: 0; background-size:25px;text-indent:-99999px;position: relative;border-radius: 5px;cursor: pointer}
 
 	.org_kind{margin-top:13px;padding:13px 0;border-top:1px solid #e5e5e5;}
 	.org_kind ul{display:flex;flex-wrap:wrap;}
