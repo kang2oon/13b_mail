@@ -14,7 +14,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/sub.css" />
     <!-- ie css 변수적용 -->
-    <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');</script>
+    <script>
+        window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');
+    </script>
 </head>
 
 <body>
@@ -78,25 +80,25 @@
             </div>
         </div>
         <!-- 사이트맵 -->
-            <div class="menu_site mb_ms pop_ns" tabindex="0">
-                <div class="shadow"></div>
-                <div class="ms_inner">
-                    <div class="ms_top clearfix">
-                        <h2>사이트맵</h2>
-                    </div>
-                    <div class="pc_hide">
-                        <ul class="mb_log clearfix">
-                            <li class="login_btn"><a href="#">로그인</a></li>
-                            <li class="join_btn"><a href="#">회원가입</a></li>
-                        </ul>
-                    </div>
-                    <div class="pc_hide">
-                        <div class="bnr_mb"></div>
-                    </div>
-                    <ul id="siteMap" class="menu_wrap clearfix"></ul>
-                    <a href="#" class="close bnt_close">닫기</a>
+        <div class="menu_site mb_ms pop_ns" tabindex="0">
+            <div class="shadow"></div>
+            <div class="ms_inner">
+                <div class="ms_top clearfix">
+                    <h2>사이트맵</h2>
                 </div>
+                <div class="pc_hide">
+                    <ul class="mb_log clearfix">
+                        <li class="login_btn"><a href="#">로그인</a></li>
+                        <li class="join_btn"><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+                <div class="pc_hide">
+                    <div class="bnr_mb"></div>
+                </div>
+                <ul id="siteMap" class="menu_wrap clearfix"></ul>
+                <a href="#" class="close bnt_close">닫기</a>
             </div>
+        </div>
         <!-- //사이트맵 -->
         <div class="mega_wrap">
             <div class="shadow"></div>
@@ -203,7 +205,7 @@
                                 </select>
                             </div>
                         </div>
-                        
+
                         <ul class="fiter_list clearfix">
                             <li class="on">
                                 <a href="#">최신순</a>
@@ -276,7 +278,7 @@
                             </div>
 
                             <div class="condition_result">
-                               
+
                                 <div class="thumb imgFill">
                                     <img src="./assets/images/@fml_thumb4.png">
                                 </div>
@@ -292,7 +294,7 @@
                                     육서비스)
                                 </div>
                             </div>
-                            
+
                             <div class="condition_result">
                                 <div class="thumb imgFill">
                                     <img src="./assets/images/@fml_thumb5.png">
@@ -343,7 +345,7 @@
                             </div>
 
                             <div class="condition_result">
-                               
+
                                 <div class="thumb imgFill">
                                     <img src="./assets/images/@fml_thumb8.png">
                                 </div>
@@ -359,7 +361,7 @@
                                     육서비스)
                                 </div>
                             </div>
-                                <div class="condition_result">
+                            <div class="condition_result">
                                 <div class="thumb imgFill">
                                     <img src="./assets/images/@fml_thumb1.png">
                                 </div>
@@ -409,7 +411,7 @@
                             </div>
 
                             <div class="condition_result">
-                               
+
                                 <div class="thumb imgFill">
                                     <img src="./assets/images/@fml_thumb4.png">
                                 </div>
@@ -425,7 +427,7 @@
                                     육서비스)
                                 </div>
                             </div>
-                            
+
                             <div class="condition_result">
                                 <div class="thumb imgFill">
                                     <img src="./assets/images/@fml_thumb5.png">
@@ -476,7 +478,7 @@
                             </div>
 
                             <div class="condition_result">
-                               
+
                                 <div class="thumb imgFill">
                                     <img src="./assets/images/@fml_thumb8.png">
                                 </div>
@@ -492,7 +494,7 @@
                                     육서비스)
                                 </div>
                             </div>
-                             <div class="condition_result">
+                            <div class="condition_result">
                                 <div class="thumb imgFill">
                                     <img src="./assets/images/@fml_thumb1.png">
                                 </div>
@@ -542,7 +544,7 @@
                             </div>
 
                             <div class="condition_result">
-                               
+
                                 <div class="thumb imgFill">
                                     <img src="./assets/images/@fml_thumb4.png">
                                 </div>
@@ -558,60 +560,34 @@
                                     육서비스)
                                 </div>
                             </div>
-                            
+
 
                         </div>
                         <!-- //갤러리형 리스트 목록 -->
                         <hr class="gray_line mt40">
                         <!-- 페이징 -->
-                        <div class="pagination_wrap mt50">
+                        <div class="paginate mt50">
                             <div class="mo_paging">
-                                <button class="prev">이전</button><p class="active_txt"><span class="cut">1</span> / <span>43</span></p><button class="next">다음</button>
+                                <button class="prev">이전</button>
+                                <p class="active_txt"><span class="cut">1</span> / <span>43</span></p><button class="next">다음</button>
                             </div>
-                            <ul class="paging-list">
-                                <li class="first_paging">
-                                    <a href="#">첫번째 페이지로 이동</a>
-                                </li>
-                                <li class="prev_paging">
-                                    <a href="#">다음 페이지로 이동</a>
-                                </li>
-                                <li class="list_paging active">
-                                    <a href="#">1</a>
-                                </li>
-                                <li class="list_paging">
-                                    <a href="#">2</a>
-                                </li>
-                                <li class="list_paging">
-                                    <a href="#">3</a>
-                                </li>
-                                <li class="list_paging">
-                                    <a href="#">4</a>
-                                </li>
-                                <li class="list_paging">
-                                    <a href="#">5</a>
-                                </li>
-                                <li class="list_paging">
-                                    <a href="#">6</a>
-                                </li>
-                                <li class="list_paging">
-                                    <a href="#">7</a>
-                                </li>
-                                <li class="list_paging">
-                                    <a href="#">8</a>
-                                </li>
-                                <li class="list_paging">
-                                    <a href="#">9</a>
-                                </li>
-                                <li class="list_paging">
-                                    <a href="#">10</a>
-                                </li>
-                                <li class="next_paging">
-                                    <a href="#">다음 페이지로 이동</a>
-                                </li>
-                                <li class="end_paging">
-                                    <a href="#">마지막 페이지로 이동</a>
-                                </li>
-                            </ul>
+                            <div class="paginate_list">
+                                <a href="#" class="first_paging">첫번째 페이지로 이동</a>
+                                <a href="#" class="prev_paging">이전 페이지로 이동</a>
+                                <a href="#" class="list_paging active">1</a>
+                                <a href="#" class="list_paging">2</a>
+                                <a href="#" class="list_paging">3</a>
+                                <a href="#" class="list_paging">4</a>
+                                <a href="#" class="list_paging">5</a>
+                                <a href="#" class="list_paging">6</a>
+                                <a href="#" class="list_paging">7</a>
+                                <a href="#" class="list_paging">8</a>
+                                <a href="#" class="list_paging">9</a>
+                                <a href="#" class="list_paging">10</a>
+                                <a href="#" class="next_paging">다음 페이지로 이동</a>
+                                <a href="#" class="end_paging">다음 페이지로 이동</a>
+                            </div>
+
                         </div> <!-- //페이징 -->
 
                     </div><!-- //latest_contents -->
