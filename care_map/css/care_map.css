@@ -94,7 +94,7 @@ a{text-decoration:none;color:inherit;}
 	.orglist-wrap ul li .org_nm.org10 span:after{content:"초등돌봄교실";}
 	.orglist-wrap ul li a.tel{display:block;margin-bottom:15px;color:inherit;}
 	.orglist-wrap ul li button{background:#fff;border:1px solid #e5e5e5;border-radius:3px;padding:4px 18px;color:#666;font-size:12px;cursor:pointer;}	
-	.bnr-wrap{padding:20px 0;}
+	.bnr-wrap{padding:20px 0;text-align: left  !important;}
 	.bnr-wrap a{display:block;border:1px solid #e5e5e5;border-radius:3px;padding:2px 10px 11px;font-size:14px;}
 	.bnr-wrap a img{position:relative;top:7px;}
 	.bnr-wrap a+a{margin-top:5px;}
