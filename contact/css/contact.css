@@ -255,6 +255,9 @@ table caption {  text-indent: -99999px;width: 0;height: 0;overflow: hidden}
 .consultant_wrap .consultant_area:nth-child(4) {margin-bottom: 10px}     
 .consultant_wrap .consultant_area:last-child{margin-bottom: 0}
     
+.consultant_wrap  .mo_paging{display: block}
+.consultant_wrap .paginate_list{display: none}
+    
     
 }
 
