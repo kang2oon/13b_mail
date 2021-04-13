@@ -108,12 +108,11 @@ table caption {  text-indent: -99999px;width: 0;height: 0;overflow: hidden}
 .contact_wrap  .board_list > .table_stat > .btn_group > button > span {display: inline-block;vertical-align: middle}
 
 /* 테이블 list */
-.contact_wrap .board_list .table_wrap {}
 .contact_wrap .board_list .table_wrap table {width: 100%;border-collapse: collapse;border-top: 2px solid #0051a4;word-break: keep-all}
 .contact_wrap .board_list .table_wrap caption{text-indent: -99999px;width: 0;height: 0;overflow: hidden;}
 .contact_wrap .board_list .table_wrap th,
 .contact_wrap .board_list .table_wrap td{border: 1px solid #e5edf6;padding: 15px 20px;font-size: 14px}
-.contact_wrap .board_list .table_wrap thead th{background: #dee8f3;color: #0051a4;font-weight: 600}
+.contact_wrap .board_list .table_wrap thead th{background: #dee8f3;color: #0051a4;font-weight: 600;text-align: center;}
 .contact_wrap .board_list .table_wrap tbody td{text-align: center}
 .contact_wrap .board_list .table_wrap tbody th {background: #f7fafc;font-weight: 400}
 .contact_wrap .board_list  .separator {display: none}
@@ -213,9 +212,11 @@ table caption {  text-indent: -99999px;width: 0;height: 0;overflow: hidden}
 .contact_wrap .search_box .collapse .half:nth-child(2) {float: none;width: 100%;text-align: right !important;}    
 .contact_wrap .search_box .collapse .half:nth-child(1) {margin-bottom: 10px} 
 .contact_wrap .search_box label{font-size: 14px}    
-.contact_wrap .search_box input[type=text]{padding: 6px 10px;font-size: 13px;width: calc(100% - 106px)}    
-.contact_wrap .search_box select {padding: 7px 30px 7px 10px;font-size: 13px;width: calc(100% - 41px)}
-.contact_wrap .search_box  button {font-size: 13px;padding: 7px 10px;width: 60px;}    
+.contact_wrap .search_box input[type=text].with_btn {padding: 6px 10px !important;font-size: 13px;width: calc(100% - 110px) !important} 
+.contact_wrap .board_list > .search_box > .collapse > .half > label{width: auto !important;}   
+.contact_wrap .search_box .collapse .half:nth-child(2) {text-align: left !important;}
+.contact_wrap .search_box select.single {padding: 7px 30px 7px 10px !important;font-size: 13px !important;width: calc(100% - 43px) !important}
+.contact_wrap .search_box  button {font-size: 13px !important;padding: 7px 10px !important;width: 60px !important;}    
     
 /* 게시판 리스트*/
 .contact_wrap .board_list .table_wrap{border: 0 !important;border-radius: 0 !important;font-family: 'Noto Sans KR',sans-serif !important;}
