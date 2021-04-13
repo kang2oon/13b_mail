@@ -77,10 +77,12 @@ a{text-decoration:none;color:inherit;}
 .consultant_wrap .consultant_area .txt {padding-top: 15px;word-break: keep-all}
 
 /* 검색영역 */
+.contact_wrap .board_list .table_wrap{border: 0 !important;border-radius: 0 !important;font-family: 'Noto Sans KR',sans-serif !important;}
+.contact_wrap .board_list > .table_wrap > table > thead {border-bottom: 0 !important;}
 .contact_wrap .search_box{border: 1px solid #eee;background: #f8f8f8;border-radius: 12px;padding: 20px;margin-bottom: 30px}
 .contact_wrap .search_box .collapse::after {content: '';display: block;clear: both}
 .contact_wrap .search_box .collapse .half:nth-child(1) {float: left;}
-.contact_wrap .search_box .collapse .half:nth-child(2) {float: right;}
+.contact_wrap .search_box .collapse .half:nth-child(2) {float: right;text-align: right !important;}
 .contact_wrap .search_box label {font-size: 16px;margin-right: 15px;font-weight: 400}
 
 .contact_wrap .search_box  select {
@@ -209,25 +211,22 @@ table caption {  text-indent: -99999px;width: 0;height: 0;overflow: hidden}
     
 /* 게시판 검색 */
 .contact_wrap .search_box .collapse .half:nth-child(1),    
-.contact_wrap .search_box .collapse .half:nth-child(2) {float: none;width: 100%;text-align: right !important;}    
+.contact_wrap .search_box .collapse .half:nth-child(2) {float: none;width: 100%;text-align: left !important;}    
 .contact_wrap .search_box .collapse .half:nth-child(1) {margin-bottom: 10px} 
 .contact_wrap .search_box label{font-size: 14px}    
 .contact_wrap .search_box input[type=text].with_btn {padding: 6px 10px !important;font-size: 13px;width: calc(100% - 110px) !important} 
 .contact_wrap .board_list > .search_box > .collapse > .half > label{width: auto !important;}   
-.contact_wrap .search_box .collapse .half:nth-child(2) {text-align: left !important;}
 .contact_wrap .search_box select.single {padding: 7px 30px 7px 10px !important;font-size: 13px !important;width: calc(100% - 43px) !important}
 .contact_wrap .search_box  button {font-size: 13px !important;padding: 7px 10px !important;width: 60px !important;}    
     
 /* 게시판 리스트*/
-.contact_wrap .board_list .table_wrap{border: 0 !important;border-radius: 0 !important;font-family: 'Noto Sans KR',sans-serif !important;}
-.contact_wrap .board_list > .table_wrap > table > thead {border-bottom: 0 !important;}
+.contact_wrap .board_list > .table_wrap > table > thead {display: none}
 .contact_wrap .board_list > .table_stat {position: relative;margin: 0 0 16px 0;text-align: left}
 .contact_wrap .board_list > .table_stat > .btn_group {float: none;width: 100%;display: flex;flex-wrap: wrap;margin-top: 10px}
 .contact_wrap .board_list > .table_stat > .btn_group > button {flex: 1 1 40%;}
 .contact_wrap .board_list > .table_stat > p {font-size: 14px;float: none;font-family: 'Noto Sans KR',sans-serif !important;}    
 .contact_wrap .board_list > .table_stat > p > strong {font-family: 'Noto Sans KR',sans-serif !important;}    
 .contact_wrap .board_list > .table_wrap {text-align: left}
-.contact_wrap .board_list > .table_wrap > table > thead {display: none}
 .contact_wrap .board_list > .table_wrap > table > tbody > tr {border-bottom: 1px solid #e4e4e4}    
 .contact_wrap .board_list > .table_wrap > table > thead > tr > th {padding: 18px 4px;font-size: 14px}
 .contact_wrap .board_list > .table_wrap > table > tbody > tr {position: relative;display: block; padding: 40px 16px 16px}
