@@ -90,7 +90,7 @@ a{text-decoration:none;color:inherit;}
     appearance: none;
     }
 .contact_wrap .search_box  select::-ms-expand {display: none;} 
-.contact_wrap .search_box input[type=text] {border: 1px solid #e2e2e2;padding: 8px 10px;width: 240px;font-size: 14px}
+.contact_wrap .search_box input[type=text] {border: 1px solid #e2e2e2;padding: 8px 10px;width: 240px !important;font-size: 14px}
 .contact_wrap .search_box  button {width: 90px;border: 0;padding: 9px;background: #0051a4;color: #fff;border-radius: 5px ;margin-left: 5px;font-size: 14px}
 
 /* 리스트 상단 */
@@ -210,7 +210,7 @@ table caption {  text-indent: -99999px;width: 0;height: 0;overflow: hidden}
     
 /* 게시판 검색 */
 .contact_wrap .search_box .collapse .half:nth-child(1),    
-.contact_wrap .search_box .collapse .half:nth-child(2) {float: none;width: 100%;}    
+.contact_wrap .search_box .collapse .half:nth-child(2) {float: none;width: 100%;text-align: right !important;}    
 .contact_wrap .search_box .collapse .half:nth-child(1) {margin-bottom: 10px} 
 .contact_wrap .search_box label{font-size: 14px}    
 .contact_wrap .search_box input[type=text]{padding: 6px 10px;font-size: 13px;width: calc(100% - 106px)}    
@@ -218,10 +218,13 @@ table caption {  text-indent: -99999px;width: 0;height: 0;overflow: hidden}
 .contact_wrap .search_box  button {font-size: 13px;padding: 7px 10px;width: 60px;}    
     
 /* 게시판 리스트*/
+.contact_wrap .board_list .table_wrap{border: 0 !important;border-radius: 0 !important;font-family: 'Noto Sans KR',sans-serif !important;}
+.contact_wrap .board_list > .table_wrap > table > thead {border-bottom: 0 !important;}
 .contact_wrap .board_list > .table_stat {position: relative;margin: 0 0 16px 0;text-align: left}
 .contact_wrap .board_list > .table_stat > .btn_group {float: none;width: 100%;display: flex;flex-wrap: wrap;margin-top: 10px}
 .contact_wrap .board_list > .table_stat > .btn_group > button {flex: 1 1 40%;}
-.contact_wrap .board_list > .table_stat > p {font-size: 14px;float: none;}    
+.contact_wrap .board_list > .table_stat > p {font-size: 14px;float: none;font-family: 'Noto Sans KR',sans-serif !important;}    
+.contact_wrap .board_list > .table_stat > p > strong {font-family: 'Noto Sans KR',sans-serif !important;}    
 .contact_wrap .board_list > .table_wrap {text-align: left}
 .contact_wrap .board_list > .table_wrap > table > thead {display: none}
 .contact_wrap .board_list > .table_wrap > table > tbody > tr {border-bottom: 1px solid #e4e4e4}    
