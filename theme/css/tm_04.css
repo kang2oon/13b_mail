@@ -1,0 +1,334 @@
+*{font-family: 'Noto Sans KR', sans-serif;box-sizing:border-box;}
+html,body{position:relative;width:100%;height:100%;margin:0;padding:0;}
+.clearfix:before,.clearfix:after{content:"";display:block}.clearfix:after{clear:both;visibility:hidden;line-height:0;height:0}.clearfix{*zoom:1}
+img{max-width:100%;line-height:0;}
+ul,ol,li{list-style:none;margin:0;padding:0;}
+a{text-decoration:none;color:inherit;}
+.fleft{float:left;}
+.fright{float:right;}
+.hidden {overflow: hidden}
+p {word-break: keep-all}
+.br{}
+
+
+
+.bold {font-weight: 600}
+.bold2 {font-weight: 500}
+.tct {text-align: center}
+.tlt {text-align: left}
+.trt {text-align: right}
+.full {width: 100% !important;max-width: 100% !important}
+
+/* 폰트 컬러 */
+.white {color: #fff}
+.red {color: #f93e13}
+.dark_gray {color: #666}
+.white_bg {background: #fff;display: inline-block;padding: 2px 5px;}
+
+* {margin: 0;padding: 0}
+
+/*폰트 사이즈*/
+.f30 {font-size: 30px}
+.f24 {font-size: 24px}
+.f20 {font-size: 20px}
+.f18 {font-size: 18px}
+.f16 {font-size: 16px}
+.f15 {font-size: 15px}
+
+/* 마진 */
+.mt0 {margin-top: 0}
+.mt5 {margin-top: 5px}
+.mt10 {margin-top: 10px}
+.mt20 {margin-top: 20px}
+.mt40 {margin-top: 40px}
+.mt50 {margin-top: 50px}
+.mt60 {margin-top: 60px}
+.mt70 {margin-top: 70px}
+.mb40 {margin-bottom: 40px;}
+.mb0 {margin-bottom: 0 !important}
+.mb10 {margin-bottom: 10px}
+.mb20 {margin-bottom: 20px}
+.gray_bg {background: #f5f5f5;padding: 50px 0}
+.gray_line {border-top: 1px dashed #f0f0f0;margin: 40px 0}
+.tct {text-align: center;}
+
+
+.container{position:relative;width:1080px;margin:0 auto;font-size:16px;}
+.container.fluid{width:100%;}
+
+/* tm04 시작*/
+#tm04 {background: url(../images/tm_04/tm04_bg.png) no-repeat top center #d7f4ff;}
+#tm04 .btn_wrap {text-align: center;margin-top: 40px}
+#tm04 .btn {font-size: 16px;padding: 10px 70px;;border-radius: 8px;font-weight: 500;display: inline-block;}
+#tm04 .orange_btn{background: #f93e13;color: #fff}
+#tm04 .blue_btn {background: #0051a4;color: #fff;}
+#tm04 .pink_btn {background: #f5506b;color: #fff;}
+
+/* 테마4호 상단*/
+#tm04 .tm04_top{text-align: center;padding-top:40px}
+#tm04 .tm04_top .img_tit {margin-bottom: 20px}    
+#tm04 .tm04_section01 .top_img{margin-bottom: -15px;position: relative;z-index: 1}
+#tm04 .txt_box{background: #fff;margin: 0;padding: 40px 60px}
+#tm04 .txt_box_border{border: 10px solid rgba(255,255,255,.4);margin: 0;border-radius: 5px;position: relative;z-index: 2;} 
+#tm04 .txt_box h2 {padding: 0;margin: 0}
+
+/* 도넛차트 */
+#tm04 .chart_donut {position: relative;width: 380px;height: 330px;z-index: 0}
+#tm04 .chart_donut .circle{position: absolute;width: 200px;height: 200px;border-radius: 50%;background: #000;cursor: pointer}
+#tm04 .chart_donut .circle p {position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);width: 90px;height: 90px;background: #fff;border-radius: 50%;line-height: 90px;font-weight: 500;font-size: 18px;margin: 0;box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.17);z-index: 2}
+#tm04 .chart_donut .circle.yellow {background: #eccc32;bottom:130px;left: 50%;margin-left: -100px;}
+#tm04 .chart_donut .circle.yellow p:after{content: '';display: block;width: 80px;height: 80px;border-radius: 50%;position: absolute;border: 1px solid #eccc32;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+#tm04 .chart_donut .circle a {display: block;width: 100%;height: 100%;border-radius: 50%;}
+#tm04 .chart_donut .circle.sky {background: #78cddd;bottom: 0;left: 0;}
+#tm04 .chart_donut .circle.sky p:after{content: '';display: block;width: 80px;height: 80px;border-radius: 50%;position: absolute;border: 1px solid #78cddd;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+#tm04 .chart_donut .circle.blue {background: #0658cd;bottom: 0;right: 0;}
+#tm04 .chart_donut .circle.blue p:after{content: '';display: block;width: 80px;height: 80px;border-radius: 50%;position: absolute;border: 1px solid #0658cd;left: 50%;top: 50%;transform: translate(-50%,-50%)}
+#tm04 .chart_donut .polygon{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);z-index: 1;cursor: default;}
+#tm04 .chart_donut .polygon:before{content: '';display: block;width: 0;height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 130px solid #fff;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+#tm04 .chart_donut .polygon h4 {padding: 0;margin: 0;z-index: 5;position: relative;font-size: 17px;margin-top: 40px}
+#tm04 .chart_donut .ev_err {width: 230px;height: 240px;margin: auto;margin-top: 90px;z-index: 1;position: relative;background-color: transparent}
+#tm04 .chart_donut_wrap {display: flex;width: 680px;margin: auto;text-align: center;margin-top: 40px;align-items: center}
+#tm04 .chart_donut_wrap > div{}
+#tm04 .chart_donut_wrap > div:first-child{margin-right: 60px}
+#tm04 .chart_donut_txt {text-align: left !important;width: 250px;}
+#tm04 .chart_donut_txt .cdt_tit{margin-bottom: 20px}
+#tm04 .chart_donut_txt.yellow .cdt_tit{border-bottom: 2px solid #eccc32;display: inline-block;padding-bottom: 10px}
+#tm04 .chart_donut_txt.blue .cdt_tit{border-bottom: 2px solid #0658cd;display: inline-block;padding-bottom: 10px}
+#tm04 .chart_donut_txt.sky .cdt_tit{border-bottom: 2px solid #78cddd;display: inline-block;padding-bottom: 10px}
+#tm04 .chart_donut_txt ul li{position: relative;font-size: 16px;color: #666;margin-bottom: 3px;padding-left: 10px}
+#tm04 .chart_donut_txt ul li:last-child{margin-bottom: 0}
+#tm04 .chart_donut_txt ul li:before{content: '-';position: absolute;left: 0;top: 2px}
+
+/*가족친화제도 slider*/
+#tm04 .tm04_section02 .txt_box{padding-bottom: 0 !important}
+#tm04 .sw1_wrap {position: relative;}
+#tm04 .tm04_section02 .swiper-container{height: 605px; position: relative;}
+#tm04 .tm04_section02 .swiper-slide{}
+#tm04 .tm04_section02 .swiper-slide .sl_img{border: 2px solid #c2dcf0;border-radius: 5px;overflow: hidden;width: 620px;margin: auto} 
+#tm04 .tm04_section02 .swiper-slide .sl_img img {display: block;width: 100%;height: 100%;margin: 0;padding: 0}
+#tm04 .tm04_section02 .btn_slider{position: absolute;left: 0;top: 0; height: 342px;width: 100%;}
+#tm04 .swiper-button-prev:after{display: none}
+#tm04 .swiper-button-next:after{display: none}
+#tm04 .swiper-button-prev{background: url(../images/tm_04/tm04_arrow.png) no-repeat;width: 30px;height: 65px;transform: rotate(180deg);position: absolute;left: 0;top: 50%;}
+#tm04 .swiper-button-next{background: url(../images/tm_04/tm04_arrow.png) no-repeat;width: 30px;height: 65px;position: absolute;right: 0px;top: 50%;}
+.tm04_section02 .sl_txt {padding: 20px }
+
+/* 가족 친화인증기업 인증제도*/
+#tm04 .tm04_section02  .info_row{display:flex;margin:0 0 20px;text-align: left;}
+#tm04 .tm04_section02  .info_row > div:nth-child(1){position:relative;flex-shrink:0;width:140px;color:#aa8223;padding:0 0 0 15px;font-weight:400;}
+#tm04 .tm04_section02  .info_row > div:nth-child(1):before{content:"●";position:absolute;top:2px;left:0;display:inline-block;font-size:6px;}
+#tm04 .tm04_section02  .info_row > div:nth-child(2){flex-grow:1;}
+#tm04 .tm04_section02  .info_row > div > p {color: #666}
+#tm04 .tm04_section02 .family_step {display:flex;justify-content:space-between;}
+#tm04 .tm04_section02 .family_step > .fs_cont {width:25%;margin-right: 15px;margin-left: 15px}
+#tm04 .tm04_section02 .family_step > .fs_cont:first-child{margin-left: 0}
+#tm04 .tm04_section02 .family_step > .fs_cont:last-child{margin-right: 0}
+#tm04 .tm04_section02 .family_step > div:not(.arrow){border: 1px solid #eee;border-radius: 10px;text-align: center;padding:30px 20px;font-weight: 400;}
+#tm04 .tm04_section02 .family_step .arrow {background: url(../images/tm_04/arrow_next.png) no-repeat center;width: 13px;height: 25px;background-size: 10px;margin-top: 26px}
+#tm04 .tm04_section02 .family_step > div:nth-child(1){background: #fbf9f4}
+#tm04 .tm04_section02 .family_step > div:nth-child(3){background: #f6f2e9}
+#tm04 .tm04_section02 .family_step > div:nth-child(5){background: #f2ecde}
+#tm04 .tm04_section02 .family_step > div:nth-child(7){background: #eee6d3}
+
+ /*배너*/
+#tm04 .tm04_section02 .tm04_banner{margin-top: 40px;text-align: left;background: url(../images/tm_04/tm04_banner_img.png) no-repeat right bottom;height: 160px;position: relative;}
+#tm04 .tm04_section02 .tm04_banner .banner_inner{position: absolute;left: 0;top: 50%;transform: translateY(-50%);}
+#tm04 .tm04_section02 .tm04_banner strong{font-size: 18px;}
+#tm04 .tm04_section02 .tm04_banner strong span{font-size: 22px;color: #f5506b;box-shadow:inset 0  -10px  0 #fff5ae}
+#tm04 .tm04_section02 .tm04_banner .btn {padding: 10px 50px !important;margin-left: 20px }
+
+/* 경기 가족친화 일하기 좋은 기업 사례집 */
+#tm04 .tm04_section03 .sw2_wrap {position: relative;padding: 0 70px}
+#tm04 .tm04_section03  .swiper-slide{width: 240px;}
+#tm04 .tm04_section03 .swiper-container .sl_img{border: 2px solid #c2dcf0;border-radius: 5px;overflow: hidden;width:240px;margin: auto;}
+#tm04 .tm04_section03 .swiper-container .sl_img img {display: block;}
+#tm04 .tm04_section03 .btn_slider{position: absolute;left: 0;top: 24px; height: 338px;width: 100%;}
+#tm04 .swiper-button-prev2:after{display: none}
+#tm04 .swiper-button-next2:after{display: none}
+#tm04 .swiper-button-prev2{background: url(../images/tm_04/tm04_arrow.png) no-repeat;width: 30px;height: 65px;transform: rotate(180deg) translateY(50%);position: absolute;left: 0;top: 50%; cursor: pointer}
+#tm04 .swiper-button-next2{background: url(../images/tm_04/tm04_arrow.png) no-repeat;width: 30px;height: 65px;position: absolute;right: 0px;top: 50%;cursor: pointer;transform: translateY(-50%)}
+#tm04 .swiper-button-next2.swiper-button-disabled {opacity: .35}
+
+/* section04 */
+#tm04 .tm04_section04{background: #fff;width: 100%;}
+#tm04 .tm04_section04 h2 {color: #03478d}
+#tm04 .tm04_section04 .service_list{background:#fff;padding:50px 60px 0;}
+#tm04 .service_list h3{font-size:22px;color:#2a2e38;margin:0 auto 45px;}
+#tm04 .service_list h3 span{color:#4d4d4d;font-weight:400;}
+#tm04 .service_list ul{display:flex;flex-wrap:wrap;}
+#tm04 .service_list ul li{flex:1 1 30%;margin-bottom:60px;cursor:pointer;}
+#tm04 .service_list ul li > div{position:relative;width:250px;height:100%;margin:0 auto;padding-bottom:46px;text-align:left;font-size:15px;font-weight:300;color:#777;letter-spacing:-.5px;}
+#tm04 .service_list ul li .thumb{border-radius:5px;line-height:0;overflow:hidden;}
+#tm04 .service_list ul li h4{color:#606060;font-size:18px;margin:25px 0 15px;}
+#tm04 .service_list ul li .goto{position:absolute;bottom:0;}
+
+@media screen and (min-width: 1080px) and (max-width:1600px) {
+    
+}
+	
+@media screen and (min-width : 1080px) {
+    .container {max-width: 100%;}
+}
+
+@media screen and (max-width : 1080px){
+.container{width:calc(100% - 90px);letter-spacing:-.5px;font-size:15px;}
+#tm04 .txt_box {padding: 40px 30px}    
+    
+/* banner */
+#tm04 .tm04_section02 .tm04_banner{background-size: 220px}    
+#tm04 .tm04_section02 .tm04_banner .btn{display: block !important;width: 200px;padding: 10px  !important;text-align: center;margin-left: 0;margin-top: 15px}    
+
+/* 가족친화제도 슬라이드*/    
+#tm04 .tm04_section02 .swiper-slide .sl_img{width: 500px}    
+#tm04 .tm04_section02 .btn_slider{height: 272px;}
+/* 경기도 가족친화기업 인증제도 */    
+#tm04 .tm04_section02 .family_step {flex-wrap: wrap}    
+#tm04 .tm04_section02 .family_step > .fs_cont {width: calc(50% - 30px)}
+#tm04 .tm04_section02 .family_step > .fs_cont:nth-child(1){margin-bottom: 30px}
+#tm04 .tm04_section02 .family_step > .fs_cont:nth-child(3){margin-right: 0;margin-bottom: 30px}
+#tm04 .tm04_section02 .family_step > .fs_cont:nth-child(5){margin-left: 0}
+#tm04 .tm04_section02 .family_step .arrow:nth-child(4) {display: none}    
+
+    
+/* 경기가족친화 일하기 좋은 기업 사례집*/
+#tm04 .tm04_section03 .swiper-container .sl_img{max-width: 240px; width: auto;} 
+#tm04 .tm04_section03 .btn_slider{height: 100%;;top: 0;}
+#tm04 .swiper-button-prev2{top: 50%;transform:rotate(180deg) translateY(50%)}
+#tm04 .swiper-button-next2{top: 50%;transform:translateY(-50%)}
+    
+}
+
+@media screen and (max-width : 768px){
+    /*폰트 사이즈*/
+.f30 {font-size: 26px}
+.f24 {font-size: 20px}
+.f22 {font-size: 19px}
+.f20 {font-size: 18px}
+.f18 {font-size: 16px}
+.f15 {font-size: 13px}
+.f16 {font-size: 13px}
+.f14 {font-size: 13px}
+        
+.mt50 {margin-top: 30px}
+#tm04 .btn {font-size: 14px}  
+.gray_line{margin: 30px 0}   
+#tm04 .btn_wrap{margin-top: 30px}    
+    
+#tm04 .tm04_top .img_tit{width: 260px}    
+    
+/* 도넛차트 */
+#tm04 .chart_donut_wrap {max-width: 680px;width: 100%;}
+#tm04 .chart_donut{width: 300px;height: 300px}  
+#tm04 .chart_donut .circle{width: 150px;height: 150px;}    
+#tm04 .chart_donut .circle.yellow{margin-left: -75px}
+#tm04 .chart_donut .circle p{font-size: 14px;width: 75px;height: 75px;line-height: 75px}
+#tm04 .chart_donut .circle.yellow p:after{width: 60px;height: 60px}   
+#tm04 .chart_donut .circle.sky p:after{width: 60px;height: 60px}    
+#tm04 .chart_donut .circle.blue p:after{width: 60px;height: 60px}    
+#tm04 .chart_donut .ev_err{height: 210px;width: 150px;}
+#tm04 .chart_donut .polygon:before{ height: 0;
+      border-left: 70px solid transparent;
+      border-right: 70px solid transparent;
+      border-bottom: 120px solid #fff;top: 70px}    
+#tm04 .chart_donut .polygon h4{margin-top: 70px}
+#tm04 .chart_donut_wrap > div:first-child{margin-right: 30px}    
+#tm04 .chart_donut_txt{width: calc(100% - 300px)}   
+#tm04 .chart_donut_txt ul li{font-size: 14px}    
+
+/* 가족친화제도*/    
+#tm04 .sw1_wrap{width: 90%; margin: auto;}    
+#tm04 .tm04_section02 .swiper-container{height: auto;}
+#tm04 .tm04_section02 .swiper-slide .sl_img{max-width: 500px;width: 100%;}
+#tm04 .swiper-button-prev{background-size: 15px;width: 15px;height: 27px;left: -35px;top:50%;transform: rotate(180deg) translateY(50%)}   #tm04 .swiper-button-next{background-size: 15px;width: 15px;height: 27px;right: -35px;top: 50%;transform: translateY(-50%)}    
+#tm04 .tm04_section02 .btn_slider{height: auto;position: static;}
+#tm04 .tm04_section02 .sl_txt{padding:0;margin-top: 20px}
+    
+/* 배너 */
+#tm04 .tm04_section02 .tm04_banner strong{font-size: 15px}    
+#tm04 .tm04_section02 .tm04_banner strong span{font-size: 19px}
+    
+/* 사례집 */
+#tm04 .swiper-button-prev2{background-size: 15px;width: 15px;height: 27px;left: 10px;top:50%;transform: rotate(180deg) translateY(50%)}   #tm04 .swiper-button-next2{background-size: 15px;width: 15px;height: 27px;right: 10px;top: 50%;transform: translateY(-50%)}      
+#tm04 .service_list ul li > div {width: calc(100% - 10px)}    
+    
+}
+
+
+@media screen and (max-width : 640px){
+    /*폰트 사이즈*/
+.f30 {font-size: 24px}
+.f22 {font-size: 18px}
+.f24 {font-size: 17px;letter-spacing: -.9px;word-break: keep-all}
+.f20 {font-size: 16px}
+.f18 {font-size: 15px}
+.f16 {font-size: 13px}
+.f14 {font-size: 13px}
+.f15 {font-size: 13px}
+    
+.container{width:calc(100% - 40px);margin: auto}
+#tm04 .txt_box {padding: 30px 20px}
+#tm04 .txt_box_border{border: 5px solid rgba(255,255,255,.4)}
+    
+/* 가족친화제도 */
+#tm04 .sw1 .btn{width: 100%;}    
+#tm04 .sw1_wrap{width: 85%;}    
+    
+/* 가족친화 인증제도 */    
+#tm04 .tm04_section02 .info_row{display: block}
+#tm04 .tm04_section02 .info_row > div:nth-child(1){}
+#tm04 .tm04_section02 .family_step{display: block;}
+#tm04 .tm04_section02 .family_step > .fs_cont{width: 100%;margin-left: 0;margin-right: 0;}
+#tm04 .tm04_section02 .family_step > .fs_cont:nth-child(1){margin-bottom: 0}
+#tm04 .tm04_section02 .family_step > .fs_cont:nth-child(3){margin-bottom: 0}
+.tm04_section02 .family_step .arrow{margin: 10px auto;transform: rotate(90deg);}
+#tm04 .tm04_section02 .family_step .arrow:nth-child(4) {display: block}    
+    
+/* 도넛차트 */
+#tm04 .chart_donut_wrap{display: block;}
+#tm04 .chart_donut_txt{width: 100%;;margin-top: 20px;text-align: center !important}
+#tm04 .chart_donut_txt ul li {display:block;}
+#tm04 .chart_donut_txt ul li:before {position: static;margin-right: 5px}
+#tm04 .chart_donut_wrap {width: 100%;margin-top: 20px} 
+#tm04 .chart_donut{width: 200px;height: 170px;margin: auto}  
+#tm04 .chart_donut .circle{width: 100px;height: 100px;}    
+#tm04 .chart_donut .circle.yellow{margin-left: -50px;bottom: auto;top: 0px}
+#tm04 .chart_donut .circle p{font-size: 13px;width: 60px;height: 60px;line-height: 60px}
+#tm04 .chart_donut_wrap > div:first-child{margin-right: auto}
+#tm04 .chart_donut .circle.yellow p:after{width: 55px;height: 55px}   
+#tm04 .chart_donut .circle.sky p:after{width: 55px;height: 55px}    
+#tm04 .chart_donut .circle.blue p:after{width: 55px;height: 55px}    
+#tm04 .chart_donut .ev_err{height: 120px;width: 100px;margin-top: 0;position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%)}
+#tm04 .chart_donut .polygon:before{ height: 0;
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-bottom: 80px solid #fff;top: 50px}    
+#tm04 .chart_donut .polygon h4{font-size: 12px;margin-top: 55px} 
+
+/* banner */    
+#tm04 .tm04_section02 .tm04_banner{background-size: 160px;height: 220px;}
+#tm04 .tm04_section02 .tm04_banner .banner_inner{top: 0;transform: translateY(0)}
+#tm04 .tm04_section02 .tm04_banner strong {word-break: keep-all}
+    
+/*  경기 가족친화 일하기 좋은 기업 사례집 */
+#tm04 .tm04_section03 .sw2_wrap{padding: 0 20px}
+#tm04 .btn{padding: 10px;width: 100%;}
+
+/* slider btn*/    
+    #tm04 .btn_wrap {margin-top: 20px}    
+#tm04 .swiper-button-prev{left: -10%}
+#tm04 .swiper-button-next{right: -10%}
+#tm04 .swiper-button-prev2{left: -7px}
+#tm04 .swiper-button-next2{right: -7px}
+    
+#tm04  .tm04_section04 .service_list{padding:40px 30px 0;}
+#tm04 .service_list h3{margin:0 auto 30px;}
+#tm04 .service_list h3 span{display:block;}
+#tm04 .service_list ul li{flex:1 1 100%;margin-bottom:40px;}
+#tm04 .service_list ul li > div{width:100%;max-width:250px;padding-bottom:35px;}
+#tm04 .service_list ul li h4{margin:15px 0 10px;}
+    
+
+}
