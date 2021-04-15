@@ -308,7 +308,7 @@ p {word-break: keep-all}
 #tm04 .chart_donut .polygon h4{font-size: 12px;margin-top: 55px} 
 
 /* banner */    
-#tm04 .tm04_section02 .tm04_banner{background-size: 160px;height: 220px;}
+#tm04 .tm04_section02 .tm04_banner{background-size: 160px;height: 180px;}
 #tm04 .tm04_section02 .tm04_banner .banner_inner{top: 0;transform: translateY(0)}
 #tm04 .tm04_section02 .tm04_banner strong {word-break: keep-all}
     
