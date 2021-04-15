@@ -23,7 +23,7 @@ p {word-break: keep-all}
 .white {color: #fff}
 .red {color: #f93e13}
 .dark_gray {color: #666}
-.white_bg {background: #fff;display: inline;padding: 2px 5px;}
+.white_bg {background: #fff;display: inline;padding: 2px 5px; }
 
 * {margin: 0;padding: 0}
 
@@ -304,8 +304,8 @@ p {word-break: keep-all}
 #tm04 .chart_donut .polygon:before{ height: 0;
       border-left: 40px solid transparent;
       border-right: 40px solid transparent;
-      border-bottom: 80px solid #fff;top: 50px}    
-#tm04 .chart_donut .polygon h4{font-size: 12px;margin-top: 55px} 
+      border-bottom: 80px solid #fff;top: 40px}    
+#tm04 .chart_donut .polygon h4{font-size: 12px;margin-top: 42px} 
 
 /* banner */    
 #tm04 .tm04_section02 .tm04_banner{background-size: 160px;height: 180px;}
