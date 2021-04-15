@@ -73,7 +73,7 @@ p {word-break: keep-all}
 #tm04 .txt_box h2 {padding: 0;margin: 0}
 
 /* 도넛차트 */
-#tm04 .chart_donut {position: relative;width: 380px;height: 330px;z-index: 0}
+#tm04 .chart_donut {position: relative;width: 380px;height: 330px;z-index: 0;margin-right: 60px;}
 #tm04 .chart_donut .circle{position: absolute;width: 200px;height: 200px;border-radius: 50%;background: #000;cursor: pointer}
 #tm04 .chart_donut .circle p {position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);width: 90px;height: 90px;background: #fff;border-radius: 50%;line-height: 90px;font-weight: 500;font-size: 18px;margin: 0;box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.17);z-index: 2}
 #tm04 .chart_donut .circle.yellow {background: #eccc32;bottom:130px;left: 50%;margin-left: -100px;}
@@ -90,9 +90,8 @@ p {word-break: keep-all}
   border-bottom: 130px solid #fff;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
 #tm04 .chart_donut .polygon h4 {padding: 0;margin: 0;z-index: 5;position: relative;font-size: 17px;margin-top: 40px}
 #tm04 .chart_donut .ev_err {width: 230px;height: 240px;margin: auto;margin-top: 90px;z-index: 1;position: relative;background-color: transparent}
-#tm04 .chart_donut_wrap {display: flex;width: 680px;margin: auto;text-align: center;margin-top: 40px;align-items: center}
+#tm04 .chart_donut_wrap {display: flex;width: 680px;margin: auto;text-align: center;margin-top: 40px;align-items: center;position: relative;}
 #tm04 .chart_donut_wrap > div{}
-#tm04 .chart_donut_wrap > div:first-child{margin-right: 60px}
 #tm04 .chart_donut_txt {text-align: left !important;width: 250px;}
 #tm04 .chart_donut_txt .cdt_tit{margin-bottom: 20px}
 #tm04 .chart_donut_txt.yellow .cdt_tit{border-bottom: 2px solid #eccc32;display: inline-block;padding-bottom: 10px}
@@ -101,6 +100,8 @@ p {word-break: keep-all}
 #tm04 .chart_donut_txt ul li{position: relative;font-size: 16px;color: #666;margin-bottom: 3px;padding-left: 10px}
 #tm04 .chart_donut_txt ul li:last-child{margin-bottom: 0}
 #tm04 .chart_donut_txt ul li:before{content: '-';position: absolute;left: 0;top: 2px}
+#tm04 .cd_more{position: absolute;right: 0;top: 0;background: url(../images/tm_04/tm04_cd_more.png) no-repeat;padding-left: 25px;background-size: 20px;vertical-align: middle;color: #666;cursor:default}
+#tm04 .cd_more .mb{display: none}   
 
 /*가족친화제도 slider*/
 #tm04 .tm04_section02 .txt_box{padding-bottom: 0 !important}
@@ -177,6 +178,9 @@ p {word-break: keep-all}
 .container{width:calc(100% - 90px);letter-spacing:-.5px;font-size:15px;}
 #tm04 .txt_box {padding: 40px 30px}    
     
+/* 도넛 */
+    #tm04 .chart_donut_wrap{max-width: 680px;width: 100%;}    
+    
 /* banner */
 #tm04 .tm04_section02 .tm04_banner{background-size: 220px}    
 #tm04 .tm04_section02 .tm04_banner .btn{display: block !important;width: 200px;padding: 10px  !important;text-align: center;margin-left: 0;margin-top: 15px}    
@@ -220,8 +224,11 @@ p {word-break: keep-all}
 #tm04 .tm04_top .img_tit{width: 260px}    
     
 /* 도넛차트 */
-#tm04 .chart_donut_wrap {max-width: 680px;width: 100%;}
-#tm04 .chart_donut{width: 300px;height: 300px}  
+#tm04 .cd_more{font-size: 14px}    
+#tm04 .cd_more .pc{display: none !important}    
+#tm04 .cd_more .mb{display: block}       
+#tm04 .chart_donut_wrap {max-width: 680px;width: 100%;padding-top: 20px}
+#tm04 .chart_donut{width: 300px;height: 300px;margin-right: 30px}  
 #tm04 .chart_donut .circle{width: 150px;height: 150px;}    
 #tm04 .chart_donut .circle.yellow{margin-left: -75px}
 #tm04 .chart_donut .circle p{font-size: 14px;width: 75px;height: 75px;line-height: 75px}
@@ -234,7 +241,6 @@ p {word-break: keep-all}
       border-right: 70px solid transparent;
       border-bottom: 120px solid #fff;top: 70px}    
 #tm04 .chart_donut .polygon h4{margin-top: 70px}
-#tm04 .chart_donut_wrap > div:first-child{margin-right: 30px}    
 #tm04 .chart_donut_txt{width: calc(100% - 300px)}   
 #tm04 .chart_donut_txt ul li{font-size: 14px}    
 
@@ -287,7 +293,8 @@ p {word-break: keep-all}
 #tm04 .tm04_section02 .family_step .arrow:nth-child(4) {display: block}    
     
 /* 도넛차트 */
-#tm04 .chart_donut_wrap{display: block;}
+#tm04 .chart_donut_wrap{display: block;padding-top: 40px;}
+#tm04 .cd_more{right: 50%;transform: translate(50%,0)}     
 #tm04 .chart_donut_txt{width: 100%;;margin-top: 20px;text-align: center !important}
 #tm04 .chart_donut_txt ul li {display:block;}
 #tm04 .chart_donut_txt ul li:before {position: static;margin-right: 5px}
@@ -307,6 +314,8 @@ p {word-break: keep-all}
       border-bottom: 80px solid #fff;top: 40px}    
 #tm04 .chart_donut .polygon h4{font-size: 12px;margin-top: 42px} 
 
+    
+    
 /* banner */    
 #tm04 .tm04_section02 .tm04_banner{background-size: 160px;height: 180px;}
 #tm04 .tm04_section02 .tm04_banner .banner_inner{top: 0;transform: translateY(0)}
