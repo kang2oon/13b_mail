@@ -1,4 +1,4 @@
-*{font-family: 'Noto Sans KR', sans-serif;box-sizing:border-box;}
+'*{font-family: 'Noto Sans KR', sans-serif;box-sizing:border-box;}
 html,body{position:relative;width:100%;height:100%;margin:0;padding:0;}
 .clearfix:before,.clearfix:after{content:"";display:block}.clearfix:after{clear:both;visibility:hidden;line-height:0;height:0}.clearfix{*zoom:1}
 img{max-width:100%;line-height:0;}
@@ -23,7 +23,7 @@ p {word-break: keep-all}
 .white {color: #fff}
 .red {color: #f93e13}
 .dark_gray {color: #666}
-.white_bg {background: #fff;display: inline;padding: 2px 5px; }
+.white_bg {background: #fff;display: inline;padding: 2px 5px;}
 
 * {margin: 0;padding: 0}
 
@@ -105,7 +105,7 @@ p {word-break: keep-all}
 /*가족친화제도 slider*/
 #tm04 .tm04_section02 .txt_box{padding-bottom: 0 !important}
 #tm04 .sw1_wrap {position: relative;}
-#tm04 .tm04_section02 .swiper-container{height: 605px; position: relative;}
+#tm04 .tm04_section02 .swiper-container{position: relative;}
 #tm04 .tm04_section02 .swiper-slide{}
 #tm04 .tm04_section02 .swiper-slide .sl_img{border: 2px solid #c2dcf0;border-radius: 5px;overflow: hidden;width: 620px;margin: auto} 
 #tm04 .tm04_section02 .swiper-slide .sl_img img {display: block;width: 100%;height: 100%;margin: 0;padding: 0}
@@ -331,4 +331,4 @@ p {word-break: keep-all}
 #tm04 .service_list ul li h4{margin:15px 0 10px;}
     
 
-}
+}'
