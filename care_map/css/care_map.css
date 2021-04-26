@@ -150,9 +150,9 @@ a{text-decoration:none;color:inherit;}
 
 @media screen and (min-width:1025px) and (max-width : 1388px){
     
-    	.header{height:57px;line-height:55px;}
-	.map-wrap{height:calc(100vh - 57px);top:57px;}
-	.org-wrap{width:100%;border-style:solid none none none;border-radius:0;margin:0;top:auto;bottom:0;height:50vh;transition:bottom 1s;box-shadow:none;}
+    .header{height:57px;line-height:55px;}
+	.map-wrap{height:calc(100vh - 57px);top:57px; }
+	.org-wrap{width:400px;top: 47%;transform: translateY(-50%);height: 526px}
 	.side_toggle{display:none;}
 	.top_toggle{position:absolute;display:block;top:-38px;right:20px;}
 	.top_toggle > div{
