@@ -50,7 +50,7 @@ a{text-decoration:none;color:inherit;}
 	.place_btn button{flex-shrink:0;width:65px;padding:10px 8px;border:1px solid #0051a4;color:#0051a4;border-radius:3px;background:#fff;width: 100%;background: url(../images/place_ico.png) no-repeat 32% center;background-size: 12px}
     .search_area{float: left;width: calc(100% - 90px);margin-right: 10px;}
     .search_btn {float: right;}
-    .search_btn button[type='submit']{width:80px;height: 90px; background:#0051a4 url(../images/ico_search.png) no-repeat center;border: 0; background-size:25px;text-indent:-99999px;position: relative;border-radius: 5px;cursor: pointer}
+    .search_btn button[type='submit']{width:80px;height: 90px; background:#0051a4 url(../images/ico_search.png) no-repeat center;border: 0; background-size:22px;text-indent:-99999px;position: relative;border-radius: 5px;cursor: pointer}
 
 	.org_kind{margin-top:13px;padding:13px 0;border-top:1px solid #e5e5e5;}
 	.org_kind ul{display:flex;flex-wrap:wrap;}
@@ -94,7 +94,7 @@ a{text-decoration:none;color:inherit;}
 	.orglist-wrap ul li .org_nm.org10 span:after{content:"초등돌봄교실";}
 	.orglist-wrap ul li a.tel{display:block;margin-bottom:15px;color:inherit;}
 	.orglist-wrap ul li button{background:#fff;border:1px solid #e5e5e5;border-radius:3px;padding:4px 18px;color:#666;font-size:12px;cursor:pointer;}	
-	.bnr-wrap{padding:20px 0;text-align: left  !important;}
+	.bnr-wrap{padding:20px 0;}
 	.bnr-wrap a{display:block;border:1px solid #e5e5e5;border-radius:3px;padding:2px 10px 11px;font-size:14px;}
 	.bnr-wrap a img{position:relative;top:7px;}
 	.bnr-wrap a+a{margin-top:5px;}
@@ -148,7 +148,28 @@ a{text-decoration:none;color:inherit;}
 		transform:rotate(45deg);
 	}
 
-@media screen and (max-width : 510px){
+@media screen and (min-width:1025px) and (max-width : 1388px){
+    
+    	.header{height:57px;line-height:55px;}
+	.map-wrap{height:calc(100vh - 57px);top:57px;}
+	.org-wrap{width:100%;border-style:solid none none none;border-radius:0;margin:0;top:auto;bottom:0;height:50vh;transition:bottom 1s;box-shadow:none;}
+	.side_toggle{display:none;}
+	.top_toggle{position:absolute;display:block;top:-38px;right:20px;}
+	.top_toggle > div{
+		display:inline-block;background-color:#e5e5e5;font-size:14px;border:1px solid #e5e5e5;border-radius:5px 5px 0 0;padding:8px 30px 8px 10px;
+		background-image:url(../images/ico_arrow_up.png);background-position:88% 53%;background-repeat:no-repeat;background-size:16px;cursor:pointer;
+	}
+	.top_toggle > div.on{background-color:#fff;background-image:url(../images/ico_arrow_down.png);border-color:#e5e5e5 #e5e5e5 #fff;}
+	.orglist-wrap{display:none;height:calc(100% + 40px);margin:-20px;}
+	.orglist-wrap li{margin:0 20px}
+	.modal-wrap > div{max-width:88%;}
+	.modal-wrap .dtl_info{max-height:50vh;overflow:auto;padding:20px;}
+	.modal-wrap .tbl th, .modal-wrap .tbl td{display:block;}
+	.modal-wrap .tbl th{padding:12px 0 3px;color:#999;font-size:12px;font-weight:400;}
+	.modal-wrap .tbl td{padding:0 0 12px;}
+}
+
+@media screen and (max-width : 540px){
 	.header{height:57px;line-height:55px;}
 	.map-wrap{height:calc(100vh - 57px);top:57px;}
 	.org-wrap{width:100%;border-style:solid none none none;border-radius:0;margin:0;top:auto;bottom:0;height:50vh;transition:bottom 1s;box-shadow:none;}
@@ -166,4 +187,14 @@ a{text-decoration:none;color:inherit;}
 	.modal-wrap .tbl th, .modal-wrap .tbl td{display:block;}
 	.modal-wrap .tbl th{padding:12px 0 3px;color:#999;font-size:12px;font-weight:400;}
 	.modal-wrap .tbl td{padding:0 0 12px;}
+    
+    /* 04.26 수정 */
+    .search_btn button[type='submit'] {width: 60px;}
+    .search_area{width: calc(100% - 65px);margin-right: 5px}
+    .location-wrap select{font-size: 12px;background-size: 12px}
+    .place_btn button {background-position: 32% center}
+}
+
+@media screen and (max-width : 340px){
+    .place_btn button {background-position: 27% center}
 }
