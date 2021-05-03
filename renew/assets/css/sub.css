@@ -377,7 +377,7 @@ select.select_style {
 /* 마이페이지 */
 .myPage_wrap .myPage_header{background: #eff5fa;border-radius: 8px;border: 1px solid #e9ecf7;padding: 40px 30px;display: flex;margin-bottom: 40px;flex-direction: row-reverse}
 .myPage_wrap .myPage_header .left{width: calc(100% - 300px)}
-.myPage_wrap .myPage_header .right{}
+.myPage_wrap .myPage_header .right{width:300px}
 
 
 /* 마이페이지 > 링크 이동 */
@@ -525,6 +525,8 @@ select.select_style {
     .myPage_wrap .myPage_link_item:nth-child(3n) {margin-left:0; }
     .myPage_wrap .myPage_link_item:nth-child(1), 
     .myPage_wrap .myPage_link_item:nth-child(2){margin-bottom: 15px} 
+    .myPage_wrap .myPage_header .right{width: 250px;}
+    .myPage_wrap .myPage_header .left {width: calc(100% - 250px);} 
         
     /* 마이페이지 > 나의 참여현황 */
     .myPage_attend .num{width: 60px;height: 60px}   
@@ -539,6 +541,7 @@ select.select_style {
    .lb_sch_wrap .btn_list01 .check_btn{width: 16.666%} 
    .lb_sch_wrap .btn_list01 .check_btn:nth-child(8n){padding-right: 5px} 
    .lb_sch_wrap .btn_list01 .check_btn:nth-child(6n){padding-right: 0} 
+   
         
         
      .myPage_attend_warp  .txt {word-break: keep-all}
@@ -609,7 +612,8 @@ select.select_style {
     
     /* 마이페이지  */    
     .myPage_wrap .myPage_header .left {width: calc(100% - 250px)}
-    .myPage_header #myChart {width: 250px !important}
+    .myPage_wrap .myPage_header .right{width: 230px;}
+    .myPage_wrap .myPage_header .left {width: calc(100% - 230px);} 
         
     /* 마이페이지 > 나의 참여현황 */
     .myPage_attend_warp{flex-wrap: wrap}
