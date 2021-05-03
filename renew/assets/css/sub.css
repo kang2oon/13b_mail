@@ -20,17 +20,17 @@ select.select_style {
     /* 서브 공통 */
     .gray_box {background: #f8f8f8;border: 1px solid var(--wbl-color-light-gray);border-radius: 10px;padding: 30px;color: var(--wbl-color-dark-gray)}
     .gray_line {border-top:var(--wbl-color-light-gray);margin: 0;}
-    .mt10 {margin-top: 10px}
-    .mt15 {margin-top: 15px}
-    .mt20 {margin-top: 20px}
-    .mt30 {margin-top: 30px}
-    .mt35 {margin-top: 35px}
-    .mt40 {margin-top: 40px}
-    .mt50 {margin-top: 50px}
-    .mt60 {margin-top: 60px;}
-    .mt100 {margin-top: 100px;}
-    .mb10 {margin-bottom: 10px}
-    .mb30 {margin-bottom: 30px}
+    .mt10 {margin-top: 10px  !important}
+    .mt15 {margin-top: 15px !important}
+    .mt20 {margin-top: 20px !important}
+    .mt30 {margin-top: 30px !important}
+    .mt35 {margin-top: 35px !important}
+    .mt40 {margin-top: 40px !important}
+    .mt50 {margin-top: 50px !important}
+    .mt60 {margin-top: 60px !important; }
+    .mt100 {margin-top: 100px !important;}
+    .mb10 {margin-bottom: 10px !important}
+    .mb30 {margin-bottom: 30px !important}
     .w180 {width: 180px}
     .p0 {padding: 0 !important}
     .pt0 {padding-top: 0 !important}
@@ -48,6 +48,11 @@ select.select_style {
     .f24 {font-size:var( --wbl-font-sz-ps2);}
     .f26 {font-size:var( --wbl-font-sz-ps3);}
     .f30 {font-size:var( --wbl-font-sz-ps4);}
+
+    /*color*/
+.color_blue {color: #053c74}
+.color_main {color: var(--wbl-color-main)}
+.color_dark_gray{color: var(--wbl-color-dark-gray)}
     
     /* table style */
     .table_style01 {}    
@@ -56,24 +61,31 @@ select.select_style {
     .table_style01 table th,
     .table_style01 table td {border:1px solid #e2e2e2;padding: 15px }
     .table_style01 table th {background: #f8f8f8;}
-    .table_style01 table td{color: #999;}
+    .table_style01 table td{color: #333;}
     
-    /* 버튼 스타일 */
+    /* 버튼 스타일 new*/
     .view_btn {}
     .view_btn a + a{margin-left: 10px}
-    .btn_style{display: inline-block;border-radius: 5px;padding: 15px 40px;font-size:var(-wbl-font-sz-default) }
-    .blue_btn {background: var(--wbl-color-main);color: var(--wbl-color-white);}
+    .btn_style{display: inline-block;border-radius: 5px;padding: 15px 40px;font-size:var(--wbl-font-sz-default) }
+    .blue_btn {background: var(--wbl-color-main);color: var(--wbl-color-white);border: 0}
     .white_btn {background: var(--wbl-color-white);color: #666;border: 1px solid #e4e4e4}
-    
+
+    /*new*/
+    .btn_small {padding: 10px 30px;font-size: var(--wbl-font-sz-ms1)}
+    .btn_long {padding: 10px 60px;font-size: var(--wbl-font-sz-ms1)}
+    .bold_line{border-top: 2px solid #222;}
+    .dashed_line{border: 1px dashed var(--wbl-color-light-gray-lighten1);border-style: none none dotted;color: #fff; 
+    background-color: #fff;}
     
     /* 서브 레이아웃 */
-    .main_section {display: flex;}
+    .main_section {display: flex !important}
     .main_section .snb_wrap {width: 260px;margin: 0 60px 0 0;}
     .main_section .snb_wrap h2 {font-size: var(--wbl-font-sz-ps3);font-weight: 500}
     .main_section .snb_wrap .snb_search {background: #f6f7f9 ;padding: 15px 20px;border-radius: 5px;margin: 30px 0}
     .main_section .snb_wrap .snb_search input[type="text"]{background: transparent;border: 0;font-size: var(--wbl-font-sz-default);float: left;width: calc(100% - 40px)}
     .main_section .snb_wrap .snb_search input[type="text"]::placeholder{font-size: var(--wbl-font-sz-default)}
-    .main_section .snb_wrap .snb_search input[type="text"]::-moz-placeholder{font-size: var(--wbl-font-sz-default)}
+    .main_section .snb_wrap .snb_search input[type="text"]::-moz-
+    {font-size: var(--wbl-font-sz-default)}
     .main_section .snb_wrap .snb_search input[type="submit"] {width: 30px;height: 30px;float: right;background: url(../images/sub_sch.png) no-repeat center;text-indent: -9999px;border: 0;}
     .main_section  #snb {border-top: 1px solid var( --wbl-color-light-gray-lighten1);border-bottom: 1px solid var( --wbl-color-light-gray-lighten1);padding: 30px 20px;min-height: 180px;;margin-bottom: 30px}
     
@@ -94,7 +106,7 @@ select.select_style {
     .sub_banner .sb-swiper-pagination  .swiper-pagination-bullet{width: 10px;height: 10px;opacity: 1;border: 1px solid #999;background: #fff;margin:0 5px}
     .sub_banner .sb-swiper-pagination .swiper-pagination-bullet-active {background: #999 !important;}
     .sub_banner .autoplay.hide {display: none}
-    .sub_banner .autoplay  {position: relative;background:url(../images/play_btn.png) no-repeat center;width: 10px;height: 10px;display: inline-block;cursor: pointer;background-size:contain}
+    .sub_banner .autoplay  {position: absolute;bottom: 3px;margin-left:5px;background:url(../images/play_btn.png) no-repeat center;width: 10px;height: 15px;display: inline-block;cursor: pointer;}
     .sub_banner .page_function .autoplay.stop {background: url(../images/stop_btn.png) no-repeat center}
     
     /* 서브 콘텐츠 레이아웃*/
@@ -104,7 +116,7 @@ select.select_style {
     /* 탭메뉴 */
     .tab {}
     .tab ul{display: table;width: 100%;table-layout: fixed;border-collapse: collapse;}
-    .tab ul > li{display: table-cell;vertical-align: middle;text-align: center;padding: 20px;background: #f6f7f9;border: 1px solid #ccc;border-right: 0;box-sizing: border-box;border-bottom: 1px solid #212121;}
+    .tab ul > li{display: table-cell;vertical-align: middle;text-align: center;padding: 15px;background: #f6f7f9;border: 1px solid #ccc;border-right: 0;box-sizing: border-box;border-bottom: 1px solid #212121;}
     .tab ul.clearfix:before,
     .tab ul.clearfix:after{display: none;}
     .tab ul > li:last-child {border-right: 1px solid #ccc}
@@ -152,7 +164,7 @@ select.select_style {
     .main_section .condition_result > a{display: block;width: 100%;height: 100%;}
     .main_section .condition_result .cs_btn ul li + li {margin-left: 10px}
     .main_section .condition_result .cs_btn ul li a{display: block;width: 100%;height: 100%;}
-    .main_section .condition_result .cs_btn .like{background: url(../images/hv_like_btn.png) no-repeat center;}
+    .main_section .condition_result .cs_btn .like{background: url(../images/hv_like_btn.png) no-repeat center;margin-right:10px;}
     .main_section .condition_result .cs_btn ul li.like.on{opacity: 1;background: url(../images/hv_like_btn_on.png) no-repeat center;border: 1px solid var(--wbl-color-red)}
     .main_section .condition_result .cs_btn ul li.like:hover,
     .main_section .condition_result .cs_btn ul li.like:active,
@@ -255,7 +267,7 @@ select.select_style {
     .board_view .view_thumb .txt li > * {display: inline-block;}
     .board_view .view_thumb .txt li + li {margin-top: 15px}
     .board_view .view_thumb .txt li strong {width: 100px;font-size: var(--wbl-font-sz-ps1);vertical-align: top;font-weight: 500}
-    .board_view .view_thumb .txt li p {font-size: var(--wbl-font-sz-ps1);width: calc(100% - 104px);color: #444}
+    .board_view .view_thumb .txt li p {font-size: var(--wbl-font-sz-ps1);width: calc(100% - 104px);color: #444;margin-top: 0;;}
     .board_view .view_thumb .txt li .tag {}
     .board_view .view_thumb .txt li .tag a{margin-right: 1px;white-space: pre;}
     .board_view .view_thumb .txt li .tag a:hover,
@@ -352,12 +364,109 @@ select.select_style {
 .condition_result.only_tit .title{margin: 20px }
 .main_section .condition_result.only_tit{height: auto}
 
+
+/* 웹진 목록*/
+.wz_header_box {border:1px solid #e9ecf7;border-radius:10px;margin:20px auto 35px;padding:40px 30px;background:url(../images/wz_list_bg.png) no-repeat #eff5fa right bottom 0;}
+.three_result_wrap{}
+.condition_result_wrap.three_result_wrap > .condition_result{width: calc(33% - 11px);height: 245px}
+.condition_result_wrap.three_result_wrap > .condition_result:nth-child(3n) {margin-right: 0}
+.condition_result_wrap.three_result_wrap > .condition_result:nth-child(4n) {margin-right: 20px}
+.condition_result_wrap.three_result_wrap .color_dark_gray {margin: 10px 0px 5px 20px}
+
+
+/* 마이페이지 */
+.myPage_wrap .myPage_header{background: #eff5fa;border-radius: 8px;border: 1px solid #e9ecf7;padding: 40px 30px;display: flex;margin-bottom: 40px;flex-direction: row-reverse}
+.myPage_wrap .myPage_header .left{width: calc(100% - 300px)}
+.myPage_wrap .myPage_header .right{}
+
+
+/* 마이페이지 > 링크 이동 */
+.myPage_wrap .myPage_link{display: flex;flex-wrap: wrap;justify-content: space-around}
+.myPage_wrap .myPage_link_item {border: 1px solid var(--wbl-color-light-gray-lighten1);border-radius: 10px;width: calc(25% - 15px); margin-left: 20px;}
+.myPage_wrap .myPage_link_item a{display: block;width: 100%;height: 100%;padding: 30px 20px 90px 20px;}
+.myPage_wrap .myPage_link_item:first-child{margin-left: 0}
+.myPage_wrap .myPage_link_item em{display: block;font-size: var(--wbl-font-sz-ms1);font-style: normal;position: relative;padding-bottom: 15px;margin-bottom: 20px;}
+.myPage_wrap .myPage_link_item em:after{content: '';display: block; position: absolute;left: 0;bottom: 0; width: 20px;height: 2px;background: red}
+.myPage_wrap .myPage_link_item strong {display: block;font-size: var(--wbl-font-sz-ps1);margin-bottom: 10px}
+.myPage_wrap .myPage_link_item p{font-size:var(--wbl-font-sz-ms1);color: var(--wbl-color-dark-gray);line-height: 1.8 }
+.myPage_wrap .myPage_link_item:nth-child(1) {background: url(../images/myPage_ico01.png) no-repeat right 20px bottom 30px}
+.myPage_wrap .myPage_link_item:nth-child(1) em:after{background: #ff628e}
+.myPage_wrap .myPage_link_item:nth-child(1):hover {border: 1px solid #ff628e}
+.myPage_wrap .myPage_link_item:nth-child(2) {background: url(../images/myPage_ico02.png) no-repeat right 20px bottom 30px}
+.myPage_wrap .myPage_link_item:nth-child(2) em:after{background: #ff804e}
+.myPage_wrap .myPage_link_item:nth-child(2):hover {border: 1px solid #ff804e}
+.myPage_wrap .myPage_link_item:nth-child(3) {background: url(../images/myPage_ico03.png) no-repeat right 20px bottom 30px}
+.myPage_wrap .myPage_link_item:nth-child(3) em:after{background: #50a0fa}
+.myPage_wrap .myPage_link_item:nth-child(3):hover {border: 1px solid #50a0fa}
+.myPage_wrap .myPage_link_item:nth-child(4) {background: url(../images/myPage_ico04.png) no-repeat right 20px bottom 30px}
+.myPage_wrap .myPage_link_item:nth-child(4) em:after{background: #aac743}
+.myPage_wrap .myPage_link_item:nth-child(4):hover {border: 1px solid #aac743}
+
+/* 마이페이지 > 나의 참여현황*/
+.myPage_attend {margin-top: 40px;}
+.myPage_attend_warp{display: flex;background: #f8f8f8;border-radius: 10px;border:1px solid var(--wbl-color-light-gray-lighten1);padding: 30px;margin-top: 15px}
+.myPage_attend_warp > div {text-align: center;width: 25%;position: relative;border-right: 1px solid var(--wbl-color-light-gray-lighten1)}
+.myPage_attend_warp > div:last-child{border-right: 0}
+.myPage_attend  .num {width: 80px;height: 80px;background: #fff;border-radius: 50%;position: relative;margin: auto;margin-bottom: 10px}
+.myPage_attend  .num span{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);font-size: 30px;font-weight: bold;color: #aa8223;}
+.myPage_attend  .num.disabled span{color: var(--wbl-color-dark-gray-lignten2);}
+
+
+/*지역별 일생활균형지원사업*/
+.lb_sch_wrap {background: #f8f8f8;border: 1px solid var(--wbl-color-light-gray-lighten1);padding: 30px;text-align: center}
+.lb_sch_wrap .select_wrap{display: inline-block;}
+.lb_sch_wrap .select_style {background:  url('../images/select_arrow.png') #fff  no-repeat center right 10px;width: 240px}
+.lb_sch_wrap .lb_sch{margin-top: 20px}
+.lb_sch_wrap .lb_sch .btn_style{padding: 7px 40px;border: 0;}
+
+/*지역별 일생활균형지원사업 리스트목록*/
+.lb_result_wrap .tag{margin:10px 20px; }
+.lb_result_wrap .tag > span {display:inline-block;font-size:var(--wbl-font-sz-ms2);border-radius:15px;padding:1px 13px;font-weight: 500}
+.lb_result_wrap .tag > span.tag_blue{border:1px solid var(--wbl-color-main);color:var(--wbl-color-main);}
+.lb_result_wrap .tag > span.tag_orange{border:1px solid var(--wbl-color-orange);color: var(--wbl-color-orange)}
+.lb_result_wrap .tag > span.tag_pink{border:1px solid #f75083;color: #f75083}
+.lb_result_wrap .tag > span.tag_gray{border:1px solid #848484;color: #848484}
+.lb_result_wrap .tag > span.tag_green{border:1px solid #2f8908;color: #2f8908}
+.lb_result_wrap .tag > span.tag_cyan{border:1px solid #38bab2;color: #38bab2}
+.lb_result_wrap .tag > span.tag_sky{border:1px solid #289bec;color: #289bec}
+.lb_result_wrap .tag > span.tag_purple{border:1px solid #802a90;color: #802a90}
+.lb_result_wrap .condition_result{height: auto !important;min-height: 335px}
+.lb_result_wrap .condition_result .title{width: calc(100% - 50px);}
+.lb_result_wrap .condition_result .lb_txt_wrap{padding: 0 20px 20px;margin-top: 20px;}
+.lb_result_wrap .condition_result .lb_txt_wrap p:only-child {position: absolute;bottom: 20px;width: calc(100% - 40px)}
+.lb_result_wrap .condition_result .lb_txt_wrap p.date{border-top: 1px dashed var(--wbl-color-light-gray-lighten1);margin-top: 20px;padding-top: 20px;}
+.lb_result_wrap .condition_result .color_dark_gray{position: relative;padding-left: 10px}
+.lb_result_wrap .condition_result .color_dark_gray:before{content: '-';position: absolute;left: 0;top: 0px}
+
+
+/*지역별 일생활균형지원사업 > 검색유형 2*/
+.lb_sch_wrap .lb_sch02 > div{margin-bottom: 20px;display: flex;}
+.lb_sch_wrap .lb_sch02 > div {}
+.lb_sch_wrap .lb_sch02 .txt{width: 60px}
+.lb_sch_wrap  .btn_area{width: calc(100% - 80px); margin-left: 20px; }
+.lb_sch_wrap .btn_list{display: flex;flex-wrap: wrap;}
+.check_btn {position: relative}
+.check_btn input[type="checkbox"] {position: absolute;z-index: 300;opacity: 0;top: -20px}
+
+.lb_sch_wrap .btn_list .check_btn{}
+.lb_sch_wrap .btn_list .check_btn label {display: block;text-align: center;color: #BBB;background: #fff;font-size: var(--wbl-font-sz-ms1);color:var(--wbl-color-dark-gray);border:1px solid var( --wbl-color-light-gray-lighten1);padding:10px;}
+.lb_sch_wrap .btn_list .check_btn input:checked + label {background-color: #fff;border:1px solid var(--wbl-color-main);color: var(--wbl-color-main);font-weight: bold;}
+.lb_sch_wrap .btn_list .check_btn input:disabled + label{color: #ccc;cursor: default}
+.lb_sch_wrap .btn_list01 .check_btn {width: 12.5%;padding-right: 5px;margin-bottom: 5px}
+.lb_sch_wrap .btn_list01 .check_btn:nth-child(8n){padding-right: 0;}
+.lb_sch_wrap .btn_list02 .check_btn {width: 25%;padding-right: 5px;margin-bottom: 5px}
+.lb_sch_wrap .btn_list02 .check_btn:nth-child(4n){padding-right: 0}
+
+
+
     /* -------------------- 반응형 시작 --------------------  */
     @media screen and (min-width:1261px) {
     
     }
     
     @media screen and (max-width:1260px) {
+      
+    
         
     /* 서브 메뉴*/
     .main_section .snb_wrap {width: 220px;margin: 0 30px 0 0}
@@ -366,7 +475,14 @@ select.select_style {
     .main_section .condition_result {height: 240px}
     .main_section .condition_result .thumb {height: 130px}    
         
-    
+   .three_result_wrap > .condition_result{height: 225px}
+        
+    /* 지역별 일생활균형지원사업*/  
+   .lb_sch_wrap .btn_list01 .check_btn .num{display: block;}  
+   .lb_sch_wrap .btn_list .check_btn label{padding: 10px 0px}    
+   .lb_result_wrap .tag > span {font-size: 8px;padding: 1px 5px;letter-spacing: -.5px}
+            
+        
     
     
     }
@@ -397,8 +513,35 @@ select.select_style {
     .tab ul > li{padding:15px 10px}    
         
     /* 워라밸정보 > 목록 */    
-        .main_section .info_recom_cont .condition_result {height: 280px}
+    .main_section .info_recom_cont .condition_result {height: 280px}
         
+    /* 웹진 목록*/
+    .wz_header_box{background-size: 400px}    
+    .condition_result_wrap.three_result_wrap .condition_result {width: calc(33.333% - 12px) !important}
+        
+        
+    /* 마이페이지 */
+    .myPage_wrap .myPage_link_item{width: calc(50% - 7.5px);margin-left: 15px}
+    .myPage_wrap .myPage_link_item:nth-child(3n) {margin-left:0; }
+    .myPage_wrap .myPage_link_item:nth-child(1), 
+    .myPage_wrap .myPage_link_item:nth-child(2){margin-bottom: 15px} 
+        
+    /* 마이페이지 > 나의 참여현황 */
+    .myPage_attend .num{width: 60px;height: 60px}   
+    .myPage_attend .num span{font-size:22px }    
+        
+    /*지역별 일생활균형지원사업*/    
+    .lb_sch_wrap .select_wrap{width: calc(100% - 115px)}    
+    .lb_sch_wrap .select_wrap > select {width: calc(50% - 5px)}
+   
+    .lb_sch_wrap .lb_sch02 > div{display: block;}    
+   .lb_sch_wrap .btn_area{width: 100%;margin-left: 0;margin-top: 15px}
+   .lb_sch_wrap .btn_list01 .check_btn{width: 16.666%} 
+   .lb_sch_wrap .btn_list01 .check_btn:nth-child(8n){padding-right: 5px} 
+   .lb_sch_wrap .btn_list01 .check_btn:nth-child(6n){padding-right: 0} 
+        
+        
+     .myPage_attend_warp  .txt {word-break: keep-all}
     }
     
     
@@ -458,6 +601,40 @@ select.select_style {
     .info_recom .tbtn_slider .swiper-button-next3, .info_recom .tbtn_slider .swiper-button-prev3 {width: 25px;height: 25px;background-size: 5px}
     .info_recom .info_recom_cont .swiper-container {padding-top: 35px}
         
+   /* 웹진 목록 */
+   .condition_result_wrap.three_result_wrap > .condition_result{width: calc(50% - 11px) !important}    
+   .condition_result_wrap.three_result_wrap > .condition_result:nth-child(2) {margin-right: 0px }        
+   .condition_result_wrap.three_result_wrap > .condition_result:nth-child(3n) {margin-right: 15px }    
+
+    
+    /* 마이페이지  */    
+    .myPage_wrap .myPage_header .left {width: calc(100% - 250px)}
+    .myPage_header #myChart {width: 250px !important}
+        
+    /* 마이페이지 > 나의 참여현황 */
+    .myPage_attend_warp{flex-wrap: wrap}
+    .myPage_attend_warp > div {width: 33.333%}
+    .myPage_attend_warp > div:nth-child(4),
+    .myPage_attend_warp > div:nth-child(5) {margin-top: 25px}
+    .myPage_attend_warp > div{border-right: 0}
+        
+     /*지역별 일생활균형지원사업*/    
+    .lb_sch_wrap .select_wrap{width: calc(100% - 80px)}    
+    .lb_sch_wrap .select_wrap > select {width: calc(50% - 5px)}
+    .lb_sch_wrap .lb_sch .btn_style {width: 75px;padding: 7px;}          
+    .lb_result_wrap .condition_result  .title{height: 1.4em;display: block; white-space: nowrap;}    
+    .lb_result_wrap .condition_result{padding-bottom: 0 !important}    
+        
+        
+   .lb_sch_wrap .btn_list01 .check_btn{width: 20%} 
+   .lb_sch_wrap .btn_list01 .check_btn:nth-child(5n){padding-right: 0} 
+   .lb_sch_wrap .btn_list01 .check_btn:nth-child(6n){padding-right: 5px} 
+    .lb_sch_wrap .btn_list01 .check_btn .num {display: inline-block}      
+        
+    /* 게시판 필터 검색창X */    
+    .ft_no_sch.fiter_top  .sel_area{float: right;width: auto}  
+    .ft_no_sch.fiter_top .fiter_list{float: left;width: auto;padding-top: 5px}    
+        
     }
     
     @media screen and (max-width:640px) {
@@ -499,4 +676,54 @@ select.select_style {
     /* 정보창고 > 워라밸 정보*/
      .fiter_top .list_search {max-width: 221px;width: calc(100% - 90px);padding: 7px 5px;height: 35px}
      .fiter_top .list_search input[type=text] {width: calc(100% - 30px)}
+        
+    /* 웹진 목록 */
+    .wz_header_box{background-size: 220px;padding-bottom: 70px}       
+   .condition_result_wrap.three_result_wrap > .condition_result{width: 100% !important;height: 260px}    
+   .condition_result_wrap.three_result_wrap > .condition_result:nth-child(2) {margin-right: 0px }        
+   .condition_result_wrap.three_result_wrap > .condition_result:nth-child(3n) {margin-right: 15px }    
+        
+    
+    /* 마이페이지  */    
+     .myPage_wrap .myPage_header  {display: block;text-align: center;padding: 30px 20px}
+    .myPage_wrap .myPage_header .left {width:100%;word-break: keep-all}
+     .myPage_wrap .myPage_header .left  br {display: none}
+    .myPage_wrap .myPage_header .right {max-width: 250px;margin: auto;margin-bottom: 20px}
+    .myPage_header #myChart{width: auto !important;margin: auto}
+        
+    /* 마이페이지 > 링크 */    
+    .myPage_wrap .myPage_link_item {width: calc(50% - 5px);margin-left: 10px;}  
+    .myPage_wrap .myPage_link_item br{display: none}
+    .myPage_wrap .myPage_link_item:nth-child(1),    
+    .myPage_wrap .myPage_link_item:nth-child(2){margin-bottom: 10px}    
+    .myPage_wrap .myPage_link_item a{padding: 20px 15px 60px 15px;}
+    .myPage_wrap .myPage_link_item:nth-child(1) {background-size: 20px}
+    .myPage_wrap .myPage_link_item:nth-child(2) {background-size: 23px}
+    .myPage_wrap .myPage_link_item:nth-child(3) {background-size: 24px}
+    .myPage_wrap .myPage_link_item:nth-child(4) {background-size: 24px}
+        
+    /* 마이페이지 > 참여현황*/    
+    .myPage_attend_warp > div{width: 50%}    
+    .myPage_attend_warp > div:nth-child(3){margin-top: 25px}    
+        
+    /*지역별 일생활균형지원사업*/    
+     .lb_sch_wrap{padding: 20px}    
+    .lb_sch_wrap .select_wrap{width: 100%;}    
+    .lb_sch_wrap .select_wrap > select {width: calc(50% - 2px)}
+    .lb_sch_wrap .lb_sch .btn_style {width: 100%;padding: 7px;margin-top: 10px}     
+        
+        
+     /* 지역별 일생활균형지원사업*/  
+   .lb_sch_wrap .btn_list01 .check_btn{width: 33.333%} 
+   .lb_sch_wrap .btn_list .check_btn label{padding: 10px 5px}
+   .lb_sch_wrap .btn_list01 .check_btn:nth-child(3n){padding-right: 0 !important} 
+   .lb_sch_wrap .btn_list01 .check_btn:nth-child(5n){padding-right: 5px}   
+   .lb_sch_wrap .btn_list02 .check_btn{width: 50%}    
+   .lb_sch_wrap .btn_list02 .check_btn:nth-child(2n){padding-right: 0}
+        
+        
+     .btn_long {padding: 10px 40px;width: 100%}    
+        
+        
+
     }

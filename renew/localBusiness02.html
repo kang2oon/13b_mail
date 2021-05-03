@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <title>워라밸링크</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/kgoon.reset.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/sub.css" />
+    <!-- ie css 변수적용 -->
+    <script>
+        window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');
+    </script>
+</head>
+
+<body>
+    <div class="container fluid skip_navi">
+        <a href="#content">본문 바로가기</a>
+    </div>
+    <div id="header" class="container pd0 fluid clearfix">
+        <div id="header_wrap">
+            <div class="container clearfix">
+                <h1><a href="/renew/"><img src="assets/images/logo_header.png" alt="경기도 워라밸 링크" /></a></h1>
+                <div id="gnb_wrap" class="fleft">
+                    <div class="hb_menu" tabindex="0">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <ul id="gnb" class="clearfix">
+                        <li><a href="javascript:void(0);" class="on">워라밸 +</a></li>
+                        <li><a href="javascript:void(0);">아동돌봄플랫폼</a></li>
+                        <li><a href="javascript:void(0);">우리회사 +</a></li>
+                        <li><a href="javascript:void(0);">우리동네 +</a></li>
+                        <li><a href="javascript:void(0);">정보창고</a></li>
+                        <li><a href="javascript:void(0);">참여/소통</a></li>
+                    </ul>
+                </div>
+                <div class="search_wrap clearfix">
+                    <input type="text" placeholder="검색어를 입력해주세요." />
+                    <input type="submit" value="검색" />
+                </div>
+                <ul id="tnb" class="clearfix">
+                    <li><a href="javascript:void(0);">로그인</a></li>
+                    <li><a href="javascript:void(0);">회원가입</a></li>
+                    <li><a href="javascript:void(0);">고객센터</a></li>
+                </ul>
+                <ul id="mnb" class="clesrfix">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i></i>
+                            마이페이지
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i></i>
+                            맞춤정보
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i>
+                                <div>2</div>
+                            </i>
+                            관심정보
+                        </a>
+                    </li>
+                </ul>
+                <ul id="pop_tag" class="clearfix">
+                    <li><a href="javascript:void(0);">국민취업지원제도</a></li>
+                    <li><a href="javascript:void(0);">아동돌봄플랫폼</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 사이트맵 -->
+        <div class="menu_site mb_ms pop_ns" tabindex="0">
+            <div class="shadow"></div>
+            <div class="ms_inner">
+                <div class="ms_top clearfix">
+                    <h2>사이트맵</h2>
+                </div>
+                <div class="pc_hide">
+                    <ul class="mb_log clearfix">
+                        <li class="login_btn"><a href="#">로그인</a></li>
+                        <li class="join_btn"><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+                <div class="pc_hide">
+                    <div class="bnr_mb"></div>
+                </div>
+                <ul id="siteMap" class="menu_wrap clearfix"></ul>
+                <a href="#" class="close bnt_close">닫기</a>
+            </div>
+        </div>
+        <!-- //사이트맵 -->
+        <div class="mega_wrap">
+            <div class="shadow"></div>
+            <div class="mega_menu">
+                <div class="container clearfix">
+                    <ul id="gnbMega" class="menu_wrap clearfix"></ul>
+                    <div class="bnr_mega"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--  서브페이지  -->
+    <div id="content">
+        <!-- container -->
+        <div class="container">
+            <!-- main_section -->
+            <div class="main_section">
+                <!-- 서브메뉴 -->
+                <div class="snb_wrap">
+                    <h2>우리동네 +</h2>
+                    <div class="snb_search clearfix">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <input type="submit" value="검색">
+                    </div>
+                    <ul id="snb">
+                        <li class="on">
+                            <a href="#">지역별 일생활균형지원사업</a>
+                        </li>
+                        <li>
+                            <a href="#">우리동네 가사서비스 기관</a>
+                        </li>
+                    </ul>
+
+                    <!-- 서브 메뉴 배너-->
+                    <div class="sub_banner">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./assets/images/sub_banner01.png" alt="경기아이사랑 부모학교 동아리 지원사업">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./assets/images/sub_banner01.png" alt="경기아이사랑 부모학교 동아리 지원사업">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./assets/images/sub_banner01.png" alt="경기아이사랑 부모학교 동아리 지원사업">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./assets/images/sub_banner01.png" alt="경기아이사랑 부모학교 동아리 지원사업">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="page_function container clearfix">
+                                <div class="sb-swiper-pagination"></div>
+                                <div class="autoplay play hide"><i></i></div>
+                                <div class="autoplay stop"><i></i></div>
+                            </div>
+                        </div>
+
+                    </div><!-- //서브 메뉴 배너-->
+                </div>
+                <!-- // 서브메뉴 -->
+
+                <!-- 서브 콘텐츠 영역-->
+                <div class="sub_cont_wrap">
+                    <h3 class="sub_tit">지역별 일생활균형지원사업</h3>
+
+                    <div class="lb_sch_wrap">
+                        <div class="lb_sch02">
+                            <div>
+                                <div class="txt">
+                                    <p class="f16 bold">관심지역</p>
+                                </div>
+                                <!--btn_area-->
+                                <div class="btn_area">
+                                    <div class="btn_list btn_list01">
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="all" name="all" />
+                                            <label for="all">전체<span class="num">(105)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox"  id="suwon" name="suwon" />
+                                            <label for="suwon">수원시<span class="num">(7)</span></label>
+                                        </div>
+                                        
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="seongnam" name="seongnam" />
+                                            <label for="seongnam">성남시<span class="num">(9)</span></label>
+                                        </div>
+                                        
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="goyang" name="goyang" />
+                                            <label for="goyang">고양시<span class="num">(6)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="yongin" name="yongin" />
+                                            <label for="yongin">용인시<span class="num">(2)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="bucheon" name="bucheon" />
+                                            <label for="bucheon">부천시<span class="num">(8)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="ansan" name="ansan" />
+                                            <label for="ansan">안산시<span class="num">(11)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="ansan" name="ansan" />
+                                            <label for="ansan">안양시<span class="num">(18)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="namyangju" name="namyangju" />
+                                            <label for="namyangju">남양주시<span class="num">(1)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="hwaseong" name="hwaseong"  disabled/>
+                                            <label for="hwaseong">화성시<span class="num">(0)</span></label>
+                                        </div>
+                                         <div class="check_btn">
+                                            <input type="checkbox" id="uijeongbu" name="uijeongbu"  disabled/>
+                                            <label for="uijeongbu">의정부시<span class="num">(0)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="siheung" name="siheung" />
+                                            <label for="siheung">시흥시<span class="num">(3)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="pyeongtaeg" name="pyeongtaeg" />
+                                            <label for="pyeongtaeg">평택시<span class="num">(5)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="gwangmyeong" name="gwangmyeong" />
+                                            <label for="gwangmyeong">광명시<span class="num">(7)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="paju" name="paju">
+                                            <label for="paju">파주시<span class="num">(9)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="gunpo" name="gunpo" />
+                                            <label for="gunpo">군포시<span class="num">(9)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="gwangju" name="gwangju" />
+                                            <label for="gwangju">광주시<span class="num">(9)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="gimpo" name="gimpo" />
+                                            <label for="gimpo">김포시<span class="num">(1)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="icheon" name="icheon"  disabled />
+                                            <label for="icheon">이천시<span class="num">(0)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="yangju" name="yangju" />
+                                            <label for="yangju">양주시<span class="num">(10)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="guli" name="guli">
+                                            <label for="guli">구리시<span class="num">(9)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="osan" name="osan" />
+                                            <label for="osan">오산시<span class="num">(1)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="anseong" name="anseong" />
+                                            <label for="anseong">안성시<span class="num">(1)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="uiwang" name="uiwang"  disabled />
+                                            <label for="uiwang">의왕시<span class="num">(0)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="hanam" name="hanam" />
+                                            <label for="hanam">하남시<span class="num">(4)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="pocheon" name="pocheon" disabled>
+                                            <label for="pocheon">포천시<span class="num">(0)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="dongducheon" name="dongducheon" />
+                                            <label for="dongducheon">동두천시<span class="num">(2)</span></label>
+                                        </div>
+                                         <div class="check_btn">
+                                            <input type="checkbox" id="gwacheon" name="gwacheon" />
+                                            <label for="gwacheon">과천시<span class="num">(3)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="yeoju" name="yeoju" />
+                                            <label for="yeoju">여주시<span class="num">(9)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="yangpyeong" name="yangpyeong" />
+                                            <label for="yangpyeong">양평군<span class="num">(2)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="gapyeong" name="gapyeong" />
+                                            <label for="gapyeong">가평군<span class="num">(16)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="yeoncheon" name="yeoncheon"  disabled />
+                                            <label for="yeoncheon">연천군<span class="num">(0)</span></label>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                                <!--//btn_area-->
+
+                            </div>
+                            <div>
+                                <div class="txt">
+                                    <p class="f16 bold">사업유형</p>
+                                </div>
+                                <!--btn_area-->
+                                <div class="btn_area">
+                                    <div class="btn_list btn_list02">
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="all2" name="all2" />
+                                            <label for="all2">전체<span class="num">(105)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="service" name="service" />
+                                            <label for="service">직접서비스<span class="num">(22)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="consult" name="consult" />
+                                            <label for="consult">상담<span class="num">(18)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="education" name="education" />
+                                            <label for="education">교육<span class="num">(40)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="campaign" name="campaign" />
+                                            <label for="campaign">캠페인<span class="num">(40)</span></label>
+                                        </div>
+                                        <div class="check_btn">
+                                            <input type="checkbox" id="event" name="event" />
+                                            <label for="event">문화행사<span class="num">(10)</span></label>
+                                        </div>
+                                         <div class="check_btn">
+                                            <input type="checkbox" id="consulting" name="consulting" />
+                                            <label for="consulting">컨설팅<span class="num">(10)</span></label>
+                                        </div>
+                                         <div class="check_btn">
+                                            <input type="checkbox" id="etc" name="etc" />
+                                            <label for="etc">기타<span class="num">(10)</span></label>
+                                        </div>
+                                     
+                                        
+                                        
+                                    </div>
+                                </div>
+                                <!--//btn_area-->
+                                
+
+                            </div>
+                            
+                                <hr class="gray_line mt30">
+                            
+                        </div>
+                           <div class="tct mt30">
+                                    <input type="submit" value="검색하기" class="btn_style blue_btn btn_long">
+                                </div>
+                    </div>
+                    
+
+                    <hr class="bold_line mt40">
+
+                    <!-- 필터 -->
+                    <div class="fiter_top ft_no_sch clearfix">
+                        <div class="sel_area clearfix">
+                            <div class="post_count">
+                                <select class="select_style">
+                                    <option>20개씩</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <ul class="fiter_list clearfix">
+                            <li class="on">
+                                <a href="#">최신순</a>
+                            </li>
+                            <li>
+                                <a href="#">인기순</a>
+                            </li>
+                             <li>
+                                <a href="#">관심정보</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- //필터 -->
+
+
+                    <hr class="gray_line">
+
+
+                    <!--   latest_contents   -->
+                    <div class="latest_contents mt15">
+                        <!-- 갤러리형 리스트 목록 -->
+                        <div class="condition_result_wrap lb_result_wrap">
+
+                            <div class="condition_result">
+                                <div class="thumb imgFill">
+                                    <img src="./assets/images/@fml_thumb1.png">
+                                </div>
+                                <div class="like_btn"></div>
+                                <div class="cs_btn">
+                                    <ul class="clearfix">
+                                        <li class="like"><a href="#none">찜하기</a></li>
+                                        <li class="view"><a href="#none">자세히보기</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tag">
+                                    <span class="tag_blue">안양시</span>
+                                    <span class="tag_orange">교육</span>
+                                </div>
+
+                                <div class="title">맞벌이가정일가정
+                                    양립지원</div>
+                                <div class="lb_txt_wrap">
+                                    <p class="txt f14 color_dark_gray">마음근육 키우기
+                                    </p>
+                                   
+                                    <p class="date f14">3월20일~4월3일(매주 토)
+                                    </p>
+                                </div>
+
+                            </div>
+                            
+                            <div class="condition_result">
+                                <div class="thumb imgFill">
+                                    <img src="./assets/images/@fml_thumb1.png">
+                                </div>
+                                <div class="like_btn on"></div>
+                                <div class="cs_btn">
+                                    <ul class="clearfix">
+                                        <li class="like"><a href="#none">찜하기</a></li>
+                                        <li class="view"><a href="#none">자세히보기</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tag">
+                                    <span class="tag_blue">안양시</span>
+                                    <span class="tag_pink">문화</span>
+                                </div>
+
+                                <div class="title">맞벌이가정일가정
+                                    양립지원</div>
+                                <div class="lb_txt_wrap">
+                                    <p class="txt f14 color_dark_gray">마음근육 키우기
+                                    </p>
+                                    <p class="date f14">3월20일~4월3일(매주 토)
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="condition_result">
+                                <div class="thumb imgFill">
+                                    <img src="./assets/images/@fml_thumb1.png">
+                                </div>
+                                <div class="like_btn"></div>
+                                <div class="cs_btn">
+                                    <ul class="clearfix">
+                                        <li class="like"><a href="#none">찜하기</a></li>
+                                        <li class="view"><a href="#none">자세히보기</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tag">
+                                    <span class="tag_blue">안양시</span>
+                                    <span class="tag_gray">기타</span>
+                                </div>
+
+                                <div class="title">맞벌이가정일가정
+                                    양립지원</div>
+                                <div class="lb_txt_wrap">
+                                    <p class="txt f14 color_dark_gray">마음근육 키우기
+                                    </p>
+                                    <p class="date f14">3월20일~4월3일(매주 토)
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="condition_result">
+                                <div class="thumb imgFill">
+                                    <img src="./assets/images/@fml_thumb1.png">
+                                </div>
+                                <div class="like_btn on"></div>
+                                <div class="cs_btn">
+                                    <ul class="clearfix">
+                                        <li class="like"><a href="#none">찜하기</a></li>
+                                        <li class="view"><a href="#none">자세히보기</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tag">
+                                    <span class="tag_blue">안양시</span>
+                                    <span class="tag_green">상담</span>
+                                </div>
+
+                                <div class="title">맞벌이가정일가정
+                                    양립지원 맞벌이가정일가정
+                                    양립지원</div>
+                                <div class="lb_txt_wrap">
+                                    <p class="txt f14 color_dark_gray">마음근육 키우기
+                                    </p>
+                                    <p class="date f14">3월20일~4월3일(매주 토)
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="condition_result">
+                                <div class="thumb imgFill">
+                                    <img src="./assets/images/@fml_thumb1.png">
+                                </div>
+                                <div class="like_btn on"></div>
+                                <div class="cs_btn">
+                                    <ul class="clearfix">
+                                        <li class="like"><a href="#none">찜하기</a></li>
+                                        <li class="view"><a href="#none">자세히보기</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tag">
+                                    <span class="tag_blue">안양시</span>
+                                    <span class="tag_cyan">직접서비스</span>
+                                </div>
+
+                                <div class="title">맞벌이가정일가정
+                                    양립지원</div>
+                                <div class="lb_txt_wrap">
+                                    <p class="date f14">3월20일~4월3일(매주 토)
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="condition_result">
+                                <div class="thumb imgFill">
+                                    <img src="./assets/images/@fml_thumb1.png">
+                                </div>
+                                <div class="like_btn"></div>
+                                <div class="cs_btn">
+                                    <ul class="clearfix">
+                                        <li class="like"><a href="#none">찜하기</a></li>
+                                        <li class="view"><a href="#none">자세히보기</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tag">
+                                    <span class="tag_blue">안양시</span>
+                                    <span class="tag_sky">캠페인</span>
+                                </div>
+
+                                <div class="title">한부모가족통합지원사업
+</div>
+                                <div class="lb_txt_wrap">
+                                    <p class="date f14">3월20일~4월3일(매주 토)
+                                    </p>
+                                </div>
+                            </div>
+                            
+                             <div class="condition_result">
+                                <div class="thumb imgFill">
+                                    <img src="./assets/images/@fml_thumb1.png">
+                                </div>
+                                <div class="like_btn"></div>
+                                <div class="cs_btn">
+                                    <ul class="clearfix">
+                                        <li class="like"><a href="#none">찜하기</a></li>
+                                        <li class="view"><a href="#none">자세히보기</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tag">
+                                    <span class="tag_blue">안양시</span>
+                                    <span class="tag_sky">캠페인</span>
+                                </div>
+
+                                <div class="title">맞벌이가정일가정
+                                    양립지원</div>
+                                <div class="lb_txt_wrap">
+                                    <p class="date f14">3월20일~4월3일(매주 토)
+                                    </p>
+                                </div>
+                            </div>
+                            
+                             <div class="condition_result">
+                                <div class="thumb imgFill">
+                                    <img src="./assets/images/@fml_thumb1.png">
+                                </div>
+                                <div class="like_btn on"></div>
+                                <div class="cs_btn">
+                                    <ul class="clearfix">
+                                        <li class="like"><a href="#none">찜하기</a></li>
+                                        <li class="view"><a href="#none">자세히보기</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tag">
+                                    <span class="tag_blue">안양시</span>
+                                    <span class="tag_purple">컨설팅</span>
+                                </div>
+
+                                <div class="title">맞벌이가정일가정
+                                    양립지원</div>
+                                <div class="lb_txt_wrap">
+                                    <p class="date f14">3월20일~4월3일(매주 토)
+                                    </p>
+                                </div>
+                            </div>
+                            
+
+
+                        </div>
+                        <!-- //갤러리형 리스트 목록 -->
+                        <hr class="gray_line mt40">
+                        <!-- 페이징 -->
+                        <div class="paginate mt50">
+                            <div class="mo_paging">
+                                <button class="prev">이전</button>
+                                <p class="active_txt"><span class="cut">1</span> / <span>43</span></p><button class="next">다음</button>
+                            </div>
+                            <div class="paginate_list">
+                                <a href="#" class="first_paging">첫번째 페이지로 이동</a>
+                                <a href="#" class="prev_paging">이전 페이지로 이동</a>
+                                <a href="#" class="list_paging active">1</a>
+                                <a href="#" class="list_paging">2</a>
+                                <a href="#" class="list_paging">3</a>
+                                <a href="#" class="list_paging">4</a>
+                                <a href="#" class="list_paging">5</a>
+                                <a href="#" class="list_paging">6</a>
+                                <a href="#" class="list_paging">7</a>
+                                <a href="#" class="list_paging">8</a>
+                                <a href="#" class="list_paging">9</a>
+                                <a href="#" class="list_paging">10</a>
+                                <a href="#" class="next_paging">다음 페이지로 이동</a>
+                                <a href="#" class="end_paging">다음 페이지로 이동</a>
+                            </div>
+
+                        </div> <!-- //페이징 -->
+
+                    </div><!-- //latest_contents -->
+
+                </div> <!-- //서브 콘텐츠 영역-->
+
+            </div><!-- //main_section -->
+
+        </div><!-- //container -->
+
+    </div><!-- //content -->
+    <!--  //서브페이지  -->
+
+    <div id="footer" class="fluid">
+        <div id="fnb_wrap">
+            <div class="container clearfix">
+                <ul id="fnb" class="clearfix">
+                    <li><a href="javascript:void(0);">워라밸링크 소개</a></li>
+                    <li><a href="javascript:void(0);">이용약관</a></li>
+                    <li class="private"><a href="javascript:void(0);">개인정보처리방침</a></li>
+                    <li><a href="javascript:void(0);">API이용신청</a></li>
+                    <li><a href="javascript:void(0);">사용자 가이드</a></li>
+                </ul>
+                <select class="family_site">
+                    <option>패밀리 사이트 바로가기</option>
+                    <option value="https://www.gg.go.kr/">경기도</option>
+                    <option value="https://www.gjf.or.kr/">경기도일자리재단</option>
+                    <option value="https://apply.jobaba.net/">통합접수시스템</option>
+                    <option value="https://www.jobaba.net/">잡아바</option>
+                    <option value="https://www.dream.go.kr/">꿈날개</option>
+                    <option value="https://www.dreammaru.or.kr//">꿈마루</option>
+                    <option value="https://www.gjf.or.kr/gti/index.do">경기도 기술학교</option>
+                </select>
+            </div>
+        </div>
+        <div class="copy_wrap container clearfix">
+            <div class="copy clearfix">
+                <div class="cscenter">경기도워라밸링크 문의 안내 1599-7235</div>
+                <div class="clearfix">
+                    <div class="work_time">
+                        평일 09:00 ~ 18:00<br />
+                        <span>토,일요일 및 법정공휴일 휴무</span>
+                    </div>
+                    <div class="address">
+                        주소 : 경기도청 16444 수원시 팔달구 효원로 1 (매산호3가) / 북부청사 11780 의정부시 청사로 1<br />
+                        <span>&copy;GYEONGGI PRIVINCE All Rights Reserved.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="catchphrase">
+                <img src="assets/images/img_catchphrase.png" alt="새로운 경기, 공정한 세상" />
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+    <script>
+        var value = 75;
+        var data = {
+            labels: [
+                "회원정보 완성도",
+                ""
+            ],
+            datasets: [{
+                data: [value, 100 - value],
+                backgroundColor: [
+                    "#ff3f07",
+                    "#ffffff"
+                ],
+                hoverBackgroundColor: [
+                    "#ff3f07",
+                    "#ffffff"
+                ],
+                borderColor: [
+                    "#ff3f07",
+                    "#ffffff"
+                ],
+            }]
+        };
+
+        var myChart = new Chart(document.getElementById('myChart'), {
+            type: 'doughnut',
+            data: data,
+            options: {
+                responsive: true,
+                legend: {
+                    display: false
+                },
+                cutoutPercentage: 80,
+                tooltips: {
+                    enabled: false,
+                    mode: 'single',
+                }
+            }
+        });
+
+        textCenter(value);
+
+        function textCenter(val) {
+            Chart.pluginService.register({
+                beforeDraw: function(chart) {
+                    var width = chart.chart.width,
+                        height = chart.chart.height,
+                        ctx = chart.chart.ctx;
+
+                    ctx.restore();
+                    var fontSize = (height / 95).toFixed(2);
+                    ctx.font = fontSize + "em sans-serif";
+                    ctx.textBaseline = "middle";
+
+                    var text = val + "%",
+                        textX = Math.round((width - ctx.measureText(text).width) / 2),
+                        textY = height / 2;
+
+                    ctx.fillText(text, textX, textY);
+                    ctx.save();
+                }
+            });
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgLiquid-min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <!--차트-->
+
+</body></html>
