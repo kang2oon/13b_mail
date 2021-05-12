@@ -71,7 +71,7 @@ p {word-break: keep-all}
 
 /* 워라밸 자가진단서비스 8 진단요인 */
 #tm05 .tm05_section02 {background:#10153f; }
-#tm05 .tm05_section02  .pink_tit{color: #fff;background: #ff4f7d;display: inline-block;padding: 5px 20px;border-radius: 10px}
+#tm05 .tm05_section02  .pink_tit{color: #fff;background: #ff4f7d;display: inline-block;padding: 5px 20px;border-radius: 10px;margin-bottom: 0}
 
 /*워라밸 자가진단서비스 8 진단요인 slider*/
 #tm05 .tm05_section02 {padding: 60px 0}
