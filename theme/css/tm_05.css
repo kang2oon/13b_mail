@@ -1,0 +1,238 @@
+*{font-family: 'Noto Sans KR', sans-serif;box-sizing:border-box;}
+html,body{position:relative;width:100%;height:100%;margin:0;padding:0;color: #333;}
+.clearfix:before,.clearfix:after{content:"";display:block}.clearfix:after{clear:both;visibility:hidden;line-height:0;height:0}.clearfix{*zoom:1}
+img{max-width:100%;line-height:0;}
+ul,ol,li{list-style:none;margin:0;padding:0;}
+a{text-decoration:none;color:inherit;}
+.fleft{float:left;}
+.fright{float:right;}
+.hidden {overflow: hidden}
+p {word-break: keep-all}
+.br{}
+
+
+#tm05 .blue {color: #03478d}
+.bold {font-weight: 600}
+.bold2 {font-weight: 500}
+.tct {text-align: center}
+.tlt {text-align: left}
+.trt {text-align: right}
+.full {width: 100% !important;max-width: 100% !important}
+
+/* 폰트 컬러 */
+.white {color: #fff}
+.red {color: #f93e13}
+.dark_gray {color: #666}
+.yellow {color: #f6ff00}
+.pink {color: #ff4f7d}
+.white_bg {background: #fff;display: inline;padding: 2px 5px;}
+
+* {margin: 0;padding: 0}
+
+/*폰트 사이즈*/
+.f30 {font-size: 30px}
+.f24 {font-size: 24px}
+.f22 {font-size: 22px}
+.f20 {font-size: 20px}
+.f18 {font-size: 18px}
+.f16 {font-size: 16px}
+.f15 {font-size: 15px}
+
+/* 마진 */
+.mt0 {margin-top: 0}
+.mt5 {margin-top: 5px}
+.mt10 {margin-top: 10px}
+.mt20 {margin-top: 20px}
+.mt30 {margin-top: 30px}
+.mt40 {margin-top: 40px}
+.mt50 {margin-top: 50px}
+.mt60 {margin-top: 60px}
+.mt70 {margin-top: 70px}
+.mb40 {margin-bottom: 40px;}
+.mb0 {margin-bottom: 0 !important}
+.mb10 {margin-bottom: 10px}
+.mb20 {margin-bottom: 20px}
+.mb30 {margin-bottom: 30px}
+.gray_bg {background: #f5f5f5;padding: 50px 0}
+.gray_line {border-top: 1px dashed #f0f0f0;margin: 40px 0}
+.tct {text-align: center;}
+
+
+.container{position:relative;width:1080px;margin:0 auto;font-size:16px;}
+.container.fluid{width:100%;}
+
+/* tm05 시작*/
+/* 테마5호 상단*/
+#tm05 .tm05_top{background: url(../images/tm_05/tm05_bg.png) center;padding-top:60px;text-align: center}
+#tm05 .tm05_top .img_tit {display: block;margin: auto;padding-bottom: 20px}
+#tm05 .tm05_top span{border-bottom: 1px solid;padding-bottom: 1px}
+#tm05 .tm05_top strong{display: inline-block;} 
+#tm05 .tm05TopImg{display: block;margin: auto;padding-top: 50px}
+
+/* 워라밸 자가진단서비스 8 진단요인 */
+#tm05 .tm05_section02 {background:#10153f; }
+#tm05 .tm05_section02  .pink_tit{color: #fff;background: #ff4f7d;display: inline-block;padding: 5px 20px;border-radius: 10px}
+
+/*워라밸 자가진단서비스 8 진단요인 slider*/
+#tm05 .tm05_section02 {padding: 60px 0}
+#tm05 .sw1_wrap {position: relative;}
+#tm05 .tm05_section02 .swiper-container{position: relative;}
+#tm05 .tm05_section02 .swiper-slide{}
+#tm05 .tm05_section02 .swiper-slide .sl_img{border: 2px solid #d6d6d6;border-radius: 5px;overflow: hidden;width: 620px;margin: auto} 
+#tm05 .tm05_section02 .swiper-slide .sl_img img {display: block;width: 100%;height: 100%;margin: 0;padding: 0}
+#tm05 .tm05_section02 .btn_slider{position: absolute;left: 0;top: 0; height: 337px;width: 100%;}
+#tm05 .swiper-button-prev:after{display: none}
+#tm05 .swiper-button-next:after{display: none}
+#tm05 .swiper-button-prev{background: url(../images/tm_05/arrow_prev.png) no-repeat;width: 24px;height: 45px;position: absolute;left: 100px;top: 50%;transform: translateY(-50%);margin-top: 0}
+#tm05 .swiper-button-next{background: url(../images/tm_05/arrow_next.png) no-repeat;width: 25px;height: 45px;position: absolute;right: 100px;top: 50%;transform: translateY(-50%);margin-top: 0}
+#tm05 .sl_txt {padding-top: 20px}
+
+/* 진단 TIP */
+#tm05 .tm05_section03 {padding: 60px 0;}
+#tm05 .bar_list {}
+#tm05 .bar_list li{position: relative;padding-left: 10px;margin-top: 5px}
+#tm05 .bar_list li:first-child{margin-top: 0}
+#tm05 .bar_list li:before{content: '-';position: absolute;left: 0;top: .1em}
+#tm05 .tm05_section03 .blue_box {background: #f5fdff;border:2px solid #b7d5e4;padding: 40px 30px;border-radius: 10px; }
+#tm05 .tm05_section03 .result_wrap{position: relative;}
+#tm05 .tm05_section03 .chart_warp{display: flex;width: calc(100% - 150px);}
+#tm05 .tm05_section03 .chart_warp div:first-child {margin-right: 100px}
+#tm05 .tm05_section03 .chart_warp div{margin-top: auto}
+#tm05 .tm05_section03 .btn_wrap a{font-size: 18px;font-weight: bold;color: #fff;background:#ff4f7d;display: block;width: 130px;height: 130px;border-radius: 50%;position: absolute;bottom: 0px;right: 0px}
+#tm05 .tm05_section03 .btn_wrap a span{position: absolute;top: 50%;left: 0;transform: translate(0,-50%);text-align: center;width: 100%;}
+
+#tm05 .service_list h3{font-size:22px;color:#2a2e38;margin:0 auto 45px;}
+#tm05 .service_list h3 span{color:#4d4d4d;font-weight:400;}
+#tm05 .service_list ul{display:flex;flex-wrap:wrap;}
+#tm05 .service_list ul li{flex:1 1 30%;margin-bottom:60px;cursor:pointer;}
+#tm05 .service_list ul li > div{position:relative;width:250px;height:100%;margin:0 auto;padding-bottom:46px;text-align:left;font-size:15px;font-weight:300;color:#777;letter-spacing:-.5px;}
+#tm05 .service_list ul li .thumb{border-radius:5px;line-height:0;overflow:hidden;}
+#tm05 .service_list ul li h4{color:#606060;font-size:18px;margin:25px 0 15px;}
+#tm05 .service_list ul li .goto{position:absolute;bottom:0;}
+
+
+/* 워라밸 지수 향상 솔루션 */
+.tm05_solution_wrap{display: flex;}
+.tm05_solution_wrap > div{flex: 1;padding-right: 20px}
+.tm05_solution_wrap > div:last-child{padding-right: 0}
+#tm05 .img {border: 2px solid #d6d6d6;border-radius: 5px;overflow: hidden;width: 100%;;margin: auto}
+#tm05  .img img {display: block;width: 100%;height: 100%;margin: 0;padding: 0}
+.tm05_solution_wrap .f18{margin: 15px 0}
+.tm05_solution_wrap a:hover .f16,
+.tm05_solution_wrap a:active .f16,
+.tm05_solution_wrap a:focus .f16{text-decoration: underline}
+
+/* 워라밸 지수 정보 모음*/
+.tm05_section04 {background: #2c2c33;padding: 60px 0;color: #fff}
+.tm05_section04  .tabs{text-align: center;}
+.tm05_section04  .tabs li {display: inline-block;background: #eee;padding: 10px 25px;border-radius: 10px;margin-right:5px}
+.tm05_section04  .tabs li:last-child{margin-right: 0}
+.tm05_section04  .tabs li a{color: #777}
+.tm05_section04  .tabs li.active{background: #ff4f7d;}
+.tm05_section04  .tabs li.active a{color: #fff}
+
+.tm05_section04 .tm05_solution_wrap a:focus .bold2,
+.tm05_section04 .tm05_solution_wrap a:active .bold2,
+.tm05_section04 .tm05_solution_wrap a:hover .bold2{text-decoration: underline;}
+
+/**/
+.tm05_section05{padding: 60px 0}
+
+@media screen and (min-width: 1080px) and (max-width:1600px) {
+    
+}
+	
+@media screen and (min-width : 1080px) {
+    .container {max-width: 100%;}
+}
+
+@media screen and (max-width : 1080px){
+.container{width:calc(100% - 90px);letter-spacing:-.5px;font-size:15px;}
+
+/* 테마5 상단*/
+ #tm05 .tm05_top .img_tit{width: 25rem}
+#tm05 .tm05TopImg{width: 25rem}    
+    
+/*테마 5 진단 top*/
+#tm05 .tm05_section03 .chart_warp{width: calc(100% - 170px)}    
+#tm05 .tm05_section03 .chart_warp div:first-child{margin-right: 50px}    
+#tm05 .tm05_section03 .btn_wrap a{width: 110px;height: 110px;font-size: 16px;}   
+    
+/* 테마5 워라밸 자가진단서비스 8 진단요인 */    
+#tm05 .tm05_section02 .swiper-slide .sl_img{width: 500px}   
+#tm05 .tm05_section02 .btn_slider{height: 272px;}
+#tm05 .swiper-button-prev{left: 0}    
+#tm05 .swiper-button-next{right: 0}    
+}
+
+@media screen and (max-width : 768px){
+    /*폰트 사이즈*/
+.f30 {font-size: 26px}
+.f24 {font-size: 20px}
+.f22 {font-size: 19px}
+.f20 {font-size: 18px}
+.f18 {font-size: 16px}
+.f15 {font-size: 13px}
+.f16 {font-size: 13px}
+.f14 {font-size: 13px}
+        
+.mt50 {margin-top: 30px}
+    
+    
+/* 테마5 상단*/
+ #tm05 .tm05_top .img_tit{width: 20rem}
+#tm05 .tm05TopImg{width: 20rem}      
+    
+/* 테마5 워라밸 자가진단서비스 8 진단요인 */      
+#tm05 .sw1_wrap{width: 90%; margin: auto;padding-top: 20px} 
+#tm05 .tm05_section02 .swiper-container{height: auto;}
+#tm05 .tm05_section02 .swiper-slide .sl_img{max-width: 500px;width: 100%;}
+#tm05 .swiper-button-prev{background-size: 15px;width: 15px;height: 27px;left: -35px;top:50%;transform: translateY(-50%)}   
+#tm05 .swiper-button-next{background-size: 15px;width: 15px;height: 27px;right: -35px;top: 50%;transform: translateY(-50%)}    
+#tm05 .tm05_section02 .btn_slider{height: auto;position: static;}
+#tm05 .tm05_section02 .sl_txt{padding:0;margin-top: 20px}
+    
+    
+/* 진단 TIP */
+#tm05 .tm05_section03 .chart_warp{width: 100%;}       
+#tm05 .tm05_section03 .btn_wrap a{position: relative;margin: auto;margin-top: 45px;font-size: 14px;width: 250px;height: 40px;border-radius: 8px;}   
+#tm05 .tm05_section03 .btn_wrap a br{display: none;}  
+}
+
+
+@media screen and (max-width : 640px){
+    /*폰트 사이즈*/
+.f30 {font-size: 24px}
+.f22 {font-size: 18px}
+.f24 {font-size: 17px;letter-spacing: -.9px;word-break: keep-all}
+.f20 {font-size: 16px}
+.f18 {font-size: 15px}
+.f16 {font-size: 13px}
+.f14 {font-size: 13px}
+.f15 {font-size: 13px}
+    
+.container{width:calc(100% - 40px);margin: auto}
+    
+    /*워라밸 자가진단 상단*/
+    #tm05 .tm05_top .img_tit,#tm05 .tm05TopImg {width: 15rem}
+    
+/* 진단 TIP */
+#tm05 .tm05_section03 .chart_warp{width: 100%;}       
+    #tm05 .tm05_section03 .chart_warp div:first-child{margin-right: 0;margin-bottom: 40px}    
+    #tm05 .tm05_section03 .chart_warp{display: block}
+    #tm05 .tm05_section03 .chart_warp div {text-align: center}
+    #tm05 .tm05_section03 .btn_wrap a{width: 100%;}
+
+    /* 워라밸 향상 솔루션*/
+    .tm05_solution_wrap{display: block;}
+    .tm05_solution_wrap > div{padding-right: 0;margin-bottom: 40px}
+    .tm05_solution_wrap  div p{word-break: keep-all}
+    .tm05_solution_wrap  div br{display: none}
+    .tm05_solution_wrap > div:last-child{margin-bottom: 0}
+    
+    /* 진단결과 예시 */
+    #tm05 .tm05_section03 .blue_box {padding: 30px 20px;}
+    
+    .tm05_section04 .tabs {}
+    .tm05_section04 .tabs li{width: calc(33.333% - 4px);margin-right: 3px;;padding: 10px 0;text-align: center}
+}
