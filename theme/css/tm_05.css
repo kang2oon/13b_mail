@@ -54,7 +54,7 @@ p {word-break: keep-all}
 .mb20 {margin-bottom: 20px}
 .mb30 {margin-bottom: 30px}
 .gray_bg {background: #f5f5f5;padding: 50px 0}
-.gray_line {border-top: 1px dashed #f0f0f0;margin: 40px 0}
+.gray_line {border:0;border-top: 1px dashed #f0f0f0;margin: 40px 0;background-color: transparent;color: transparent; }
 .tct {text-align: center;}
 
 
