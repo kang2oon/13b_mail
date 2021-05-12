@@ -232,7 +232,10 @@ p {word-break: keep-all}
     
     /* 진단결과 예시 */
     #tm05 .tm05_section03 .blue_box {padding: 30px 20px;}
+    #tm05 .tm05_section03 .chart_warp div {width: 90%;margin: auto;}
     
-    .tm05_section04 .tabs {}
-    .tm05_section04 .tabs li{width: calc(33.333% - 4px);margin-right: 3px;;padding: 10px 0;text-align: center}
+    .tm05_section04 .tabs:after {content: '';display: block;clear: both;}
+    .tm05_section04 .tabs li{display: block;float: left;width: calc(33.333% - 7px);margin-right: 10px;;padding: 7px 0;text-align: center}
+    .tm05_section04 .tabs li a{font-size: 13px}
+    #tm05 .img.imgFill img {object-fit: cover;height: 260px}
 }
