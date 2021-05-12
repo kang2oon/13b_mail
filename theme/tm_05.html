@@ -535,6 +535,43 @@ Oneday 직업체험
 
 
         $(document).ready(function() {
+             /* 탭 자동롤링 */
+            var list = 0;
+              var auto = setInterval(function(){
+                if(list==2){
+                    list = 0; 
+                }else{
+                    list = list+1;
+                }
+                $('.tabs li').removeClass('active');
+                $('.tabs li').eq(list).addClass('active');
+               
+                $('.tab_content').hide();
+                $('.tab_content').eq(list).show();
+                
+            },3000);
+            
+            
+            $(".tab_wrap").mouseenter(function(){
+                clearInterval(auto);
+            });
+            
+            $(".tab_wrap").mouseleave(function(){
+                    auto = setInterval(function(){
+                    if(list==3){
+                        list = 0; 
+                    }else{
+                        list = list+1;
+                    }
+                    $('.tabs li').removeClass('active');
+                    $('.tabs li').eq(list).addClass('active');
+
+                    $('.tab_content').hide();
+                    $('.tab_content').eq(list).show();
+
+                },5000);
+            });
+            
             /* 탭 */
             $(".tab_content").hide();
             $(".tabs li:first").addClass("active").show(); //Activate first tab
