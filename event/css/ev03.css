@@ -300,12 +300,11 @@ img{width:100%;}
 .self_ev_wrap .f60 {font-size: 24px}
         
     /*header*/
-        .self_ev_header h1{font-size: 24px;position: relative;}
-        .self_ev_header h1 span{position: static;}
-        .self_ev_header h1 i{top: -120px;right:auto;left: 0;;width: 120px;height: 71px;} 
-        .self_ev_header h1 i img{width: 140px;}
+        .self_ev_header h1{font-size: 24px;}
+        .self_ev_header h1 i{top: -60px;right:-120px;width: 150px;height: 71px;} 
+        .self_ev_header h1 i img{width: 150px;}
         .self_ev_header .white_bg{display: inline-block;margin-top: 5px}
-        
+        .self_ev_header{padding-top: 65px}
         .self_ev_section04 .ev_ticket{max-width: 283px;padding: 10px;display: block;text-align: center;margin: auto;font-size: 18px !important;margin-bottom: 30px;margin-top: 30px}
         .self_ev_section02 .qr_wrap .qr_txt img{width: 100px}
         .self_ev_section02 .qr_wrap .qr_txt .f18{white-space:normal;word-break: keep-all}
@@ -333,8 +332,8 @@ img{width:100%;}
     }
     
     
-     @media screen and (max-width : 400px){
-         .self_ev_wrap .f60{font-size: 20px}
-     .self_ev_section04 #gameContainer{zoom:0.3}
-         
+@media screen and (max-width : 400px){
+.self_ev_wrap .f60{font-size: 20px}
+.self_ev_section04 #gameContainer{zoom:0.3}
+
     }
