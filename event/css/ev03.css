@@ -1,0 +1,340 @@
+*{font-family: 'Noto Sans KR', sans-serif;box-sizing:border-box;padding: 0;margin: 0;}
+html,body{position:relative;width:100%;height:100%;margin:0;padding:0;}
+.clearfix:before,.clearfix:after{content:"";display:block}.clearfix:after{clear:both;visibility:hidden;line-height:0;height:0}.clearfix{*zoom:1}
+img{max-width:100%;line-height:0;}
+ul,ol,li{list-style:none;margin:0;padding:0;}
+a{text-decoration:none;color:inherit;}
+.fleft{float:left;}
+.fright{float:right;}
+
+.container{position:relative;width:1080px;margin:0 auto;font-size:16px;}
+.container.fluid{width:100%;}
+.self_ev_bg{background:#4199f8 url(../images/self_bg_header.png) no-repeat top;background-size:cover;}
+.self_ev_wrap {overflow: hidden}
+.self_ev_wrap .bold {font-weight: bold;}
+.self_ev_wrap .tct {text-align: center}
+.self_ev_wrap .f32 {font-size: 32px;}
+.self_ev_wrap .f22 {font-size: 22px;}
+.self_ev_wrap .f20 {font-size: 20px;}
+.self_ev_wrap .f18 {font-size: 18px;}
+.self_ev_wrap .f24 {font-size: 24px;}
+.self_ev_wrap .f26 {font-size: 26px;}
+.self_ev_wrap .f28 {font-size: 28px;}
+.self_ev_wrap .f16 {font-size: 16px;}
+.self_ev_wrap .f30 {font-size: 30px}
+.self_ev_wrap .f40 {font-size: 40px}
+.self_ev_wrap .f60 {font-size: 50px}
+.self_ev_wrap .f90 {font-size: 90px}
+.self_ev_wrap .orange {color: #ff790d}
+.self_ev_wrap .yellow {color: #ffe000}
+.self_ev_wrap .nomal{font-weight: 300}
+.self_ev_wrap .red{color: #ff0d0d}
+.self_ev_wrap .white_bg{background: #fff;padding:0 5px}
+.self_ev_wrap  .border_box {border: 2px solid #000;padding: 50px;box-sizing: border-box;}
+.self_ev_wrap .txt_under{text-decoration: underline}
+
+.self_ev_wrap .mt5{margin-top: 5px}
+.self_ev_wrap .mt10{margin-top: 10px}
+.self_ev_wrap .mt15{margin-top: 15px}
+.self_ev_wrap .mt20{margin-top: 20px}
+.self_ev_wrap .mt25{margin-top: 25px}
+.self_ev_wrap .mt30{margin-top: 30px}
+.self_ev_wrap .mt40{margin-top: 40px}
+.self_ev_wrap .mt50{margin-top: 50px}
+
+/* header */
+.self_ev_header{background: url(../images/self_ev_bg.png) no-repeat center #fff7bc;padding-top: 105px;padding-bottom: 60px;}
+.self_ev_header h1{font-size: 75px;line-height: 1.2;margin-top: 10px}
+.self_ev_header h1 span{position: relative}
+.self_ev_header h1 i{position: absolute;top: -100px;right: -250px;display: inline-block}
+.self_ev_header .f22 {font-weight: 300}
+.self_ev_header .f22 span{display: inline-block;}
+
+/* 이벤트 정보 */
+.self_ev_section01{background: #000;padding-top: 50px;padding-bottom: 100px;;position: relative}
+.self_ev_section01:after{content: '';display: block;background: url(../images/self_ev_img03.png) no-repeat;width: 132px;height: 146px;position: absolute;right: 0;top: -100px}
+.self_ev_section01 ul{display: flex;flex-wrap: wrap}
+.self_ev_section01 li{color: #fff;width: calc(50% - 35px)}
+.self_ev_section01 li:nth-child(2n) {margin-left: 70px}
+.self_ev_section01 li:nth-child(3),
+.self_ev_section01 li:nth-child(4) {margin-top: 20px}
+.self_ev_section01 li span{margin-right: 5px}
+
+/* 이벤트 참여방법*/
+.self_ev_section02 {background: #ffe000;position: relative;}
+.self_ev_section02 .container {padding-top: 30px;}
+.self_ev_section02:before{content: '';display: block;position: absolute;background: url(../images/self_ev_section02_bg.png) no-repeat;width: 100%;height: 57px;top: -56px}
+.self_ev_wrap .self_tit{box-shadow: 0px -15px 0px #fff inset;display: inline-block;padding: 0 5px}
+.self_ev_section02 .step_wrap {margin-top: 50px;display: flex;}
+.self_ev_section02 .step_wrap > div{
+  flex-grow: 1;position: relative;}
+.self_ev_section02 .step_wrap .step_tit{font-weight: bold;margin-bottom: 15px;display: inline-block}
+.self_ev_section02 .step_wrap div:after{content: '';display: block;background: url(../images/selft_ev_arrow.png) no-repeat;width: 16px;height: 31px;position: absolute;right: -8px;top: 50%;transform: translateY(-40%);opacity: 0.5}
+.self_ev_section02 .step_wrap div:last-child:after{display: none}
+.self_ev_section02 .ico_good{position: relative}
+.self_ev_section02 .ico_good:after{content: '';display: block;position: absolute;background: url(../images/self_ev_img04.png) no-repeat;;width: 51px;height: 52px;right: -60px;top: 50%;transform: translateY(-65%);}
+.self_ev_section02  ul li {margin-top: 7px}
+.self_ev_section02  ul li:first-child{margin-top: 0}
+
+.self_ev_section02 .qr_wrap{margin-top: 60px;position: relative;display: flex;align-items:flex-end;}
+.self_ev_section02 .qr_wrap > div {flex-grow: 1;}
+.self_ev_section02 .qr_wrap .qr_img{margin-bottom: -5px;}
+.self_ev_section02 .qr_wrap .qr_txt{align-items: center;padding-bottom: 100px;}
+.self_ev_section02 .qr_wrap .qr_txt .f30{white-space: nowrap}
+
+
+/* self_ev_section03 */
+.self_ev_section03 {background: #172a5f;padding: 60px 0;color: #fff}
+.self_ev_section03 .flex_wrap{display: flex;text-align: center}
+.self_ev_section03 .flex_wrap > div {width: calc(33.333% - 20px);margin-right: 40px;}
+.self_ev_section03 .flex_wrap > div:last-child{margin-right: 0}
+.self_ev_section03 .flex_wrap  .img{margin-bottom: 20px}
+
+
+/* self_ev_section04 */
+.self_ev_section04{padding: 80px 0;background: url(../images/self_ev_img11.png) no-repeat;position: relative}
+.self_ev_section04:before{content: '';display: block;background: url(../images/self_ev_img12.png) no-repeat center;width: 100%;height: 100%;z-index: 0;position: absolute;top:50%;left: 50%;transform: translate(-50%,-50%)}
+.self_ev_section04 #gameContainer{width:850px; height:850px; text-align: center; position: relative;margin:30px auto;border-radius: 50%;box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.5)}
+.self_ev_wrap .img_tit{padding-bottom: 20px}
+.self_ev_wrap #gameContainer .cursor{position: absolute;background: url(../images/self_ev_obj.png) no-repeat;width: 50px;height: 94px;top: 25px;left: 50%;transform: translateX(-50%);z-index: 999;}
+.self_ev_wrap #gameContainer .board_start{background: url(../images/self_ev_start.png) no-repeat;width: 212px;height: 212px;text-indent: -9999px;cursor: pointer;border-radius: 50%;position: absolute;top: 50%;left: 50%;z-index: 55;transform: translate(-50%,-50%)}
+.self_ev_wrap #gameContainer .board_start
+img{width:100%;}
+.self_ev_wrap #gameContainer .board_bg img{width:100%;}
+.self_ev_wrap #gameContainer .board_on{width:850px; height:850px;left:0px; z-index: 3; background: url('../images/self_ev_roulette.png') no-repeat center;}
+
+.self_ev_wrap #gameContainer .board_on img{position:absolute;}
+.self_ev_wrap #gameContainer .board_on img:nth-child(8){right:370px;top: 100px;  transform: rotate( 0deg );}
+.self_ev_wrap #gameContainer .board_on img:nth-child(7){right:180px;  transform: rotate( 45deg );  top: 175px;  }
+.self_ev_wrap #gameContainer .board_on img:nth-child(6){  right: 100px;  top: 340px; transform: rotate(90deg);}  
+.self_ev_wrap #gameContainer .board_on img:nth-child(5){right: 200px; top: 500px;  transform: rotate(135deg);}
+.self_ev_wrap #gameContainer .board_on img:nth-child(4){ right: 385px;  top: 592px;  transform: rotate(180deg);   }
+.self_ev_wrap #gameContainer .board_on img:nth-child(3){  right: 545px;  top: 540px;  transform: rotate(225deg); }  
+.self_ev_wrap #gameContainer .board_on img:nth-child(2){  right: 625px;  top: 354px;  transform: rotate(270deg); }  
+.self_ev_wrap #gameContainer .board_on img:nth-child(1){  right: 565px;  top: 175px;  transform: rotate(-45deg); }  
+
+.self_ev_wrap #gameContainer .obj.board_arrow{width:90px; height:105px; top:0px; left:195px; z-index: 5;}
+.self_ev_wrap #gameContainer .char1{width:259px; height:246px; top:400px; left:90px; z-index: 1;}
+.self_ev_wrap #gameContainer .char2{width:175px; height:198px; top:449px; left:600px; z-index: 1;}
+.self_ev_wrap #gameContainer .char3{width:112px; height:108px; top:540px; left:550px; z-index: 3;}
+.self_ev_wrap #gameContainer .txt1{width:420px; height:30px; bottom:20px; left:260px; z-index: 3;}
+
+.self_ev_section04 .ev_ticket{background: #fff;display: inline-block;padding: 15px 65px;margin-top: 50px;font-weight: bold;border: 7px solid #ff790d;margin-bottom: 50px}
+
+.self_ev_wrap .popup {display: none; position: fixed; left: 50%;top: 50%;transform: translate(-50%,-50%); z-index: 99999; text-align: center; background:#fff; font-size:20px; color:#000;padding: 30px;width:500px;border-radius: 10px}
+.self_ev_wrap .popup .close_ico{position: absolute;top: 30px;right: 30px;background: url(../images/close_ico.png) no-repeat;width: 16px;height: 16px;text-indent: -9999px;}
+.self_ev_wrap #popup_gift{}
+.self_ev_wrap .popup .lottery_present {text-align:center;margin-top: 40px;margin-bottom: 15px;font-size: 18px}
+.self_ev_wrap #popup_gift .lottery_present img{ display:block; margin: 50px auto 30px;}
+.self_ev_wrap #popup_gift_end {padding-top: 50px}
+.self_ev_wrap .popup  .close{ display:inline-block;font-size: 16px;padding: 10px 30px; color:#fff; background:#999; margin: 30px 0 0;} 
+.self_ev_wrap .popup  .link_btn{ display:inline-block;font-size: 16px;padding: 10px 20px; color:#fff; background:#0051a4; margin: 30px 0 0;margin-right: 5px} 
+.self_ev_wrap .go_self{background: #ad1000;width: 100%;text-align: center;color: #fffefe;position: relative;display: block;}
+.self_ev_wrap .go_self a {display: block;width: 100%;height: 100%;padding: 70px 0 100px;}
+.self_ev_wrap .go_self a:before{content: '';display: block;background: url(../images/self_ev_img13.png) no-repeat;width: 222px;height: 188px;position: absolute;top: -100px}
+
+
+/* 이벤트 경품*/
+.self_ev_section05 {background: url(../images/self_ev_bg2.png) #350532 no-repeat;position: relative;padding: 30px 0 100px 0}
+.self_ev_section05 .container {margin-top: 27px;position: relative}
+.self_ev_section05:before{content: '';display: block;position: absolute;background: url(../images/self_ev_section02_bg.png) no-repeat;width: 100%;height: 57px;top: -56px}
+.self_ev_section05 > .container:after{content: '';display: block;background: url(../images/self_ev_img14.png) no-repeat;width: 218px;height: 223px;position: absolute;right: 20px;top: -190px;z-index: 999}
+.self_ev_section05 .border_box {background: #ffe000}
+.self_ev_section05 .flex_wrap{display: flex;flex-wrap: wrap;}
+.self_ev_section05 .flex_wrap > div {width: 25%;text-align: center;margin-bottom: 80px}
+.self_ev_section05 .flex_wrap > div:nth-child(5),
+.self_ev_section05 .flex_wrap > div:nth-child(6),
+.self_ev_section05 .flex_wrap > div:nth-child(7),
+.self_ev_section05 .flex_wrap > div:nth-child(8) {margin-bottom:0}
+.self_ev_section05 .flex_wrap div  .img {position: relative;height: 153px;margin-bottom: 20px}
+.self_ev_section05 .flex_wrap div  .img img {position: absolute;bottom: 0;left: 50%;transform: translateX(-50%)}
+.self_ev_section05 .flex_wrap div .img span{background: #fff;color:#ff680d;width: 87px;height: 87px;line-height: 87px; border-radius: 50%; display: block;font-weight: bold;position: absolute;right: 25px;top: -10px}
+.self_ev_section05 .flex_wrap div p {margin-top: 10px}
+
+.self_ev_wrap .fade {background: rgba(0, 0, 0, 0.5);width: 100%;height: 100vh;position: fixed;left: 0;top: 0;overflow: hidden;z-index: 5555;display: none}
+
+/*body.not_scr{width: 100%;height: 100vh;overflow: hidden}*/
+
+/*footer 주의사항*/
+.self_ev_wrap .footer{color: #fff;margin-top: 70px}
+.self_ev_wrap .footer li {margin-top: 5px;position: relative;padding-left: 10px;}
+.self_ev_wrap .footer li:before{content: '-';position: absolute;left: 0;top: 1px}
+
+@media screen and (max-width : 1300px){
+    .self_ev_header .f24{font-size: 22px;margin-bottom: 15px}
+}
+
+@media screen and (max-width : 1080px){
+.container {width: 100%;padding: 0 20px}    
+.self_ev_wrap .f32 {font-size: 24px;}
+.self_ev_wrap .f22 {font-size: 18px;}
+.self_ev_wrap .f20 {font-size: 17px;}
+.self_ev_wrap .f18 {font-size: 16px;}
+.self_ev_wrap .f26 {font-size: 22px;}
+.self_ev_wrap .f24 {font-size: 20px;}
+.self_ev_wrap .f28 {font-size: 26px;}
+.self_ev_wrap .f16 {font-size: 14px;}
+.self_ev_wrap .f30 {font-size: 26px}
+.self_ev_wrap .f40 {font-size: 30px}
+.self_ev_wrap .f60 {font-size: 40px}
+.self_ev_wrap .f90 {font-size: 60px}
+    
+/* 상단 */
+.self_ev_header h1{font-size: 65px}
+.self_ev_header .img_wrap{text-align: center}
+.self_ev_header .img_wrap img{width: 90%;}
+.self_ev_section01:after{top: -70px;background-size: 100px;width: 100px;height: 107px}
+    
+.self_ev_section02 .step_wrap {flex-wrap: wrap}
+.self_ev_section02 .step_wrap > div {width: 33.333%;margin-bottom: 30px}
+.self_ev_section02 .step_wrap > div:nth-child(3):after{display: none}
+.self_ev_section02 .step_wrap > div:nth-child(4),
+.self_ev_section02 .step_wrap > div:nth-child(5),
+.self_ev_section02 .step_wrap > div:nth-child(6){margin-bottom: 0}
+
+}
+
+@media screen and (max-width : 1024px){
+.self_ev_wrap .f32 {font-size: 22px;}
+.self_ev_wrap .f22 {font-size: 17px;}
+.self_ev_wrap .f20 {font-size: 16px;}
+.self_ev_wrap .f18 {font-size: 15px;}
+.self_ev_wrap .f26 {font-size: 18px;}
+.self_ev_wrap .f28 {font-size: 22px;}
+.self_ev_wrap .f16 {font-size: 14px;}
+.self_ev_wrap .f30 {font-size: 24px}
+.self_ev_wrap .f40 {font-size: 25px}
+.self_ev_wrap .f60 {font-size: 35px}
+.self_ev_wrap .f90 {font-size: 70px}    
+    
+/* 상단 */
+.self_ev_header h1{font-size: 55px}
+    
+/*이벤트 기간*/
+.self_ev_section01 ul li span {display: block;margin-bottom: 5px}
+.self_ev_section03 .tct  br{display: none;} .self_ev_section03 .tct {word-break: keep-all} 
+    
+/*룰렛영역*/
+.self_ev_wrap .img_tit{width: 350px;margin: auto;}    
+.self_ev_section04 #gameContainer{zoom:0.7}    
+    .self_ev_section04:before{background-size: cover}    
+.self_ev_wrap .go_self a:before{background-size: 150px;top: -50px;left: 20px;width:150px;}
+    
+    
+.self_ev_section05 .container:after{background-size: 150px;top: -180px;right: 20px;width: 150px}
+
+@media screen and (max-width : 768px){
+.self_ev_wrap .f32 {font-size: 20px;}
+.self_ev_wrap .f22 {font-size: 16px;}
+.self_ev_wrap .f20 {font-size: 16px;}
+.self_ev_wrap .f18 {font-size: 15px;}
+.self_ev_wrap .f26 {font-size: 18px;}
+.self_ev_wrap .f24 {font-size: 18px;}
+.self_ev_wrap .f28 {font-size: 20px;}
+.self_ev_wrap .f16 {font-size: 14px;}
+.self_ev_wrap .f30 {font-size: 22px}
+.self_ev_wrap .f40 {font-size: 25px}
+.self_ev_wrap .f60 {font-size: 26px}
+.self_ev_wrap .f90 {font-size: 60px}   
+    
+    .self_ev_wrap .border_box{padding: 20px}    
+        
+/*header*/
+    .self_ev_header h1{font-size: 35px}    
+    .self_ev_header h1 i{width: 202px;right: -170px;top: -75px}
+   
+    
+/*이벤트 기간*/   
+    .self_ev_section01 ul{display: block;}
+    .self_ev_section01 li{width: 100%;margin-top: 20px}    
+    .self_ev_section01 li:first-child{margin-top: 0}
+    .self_ev_section01 li:nth-child(2n){margin-left: 0;}
+    
+    /*참여방법*/
+     .self_ev_section02 .ico_good:after{width: 30px;height: 30px;background-size: 30px;top: 15px;margin-right: 25%}
+    .self_ev_section02 .step_wrap > div{width: 50%}
+    .self_ev_section02 .step_wrap div:after{background-size: 10px}
+    .self_ev_section02 .step_wrap div:nth-child(3):after{display: block;}
+    .self_ev_section02 .qr_wrap .qr_txt{padding-left: 20px;padding-right: 20px}
+    .self_ev_section02 .qr_wrap .qr_txt img{width: 140px}
+    .self_ev_section02 .qr_wrap .qr_txt .f18{white-space: nowrap}
+    .self_ev_section02 .qr_wrap .qr_txt .f30{font-size: 16px}
+    
+    .self_ev_section03 .flex_wrap {display: block}
+    .self_ev_section03 .flex_wrap .img{margin-bottom: 10px}
+    .self_ev_section03 .flex_wrap > div{width:100%;margin-right: 0;margin-bottom: 30px}
+    
+    /*룰렛영역*/
+    .self_ev_section04{padding: 60px 0}    
+.self_ev_wrap .img_tit{width: 250px;margin: auto;}    
+.self_ev_section04 #gameContainer{zoom:0.5}   
+    .self_ev_section04 .ev_ticket{font-size: 22px;margin-top: 30px;margin-bottom: 00px}
+    
+    .self_ev_wrap .go_self a{padding: 40px 0 90px}
+    
+    /*이벤트 상품*/
+    .self_ev_section05{padding: 10px 0 50px 0}
+    .self_ev_section05 .flex_wrap{zoom:0.6}
+    .self_ev_section05 .flex_wrap > div{width:calc(25% - 15px);margin-right: 20px}
+    .self_ev_section05 .flex_wrap > div:nth-child(4n){margin-right: 0}
+    .self_ev_section05 .flex_wrap div p{zoom:1.5}
+    .self_ev_section05 .container:after{background-size: 100px;width: 100px;height: 102px;top: -120px}
+    .self_ev_wrap .go_self a:before {background-size: 100px;width: 100px;height: 100px;}
+    
+    .self_ev_wrap .footer{margin-top: 50px}
+    
+    
+}
+
+    @media screen and (max-width : 510px){
+        .self_ev_wrap .f32 {font-size: 18px;}
+.self_ev_wrap .f22 {font-size: 15px;}
+.self_ev_wrap .f20 {font-size: 15px;}
+.self_ev_wrap .f18 {font-size: 15px;}
+.self_ev_wrap .f26 {font-size: 16px;}
+.self_ev_wrap .f24 {font-size: 16px;}
+.self_ev_wrap .f28 {font-size: 18px;}
+.self_ev_wrap .f16 {font-size: 14px;}
+.self_ev_wrap .f30 {font-size: 20px}
+.self_ev_wrap .f40 {font-size: 22px}
+.self_ev_wrap .f60 {font-size: 24px}
+        
+    /*header*/
+        .self_ev_header h1{font-size: 24px;position: relative;}
+        .self_ev_header h1 span{position: static;}
+        .self_ev_header h1 i{top: -120px;right:auto;left: 0;;width: 120px;height: 71px;} 
+        .self_ev_header h1 i img{width: 140px;}
+        .self_ev_header .white_bg{display: inline-block;margin-top: 5px}
+        
+        .self_ev_section04 .ev_ticket{max-width: 283px;padding: 10px;display: block;text-align: center;margin: auto;font-size: 18px !important;margin-bottom: 30px;margin-top: 30px}
+        .self_ev_section02 .qr_wrap .qr_txt img{width: 100px}
+        .self_ev_section02 .qr_wrap .qr_txt .f18{white-space:normal;word-break: keep-all}
+        .self_ev_section02 .qr_wrap .qr_txt .f30{white-space:normal;word-break: keep-all}
+        .self_ev_section02 .qr_wrap .qr_img{display: none}
+        
+        .self_ev_section03 .flex_wrap .img{max-width: 324px;width: 100%;margin:10px auto}
+        .self_ev_section03 .flex_wrap .img img{width: 100%}
+        
+        .self_ev_wrap .img_tit{width: 200px}
+        .self_ev_section04 #gameContainer{zoom:0.4}
+        
+        .self_ev_wrap .popup{max-width: 500px;width: 90%;}
+        
+        .self_ev_section05 .flex_wrap{zoom:1}
+        .self_ev_section05 .flex_wrap div p{zoom:1}
+        .self_ev_section05 .flex_wrap > div {width: calc(50% - 10px);}
+        .self_ev_section05 .flex_wrap > div:nth-child(2n){margin-right: 0}
+        .self_ev_section05 .flex_wrap div .img span{font-size: 16px;width: 50px;height: 50px;line-height: 50px;top: 20px}
+        
+        .self_ev_section05 .flex_wrap > div{margin-bottom: 20px}
+        
+        .self_ev_section05 .flex_wrap > div:nth-child(5), .self_ev_section05 .flex_wrap > div:nth-child(6), .self_ev_section05 .flex_wrap > div:nth-child(7), .self_ev_section05 .flex_wrap > div:nth-child(8) {margin-bottom: 20px}
+        
+    }
+    
+    
+     @media screen and (max-width : 400px){
+         .self_ev_wrap .f60{font-size: 20px}
+     .self_ev_section04 #gameContainer{zoom:0.3}
+         
+    }
