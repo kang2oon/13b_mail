@@ -93,13 +93,13 @@ a{text-decoration:none;color:inherit;}
 .renew_ev_section01_wrap:before{content: '';display: block;width: 700px;height: 100%;background: #ffe25f;position: absolute;left: 0}
 .renew_ev_section01{background: #ffe25f;padding: 40px ;border-radius: 0 50px 50px 0;}
 .renew_ev_section01 .tab_area{display: flex;flex-wrap: wrap;flex-direction: row}
-.renew_ev_section01 .tab_area > div {width: calc(50% - 60px);margin-bottom: 40px}
+.renew_ev_section01 .tab_area > div {width: calc(50% - 30px);margin-right: 60px;margin-bottom:  40px}
 .renew_ev_section01 .tab_area > div:nth-child(3),
 .renew_ev_section01 .tab_area > div:nth-child(4){margin-bottom: 0}
 .renew_ev_section01 .tab_area a:hover,
 .renew_ev_section01 .tab_area a:active,
 .renew_ev_section01 .tab_area a:focus {text-decoration: underline;}
-.renew_ev_section01 .tab_area > div a{display: flex;justify-content: space-around;align-items: center}
+.renew_ev_section01 .tab_area > div a{display: flex;justify-content: space-between;align-items: center}
 .renew_ev_section01 .tab_area > div:nth-child(2n){margin-right: 0}
 .renew_ev_section01 .tab_area .txt{width: 230px}
 .renew_ev_section01 .result span{display: block;width: 148px;height: 87px;text-indent: -9999px;margin-left: 20px}
@@ -144,7 +144,7 @@ a{text-decoration:none;color:inherit;}
 /* self_ev_section04 */
 .renew_ev_section03{position: relative;padding-top: 15px;}
 .renew_ev_section03 #gameContainer{width:692px; height:688px; text-align: center; position: relative;margin:30px auto;border-radius: 50%;margin-bottom: 60px}
-.renew_ev_section03 .s_inner{position: relative;margin-top: 100px}
+.renew_ev_section03 .s_inner{position: relative;margin-top: 150px}
 .renew_ev_section03 .s_inner:before{content: '';display: block;background: url(../images/renew_ev_rt_bg.png)  no-repeat center;width: 810px;height: 770px;z-index: 0;position: absolute;top:50%;left: 50%;transform: translate(-50%,-50%)}
 .renew_ev_wrap .img_tit{padding-bottom: 20px}
 .renew_ev_wrap #gameContainer .cursor{position: absolute;background: url(../images/renew_roulette-arrow.png) no-repeat;width: 94px;height: 126px;top: -90px;left: 50%;transform: translateX(-50%);z-index: 999;}
@@ -182,7 +182,7 @@ img{width:100%;}
 
 .renew_ev_wrap .ev_ticket .num{font-size: 90px;display: block;line-height: 1}
 .renew_ev_section03 .container{position: relative;}
-.renew_ev_section03 .gift_end{position: absolute;width: 100%;height: 110%;background: rgba(0, 0, 0, 0.7);left: 0;top: 50%;transform: translate(0,-50%);z-index: 5555;cursor: default}
+.renew_ev_section03 .gift_end{position: absolute;width: 100%;height: 110%;background: rgba(0, 0, 0, 0.7);left: 0;top: 50%;transform: translate(0,-50%);z-index: 5555;cursor: default;}
 .renew_ev_section03 .gift_end .txt{position: absolute;width: 100%;top: 50%;transform: translate(0,-50%);font-weight: 500}
 
 
@@ -192,10 +192,11 @@ img{width:100%;}
 .renew_ev_wrap .border{display: inline-block;border: 1px solid #ffe25f;padding: 10px 50px;border-radius: 10px;font-weight: bold}
 .renew_ev_wrap .gift_wrap{display: flex;justify-content: space-between}
 
+
 /* renew_ev_section05 회원정보 수정*/
-.renew_ev_section05:after{content: '';display: block;width: 100%;background: url(../images/renew_section04_bg.png) no-repeat ;height: 577px;position: absolute;top: -200px;}
+.renew_ev_section05:after{content: '';display: block;width: 100%;background: url(../images/renew_section04_bg.png) no-repeat center;height: 406px;position: absolute;top: -300px;background-size: cover}
 .renew_ev_section05{background: url(../images/renew_section05_bg.png) no-repeat bottom#0fac37;position: relative;}
-.renew_ev_section05 .tit{margin-top: 180px;position: relative;z-index: 2}
+.renew_ev_section05 .tit{margin-top: 50px;position: relative;z-index: 2}
 .renew_ev_wrap .flex_wrap{display: flex;}
 .renew_ev_wrap .left_tit{margin-right: 30px;font-weight: bold}
 .renew_ev_section05 .green_btn{background: #1a3c45;padding: 2px 10px;border-radius: 5px;display: inline-block;margin-left: 5px}
@@ -217,11 +218,11 @@ img{width:100%;}
 .renew_ev_section05 .mb250{margin-bottom: 250px}
 
 /*renew_ev_section06*/
-.renew_ev_section06:after{content: '';background: url(../images/renew_section06_bg.png) no-repeat;width: 100%;height: 338px;position: absolute;left: 0;top: -250px}
+.renew_ev_section06:after{content: '';background: url(../images/renew_section06_bg.png) no-repeat center;width: 100%;height: 338px;position: absolute;left: 0;top: -250px}
 .renew_ev_section06{background: url(../images/renew_section06_bg02.png) no-repeat #1a3c45 bottom;position: relative;padding-top: 180px}
 .renew_ev_section06 .tit {margin-top: 100px}
 .renew_ev_wrap .comment_write{border-radius: 20px;overflow: hidden;height: 150px;display: flex;}
-.renew_ev_wrap .comment_write textarea{resize: none;height: 100%;width:calc(100% - 200px);border: 0;}
+.renew_ev_wrap .comment_write textarea{resize: none;height: 100%;width:calc(100% - 200px);border: 0;overflow: hidden}
 .renew_ev_wrap .comment_write input[type="submit"] {background: #98ff54;border: 0;font-weight: bold;width: 200px;height: 100%;}
 .renew_ev_wrap .comment_txt{font-weight: 100}
 .renew_ev_wrap .comment_wrap{display: flex;flex-wrap: wrap}
@@ -266,9 +267,10 @@ img{width:100%;}
 .renew_ev_section07 .blue02_btn {background: #3beaff !important}
 .renew_ev_section07 .sns_comment{background: rgba(0, 0, 0, 0.25);color: #fff}
 .renew_ev_section07 .sns_comment > ul li:after{content: '';display: block;clear: both}
-.renew_ev_section07 .sns_comment ul .left {float: left}
+.renew_ev_section07 .sns_comment ul .left {float: left;width: calc(100% - 150px)}
 .renew_ev_section07 .sns_comment ul .right {float: right}
 .renew_ev_section07 .sns_comment ul li  {font-weight: 200}
+.renew_ev_section07 .sns_comment ul li a {white-space: nowrap;display: block;overflow: hidden;text-overflow: ellipsis;width: 100%;}
 .renew_ev_section07 .sns_comment > ul > li {margin-bottom: 15px;padding-bottom: 15px;border-bottom: 1px solid rgba(255, 255, 255, 0.2)}
 .renew_ev_section07 .sns_comment > ul > li:last-child{margin-bottom: 0;padding-bottom: 0;border-bottom: 0}
 .renew_ev_section07 .sns_comment ul li a:hover,
@@ -289,26 +291,54 @@ img{width:100%;}
 .renew_ev_footer ul li:before{content: '-';position: absolute;left: 0;top: 3px}
 
 
-@media screen and (max-width : 1300px){
+@media screen and (min-width : 1500px) and (max-width : 1800px){
+    .container {width: 1024px;margin: auto}
 }
 
-@media screen and (max-width : 1080px){
-.container {width: 100%;padding: 0 20px}    
-.renew_ev_wrap .f32 {font-size: 24px;}
-.renew_ev_wrap .f22 {font-size: 18px;}
-.renew_ev_wrap .f20 {font-size: 17px;}
-.renew_ev_wrap .f18 {font-size: 16px;}
-.renew_ev_wrap .f26 {font-size: 22px;}
-.renew_ev_wrap .f24 {font-size: 20px;}
-.renew_ev_wrap .f28 {font-size: 26px;}
-.renew_ev_wrap .f16 {font-size: 14px;}
-.renew_ev_wrap .f30 {font-size: 26px}
-.renew_ev_wrap .f40 {font-size: 30px}
-.renew_ev_wrap .f60 {font-size: 40px}
-.renew_ev_wrap .f90 {font-size: 60px}
+@media screen and (min-width:1261px) and (max-width : 1500px){
+    .container {width: 900px;margin: auto;}
+    .renew_ev_wrap .gift_wrap > div{margin: 0 5px}
+    .renew_ev_wrap .quick_menu li{font-size: 12px}
+    .renew_ev_wrap .quick_menu li a{font-size: 14px}
+    .renew_ev_wrap .quick_menu{width: 165px;left: 10px}
+    .renew_ev_section02 .txt_area:first-child .left_tit{width: 50px}
+    .renew_ev_section01 .tab_area .txt{width: 260px}
     
-
+    .renew_ev_section01_wrap .container{width: 1024px}
+    
 }
+
+@media screen and (max-width : 1260px){
+    
+.container {width: 100%;padding: 0 20px}    
+    .renew_ev_wrap .quick_menu{display: none}
+    
+    /*리뉴얼 전후*/
+    .renew_ev_header .twentytwenty_wrap{max-width: 1000px;width: 85%}
+    .renew_ev_section05 .swiper-button-prev{width: 22px;height:42px;background-size: 22px}
+    .renew_ev_section05 .swiper-button-next{width: 22px;height:42px;background-size: 22px}
+    
+    .renew_ev_section05 .btn_slider{width: 113%}
+    
+    /* 일러스트 */
+    .renew_ev_section04{padding-bottom: 150px}
+    .renew_ev_section05:after{background-size: contain;top: -200px}
+    .renew_ev_section06:after{background-size: contain;top: -200px}
+    .renew_ev_section05 .mb250{margin-bottom: 100px}
+    .renew_ev_section06 .tit{margin-top: 50px}
+    
+    /*워라밸 퀴즈*/
+    .renew_ev_section01_wrap:before {display: none}
+    .renew_ev_section01{border-radius: 0;padding: 30px 20px}
+    .renew_ev_section01 .tab_area > div a{justify-content: center}
+    .renew_ev_section01 .tab_area > div{width: calc(50% - 20px);margin-right: 40px}
+    .renew_ev_section01 .tab_area > div:nth-child(2n){margin-right: 0}
+    
+    /*회원정보수정*/
+    .renew_ev_section05 .sw1_wrap{width: 90%;margin:30px auto;}
+    
+}
+
 
 @media screen and (max-width : 1024px){
 .renew_ev_wrap .f32 {font-size: 22px;}
@@ -323,6 +353,9 @@ img{width:100%;}
 .renew_ev_wrap .f60 {font-size: 35px}
 .renew_ev_wrap .f90 {font-size: 70px}    
     
+    
+/*  상품  */
+    .renew_ev_wrap .gift_wrap  > div{margin: 0 10px}  
     
 }
 
@@ -339,6 +372,65 @@ img{width:100%;}
 .renew_ev_wrap .f40 {font-size: 25px}
 .renew_ev_wrap .f60 {font-size: 26px}
 .renew_ev_wrap .f90 {font-size: 60px}   
+    .renew_ev_wrap p {word-break: keep-all}
+.renew_ev_wrap  .mt50 {margin-top: 30px}
+    .renew_ev_wrap .section_pd{padding: 30px 0}
+    
+    .renew_ev_wrap .tit {}
+    .renew_ev_wrap .tit p{font-size: 16px}
+    .renew_ev_wrap .tit h3{font-size: 22px}
+    
+    /* main */
+    .renew_ev_wrap .img_tit {width: 350px}
+    .renew_ev_header .bottom h4{font-size: 18px;}
+    
+    /*워라밸 탭*/
+    .renew_ev_section01 .tab_area {display: block;}
+    .renew_ev_section01 .tab_area > div{width: 100%;margin-right: 0}
+    .renew_ev_section01 .tab_area > div:nth-child(3){margin-bottom: 40px}
+    .renew_ev_section01 .result .complete {background-size: 120px;width: 120px;height: 72px}
+    .renew_ev_section01 .result .run {background-size: 120px;width: 120px;height: 72px}
+    .renew_ev_section01 .tab_area > div a{justify-content: space-between}
+    
+    .renew_ev_section02 .txt_wrap{display: block;}
+    .renew_ev_section02 .txt_wrap > div:first-child{margin-bottom: 20px}
+    .renew_ev_section02 .txt_wrap .txt_area{display: block;}
+    .renew_ev_section02 .txt_wrap .left_tit{margin-right: 0;margin-bottom: 10px}
+    .renew_ev_section02 .txt_wrap .left_tit br{display: none}
+    
+    /*퀴즈영역*/
+    .renew_ev_wrap .white_border {padding: 30px}
+    .renew_ev_section02 .quiz_input{width: 80px;height: 80px;}
+    .renew_ev_section02 .quiz_input.letter01 input{background-size: 30px}
+    .renew_ev_section02 .quiz_input.letter02 input{background-size: 30px}
+    .renew_ev_section02 .quiz_input.letter03 input{background-size: 25px}
+    .renew_ev_section02 .quiz_input.letter04 input{background-size: 40px}
+    .renew_ev_section02 .quiz_input.letter05 input{background-size: 35px}
+    .renew_ev_section02 .btn_wrap > a{width: calc(50% - 15px);padding: 10px;font-size: 14px}
+    
+    /* 룰렛 */
+    .renew_ev_wrap .ev_ticket .num{font-size: 65px}
+    .renew_ev_section03 .s_inner {zoom:0.65}
+    
+    /* 상품 */
+    .renew_ev_wrap .gift_wrap > div {flex-grow: 1}
+    .renew_ev_section06 .gift_wrap{zoom:0.6}
+    
+    /* 댓글 작성 */
+    .renew_ev_wrap .comment_write input[type="submit"]{width: 120px}
+    .renew_ev_wrap .comment_write textarea{width: calc(100% - 120px )}
+    
+    /*페이징*/
+    .renew_ev_wrap .paginate .mo_paging p{color: #fff}
+    .paginate_list{}
+    
+    .renew_ev_wrap .flex_wrap{display: block;}
+    .renew_ev_wrap .left_tit{margin-bottom: 10px}
+    .renew_ev_wrap .left_tit br{display: none}
+    
+    .renew_ev_section07 .sns_comment ul li a {font-size: 14px}
+    
+    .renew_ev_wrap .paginate_list{display: block}
     
     
 }
@@ -356,10 +448,64 @@ img{width:100%;}
 .renew_ev_wrap .f40 {font-size: 22px}
 .renew_ev_wrap .f60 {font-size: 24px}
         
+        /* header */
+        .renew_ev_header .ev_date .fright{float: none}
+        .renew_ev_header{padding-top: 65px}
+        .renew_ev_wrap .img_tit{width:200px}
+        .renew_ev_header .twentytwenty_wrap{padding: 20px}
+        .renew_ev_header .twentytwenty_wrap{max-width: calc(100% - 40px);width: calc(100% - 40px) }
+        .twentytwenty-handle{width: 40px !important;height: 40px !important;background-size: 15px !important;margin-top: -20px !important;margin-left: -20px !important}
         
+        .renew_ev_header .bottom h4{font-size: 15px;padding: 10px 0px;width: 100%;}
+        .renew_ev_header .bottom .bt_area{width: 100%;word-break: keep-all}
+        
+        /* 워라밸 탭*/
+        .renew_ev_section01 .result .run{background-size: 80px;width: 80px;height: 50px}
+        .renew_ev_section01 .result .complete{background-size: 80px;width: 80px;height: 50px}
+        
+        /*qr*/
+        .renew_ev_section02 .qr_wrap img {width: 80px}
+        
+        /*퀴즈*/
+        .renew_ev_section02 .quiz_input{margin-right: 5px}
+        .renew_ev_section02 .quiz_input{width: 45px;height: 45px;}
+        .renew_ev_section02 .quiz_input.letter01 input{background-size: 20px}
+        .renew_ev_section02 .quiz_input.letter02 input{background-size: 20px}
+        .renew_ev_section02 .quiz_input.letter03 input{background-size: 15px}
+        .renew_ev_section02 .quiz_input.letter04 input{background-size: 25px}
+        .renew_ev_section02 .quiz_input.letter05 input{background-size: 20px}
+        
+        /*룰렛*/
+        .renew_ev_section03 .s_inner{zoom:0.4}
+        
+        /* 경품 */
+        .renew_ev_wrap .gift_wrap{display: block;}
+        .renew_ev_wrap .gift_wrap > div {margin-bottom: 20px}
+        .renew_ev_section06 .gift_wrap{zoom:1}
+        
+        /* 댓글 */
+        .renew_ev_wrap .comment_wrap {display: block;}
+        .renew_ev_wrap .comment_wrap .comment_area{width: 100%;margin-right: 0;margin-bottom: 20px}
+        .renew_ev_section06 .comment_wrap .comment_area:nth-child(9){margin-bottom: 20px}
+        .renew_ev_wrap .comment_write{height: 120px}
+        .renew_ev_wrap .comment_write input[type="submit"]{width: 80px;}
+        .renew_ev_wrap .comment_write textarea{width: calc(100% - 80px);}
+        
+        .renew_ev_section07 .sns_comment ul .left{float: none;width: 100%;}
+        .renew_ev_section07 .sns_comment ul .right{margin-top: 20px;font-size: 13px}
     }
     
     
 @media screen and (max-width : 400px){
+    /*퀴즈*/
+    
+        .renew_ev_section02 .quiz_input{width: 30px;height: 30px;flex:1 1 auto}
+        .renew_ev_section02 .quiz_input.letter01 input{background-size: 20px}
+        .renew_ev_section02 .quiz_input.letter02 input{background-size: 20px}
+        .renew_ev_section02 .quiz_input.letter03 input{background-size: 15px}
+        .renew_ev_section02 .quiz_input.letter04 input{background-size: 25px}
+        .renew_ev_section02 .quiz_input.letter05 input{background-size: 20px}
+    
+    .renew_ev_wrap .gift_wrap .img{width: 130px;margin: auto}
 
     }
