@@ -435,6 +435,10 @@ img{width:100%;}
 
     .renew_ev_section05 .bg_green{white-space:normal;}
     .renew_ev_section05 .bg_green:before{content: '';display: block;}
+
+    .renew_ev_section05 .btn_slider{width: calc(100% + 80px)}
+    .renew_ev_section05 .swiper-button-prev{width: 15px;background-size: 15px;height: 30px;}
+    .renew_ev_section05 .swiper-button-next{width: 15px;background-size: 15px;height: 30px;}
     
     
 }
