@@ -222,7 +222,7 @@ img{width:100%;}
 .renew_ev_section06{background: url(../images/renew_section06_bg02.png) no-repeat #1a3c45 bottom;position: relative;padding-top: 180px}
 .renew_ev_section06 .tit {margin-top: 100px}
 .renew_ev_wrap .comment_write{border-radius: 20px;overflow: hidden;height: 150px;display: flex;}
-.renew_ev_wrap .comment_write textarea{resize: none;height: 100%;width:calc(100% - 200px);border: 0;overflow: hidden}
+.renew_ev_wrap .comment_write textarea{resize: none;height: 100%;width:calc(100% - 200px);border: 0;overflow: hidden;padding:20px;font-size: 16px;}
 .renew_ev_wrap .comment_write input[type="submit"] {background: #98ff54;border: 0;font-weight: bold;width: 200px;height: 100%;}
 .renew_ev_wrap .comment_txt{font-weight: 100}
 .renew_ev_wrap .comment_wrap{display: flex;flex-wrap: wrap}
