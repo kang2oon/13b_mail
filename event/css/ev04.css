@@ -401,6 +401,7 @@ img{width:100%;}
     /*퀴즈영역*/
     .renew_ev_wrap .white_border {padding: 30px}
     .renew_ev_section02 .quiz_input{width: 80px;height: 80px;}
+    .renew_ev_section02 .quiz_input input{font-size: 16px;}
     .renew_ev_section02 .quiz_input.letter01 input{background-size: 30px}
     .renew_ev_section02 .quiz_input.letter02 input{background-size: 30px}
     .renew_ev_section02 .quiz_input.letter03 input{background-size: 25px}
@@ -474,6 +475,7 @@ img{width:100%;}
         .renew_ev_section02 .quiz_input.letter03 input{background-size: 15px}
         .renew_ev_section02 .quiz_input.letter04 input{background-size: 25px}
         .renew_ev_section02 .quiz_input.letter05 input{background-size: 20px}
+        .renew_ev_section02 .quiz_input input{font-size: 14px;}
         
         /*룰렛*/
         .renew_ev_section03 .s_inner{zoom:0.4}
