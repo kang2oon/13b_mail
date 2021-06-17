@@ -102,7 +102,7 @@
                     <div class="renew_ev_section01 container">
                         <div class="tab_area">
                             <div>
-                                <a href="#">
+                                <a href="#section01">
                                     <div class="txt">
                                         <p class="f18">EVENT1. 워라밸 퀴즈</p>
                                         <p class="bold f26">이것은 무엇일까요?
@@ -114,7 +114,7 @@
                                 </a>
                             </div>
                             <div>
-                                <a href="#">
+                                <a href="#section02">
                                     <div class="txt">
                                         <p class="f18">EVENT2. 회원정보 수정
                                         </p>
@@ -127,7 +127,7 @@
                                 </a>
                             </div>
                             <div>
-                                <a href="#">
+                                <a href="#section03">
                                     <div class="txt">
                                         <p class="f18">EVENT3. 궁금해요</p>
                                         <p class="bold f26">무엇을 원하나요?
@@ -140,7 +140,7 @@
                                 </a>
                             </div>
                             <div>
-                                <a href="#">
+                                <a href="#section04">
                                     <div class="txt">
                                         <p class="f18">EVENT4. 홍보왕
 
@@ -1097,6 +1097,11 @@
             $("#container1").twentytwenty();
         });
         $(document).ready(function() {
+
+            $('.tab_area a').click(function(e){
+      e.preventDefault(); //a태그이기때문에 버벅거림?빼기
+     $('html,body').animate({scrollTop:$(this.hash).offset().top }, 500);//부드럽게 스크롤 이동하는부분 - 53부분은 고정 header이기때문에 추가됨, 고정 header가 아닌 경우 삭제
+   });
 
             $(".quiz_input input").on("change keyup paste", function() {
                 $(this).addClass('on')

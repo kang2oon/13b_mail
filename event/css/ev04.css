@@ -96,6 +96,9 @@ a{text-decoration:none;color:inherit;}
 .renew_ev_section01 .tab_area > div {width: calc(50% - 60px);margin-bottom: 40px}
 .renew_ev_section01 .tab_area > div:nth-child(3),
 .renew_ev_section01 .tab_area > div:nth-child(4){margin-bottom: 0}
+.renew_ev_section01 .tab_area a:hover,
+.renew_ev_section01 .tab_area a:active,
+.renew_ev_section01 .tab_area a:focus {text-decoration: underline;}
 .renew_ev_section01 .tab_area > div a{display: flex;justify-content: space-around;align-items: center}
 .renew_ev_section01 .tab_area > div:nth-child(2n){margin-right: 0}
 .renew_ev_section01 .tab_area .txt{width: 230px}
