@@ -211,7 +211,7 @@ img{width:100%;}
 .renew_ev_section05 .btn_slider {top: 50%;position: absolute;transform: translate(-50%,-50%);width:110%;left: 50%;z-index: 55555;}
 
 .renew_ev_section05 .left_tit{text-align: left;width:auto;white-space: nowrap}
-.renew_ev_section05 .bg_green{background: #1a3c45;color: #fff;white-space: pre}
+.renew_ev_section05 .bg_green{background: #1a3c45;color: #fff;white-space: pre;}
 .renew_ev_section05 .txt{word-break: keep-all}
 
 .renew_ev_section05 .border.green{border: 1px solid #1a3c45}
@@ -432,6 +432,9 @@ img{width:100%;}
     .renew_ev_section07 .sns_comment ul li a {font-size: 14px}
     
     .renew_ev_wrap .paginate_list{display: block}
+
+    .renew_ev_section05 .bg_green{white-space:normal;}
+    .renew_ev_section05 .bg_green:before{content: '';display: block;}
     
     
 }
