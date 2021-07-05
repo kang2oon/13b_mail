@@ -304,7 +304,7 @@ br {font-family: sans-serif !important}
 	#tm06 .tm06_tit{font-size: 18px;}
 	#tm06 .tm06_tit:after{width: calc(100% - 200px)}
 	#tm06 .white_round ul li{padding-left: 25px}
-	#tm06 .white_round ul li .check{background-size: 18px;width: 18px;height: 15px;top: 5px}
+	#tm06 .white_round ul li .check{background-size: 18px;width: 18px;height: 15px;top: 3px}
 	#tm06 .white_round ul li{font-size: 14px}
 	#tm06 .tab_content .tab_text ul li{display: block;font-size: 14px;word-break: keep-all}
 	#tm06 .tab_content .tab_text ul li p{width: 100%}
