@@ -134,9 +134,8 @@ br {font-family: sans-serif !important}
 
 /* 탭 */
 #tm06 .tabs ul{display: table;border-collapse: collapse}
-#tm06 .tabs li{display: table-cell;background: #e2e2e2;text-align: center;width: 240px;padding: 15px;border-radius: 10px 10px 0 0;transition: all 0.3s;vertical-align: middle;border:1px solid #e2e2e2;border-bottom: 0}
-#tm06 .tabs li:last-child{margin-left: -20px}
-#tm06 .tabs li.active {background: #fff;border: 1px solid #fff;}
+#tm06 .tabs li{display: table-cell;background: #e2e2e2;text-align: center;width: 240px;padding: 15px;border-radius: 10px 10px 0 0;transition: all 0.3s;vertical-align: middle;border-bottom: 0;box-sizing: border-box}
+#tm06 .tabs li.active {background: #fff;}
 #tm06 .tabs li a{font-size: 24px;color: rgba(0, 0, 0, 0.5)}
 #tm06 .tabs li.active a{color: #000}
 #tm06 .tabs li:hover{background: #fff;}
