@@ -278,7 +278,7 @@ br {font-family: sans-serif !important}
 	#tm06 .tm06_section02 .text > .gbold02:before{top: -20px;left: 0}
 	#tm06 .tm06_section02 .text > .gbold02:after{bottom:-20px;right: -5px}
 	#tm06 .tm06_section02 .text br{display: none}
-	#tm06 .tabs ul{display: flex;}
+	#tm06 .tabs ul{width: 100%;}
 	#tm06 .tabs li {width: 50%;}
 	#tm06 .tab_content {border-radius: 0 0 10px 10px}
 	
