@@ -462,7 +462,7 @@ select.select_style {
 .wb_intro {border-top: 2px solid #000;padding-top: 30px;margin-top: 30px;}
 .wb_intro h3 {font-weight: bold;font-size: var(--wbl-font-sz-default);margin-bottom: 20px;}
 .wb_intro .video_wrap{border-radius: 15px;overflow: hidden}
-.wb_intro .video_wrap iframe{width: 100%;}
+.wb_intro .video_wrap iframe{width: 100%;height: 100%}
 .wb_intro .wb_service{display: flex;flex-wrap: wrap;}
 .wb_intro .wb_service > div {width: calc(33% - 20px);margin-right: 30px;display: flex;flex-direction: column;margin-bottom: 40px;position: relative;}
 .wb_intro .wb_service > div:nth-child(7),
