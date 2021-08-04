@@ -770,7 +770,7 @@ select.select_style {
      .btn_long {padding: 10px 40px;width: 100%}    
         
         /*워라밸 소개*/
-        .wb_intro .video_wrap iframe{height: 300px !important}
+        .wb_intro .video_wrap iframe{height: 200px !important}
         .wb_intro .txt .bold{font-size: 16px;}
         .wb_intro .txt .color_dark_gray{font-size: 13px;}
         .wb_intro .wb_service > div{margin-right: 0;width:100%;margin-bottom: 30px;}
