@@ -1,0 +1,224 @@
+*{box-sizing:border-box;padding: 0;margin: 0;}
+html,body{position:relative;width:100%;height:100%;margin:0;padding:0;font-weight: 300;}
+.clearfix:before,.clearfix:after{content:"";display:block}.clearfix:after{clear:both;visibility:hidden;line-height:0;height:0}.clearfix{*zoom:1}
+ul,ol,li{list-style:none;margin:0;padding:0;}
+a{text-decoration:none;color:inherit;}
+.fleft{float:left;}
+.fright{float:right;}
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+     font-family: 'S-CoreDream-4Regular';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: 'S-CoreDream-5Medium';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+
+.container{position:relative;width:1024px;margin:0 auto;font-size:16px;}
+.container.fluid{width:100%;}
+.covid_ev_wrap {overflow: hidden;font-family: 'S-CoreDream-4Regular'}
+.covid_ev_wrap .bold {font-weight: bold;}
+.covid_ev_wrap .bold02 {font-weight: 400;}
+.covid_ev_wrap .tct {text-align: center}
+.covid_ev_wrap .tlt {text-align: left}
+.covid_ev_wrap .f32 {font-size: 32px;}
+.covid_ev_wrap .f22 {font-size: 22px;}
+.covid_ev_wrap .f20 {font-size: 20px;}
+.covid_ev_wrap .f18 {font-size: 18px;}
+.covid_ev_wrap .f24 {font-size: 24px;}
+.covid_ev_wrap .f26 {font-size: 26px;}
+.covid_ev_wrap .f28 {font-size: 28px;}
+.covid_ev_wrap .f16 {font-size: 16px;}
+.covid_ev_wrap .f15 {font-size: 15px;}
+.covid_ev_wrap .f30 {font-size: 30px}
+.covid_ev_wrap .f40 {font-size: 40px}
+.covid_ev_wrap .f60 {font-size: 50px}
+.covid_ev_wrap .f90 {font-size: 90px}
+.covid_ev_wrap .orange {color: #ff790d}
+.covid_ev_wrap .white {color: #fff}
+.covid_ev_wrap .yellow {color: #ffc446}
+.covid_ev_wrap .blue {color: #032fa2}
+.covid_ev_wrap .blue02 {color: #3beaff}
+.covid_ev_wrap .nomal{font-weight: 300}
+.covid_ev_wrap .green{color: #1a3c45}
+.covid_ev_wrap .green02{color: #98ff54}
+.covid_ev_wrap .red{color: #ff0d0d}
+.covid_ev_wrap .fr{float: right}
+.covid_ev_wrap .fl{float: left}
+.covid_ev_wrap .white_bg{background: #fff;padding:0 5px}
+.covid_ev_wrap  .white_border{border: 2px solid #fff;padding: 50px;box-sizing: border-box;border-radius: 20px}
+
+.sbold01{font-family: 'S-CoreDream-5Medium' !important;}
+
+.covid_ev_wrap .txt_under{text-decoration: underline}
+.covid_ev_wrap .section_pd{padding: 60px 0}
+.covid_ev_wrap .mt5{margin-top: 5px}
+.covid_ev_wrap .mt10{margin-top: 10px}
+.covid_ev_wrap .mt15{margin-top: 15px}
+.covid_ev_wrap .mt20{margin-top: 20px}
+.covid_ev_wrap .mt25{margin-top: 25px}
+.covid_ev_wrap .mt30{margin-top: 30px}
+.covid_ev_wrap .mt40{margin-top: 40px}
+.covid_ev_wrap .mt50{margin-top: 50px}
+.covid_ev_wrap .mt60{margin-top: 60px}
+.covid_ev_wrap .mb100{margin-bottom: 100px}
+.covid_ev_wrap .section{padding: 33px 0}
+
+/* tit */
+.covid_ev_wrap .tit {text-align: center}
+.covid_ev_wrap .tit p{font-size: 18px;}
+.covid_ev_wrap .tit h3{font-weight: bold;font-size: 34px}
+
+.covid_ev_wrap .bar_list{}
+.covid_ev_wrap .bar_list li{position: relative;padding-left: 10px;margin-bottom: 5px}
+.covid_ev_wrap .bar_list li:last-child{margin-bottom: 0}
+.covid_ev_wrap .bar_list li:after{content: '-';display: block;position: absolute;left: 0;top:0}
+
+.covid_ev_wrap .covid_ev_bg {background: url(../images/covid_ev_bg.png) no-repeat top #006dd5;padding-bottom: 70px}
+.covid_ev_wrap .covid_ev_header{}
+.covid_ev_wrap .covid_ev_header h2{font-size: 50px;}
+.covid_ev_wrap .covid_ev_header h2 strong{font-size: 100px;color: #ffc446}
+.covid_ev_wrap .covid_ev_header  img{margin:20px auto;display: block;}
+.covid_ev_wrap .covid_ev_header ul{padding-top: 30px;width: 545px;margin: auto;}
+.covid_ev_wrap .covid_ev_header ul li{display: flex;align-items: center;margin-top: 10px}
+.covid_ev_wrap .covid_ev_header ul li strong{background: #f4310d;color: #fff;width: 170px;text-align: center;padding: 5px 10px;border-radius: 10px;margin-right: 20px}
+.covid_ev_wrap .covid_ev_header ul li .yellow{color: #ffc85c;font-size: 26px;font-weight: bold;}
+.covid_ev_wrap .covid_ev_header ul li span{color: #fff;}
+
+.covid_ev_wrap .border_box{border: 10px solid rgba(255, 255, 255, 0.3);border-radius: 20px}
+.covid_ev_wrap .border_box > div {background: #fff;border-radius: 10px;overflow: hidden}
+.covid_ev_wrap .border_box > div .img_tit {display: block;margin: auto;}
+.covid_ev_wrap .border_box .inner{padding: 40px 70px}
+.covid_ev_wrap .border_box  .bottom{background: #ffc446;border-top: 1px dashed rgba(0, 0, 0, 0.46);padding: 30px}
+.covid_ev_wrap .border_box li{margin-bottom: 10px}
+.covid_ev_wrap .border_box li:last-child{margin-bottom: 0}
+
+.covid_ev_wrap .three_flex{display: flex;margin-top: 20px;justify-content: space-between}
+.covid_ev_wrap .three_flex .img{text-align: center;position: relative;}
+.covid_ev_wrap .three_flex .img img{display: block;}
+.covid_ev_wrap .covid_ev_section01 .three_flex .img span{display: inline-block;font-size: 17px;font-weight: bold;color: #fff;background: #003760;padding: 5px 15px;border-radius: 20px;position: absolute;bottom: -5px;left: 50%;transform: translateX(-50%)}
+.covid_ev_wrap .three_flex > div >  p {font-size: 16px;text-align: center;margin-top: 20px}
+.covid_ev_wrap .three_flex .arrow{background: url(../images/covid_ev_arrow.png) center no-repeat;width: 18px;}
+
+.covid_ev_wrap .three_flex .text{text-align: center;margin-top: 20px}
+.covid_ev_wrap .three_flex .text span{display: inline-block;font-size: 17px;font-weight: bold;color: #fff;background: #003760;padding: 5px 15px;border-radius: 20px}
+.covid_ev_wrap .three_flex .text p{margin-top: 20px}
+
+.covid_ev_wrap .covid_ev_section02 .three_flex{padding:0 30px}
+.covid_ev_wrap .covid_ev_section02 .img{height: 190px;position: relative;}
+.covid_ev_wrap .covid_ev_section02 .img img{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+.covid_ev_wrap .covid_ev_section02 span{width: 130px}
+.covid_ev_wrap .covid_evn_btn{color: #fff;background: #f4310d;font-size: 24px;padding: 10px 40px;border-radius: 5px}
+
+.covid_ev_wrap .covid_ev_footer {background: #003760}
+
+@media screen and (max-width : 1260px){
+    
+.container {width: 100%;padding: 0 20px}    
+ 
+}
+
+
+@media screen and (max-width : 1024px){
+.covid_ev_wrap .f32 {font-size: 22px;}
+.covid_ev_wrap .f22 {font-size: 17px;}
+.covid_ev_wrap .f20 {font-size: 16px;}
+.covid_ev_wrap .f18 {font-size: 15px;}
+.covid_ev_wrap .f26 {font-size: 18px;}
+.covid_ev_wrap .f28 {font-size: 22px;}
+.covid_ev_wrap .f16 {font-size: 14px;}
+.covid_ev_wrap .f30 {font-size: 24px}
+.covid_ev_wrap .f40 {font-size: 25px}
+.covid_ev_wrap .f60 {font-size: 35px}
+.covid_ev_wrap .f90 {font-size: 70px}    
+	
+.covid_ev_wrap .covid_ev_header h2{font-size: 30px}	
+.covid_ev_wrap .covid_ev_header h2 strong{font-size: 70px}	
+.covid_ev_wrap .covid_ev_header img{max-width: 646px;width: 70%}  
+   
+.covid_ev_wrap .covid_ev_section01  .three_flex{word-break: keep-all}	
+.covid_ev_wrap .covid_ev_section01  .three_flex > div:not(.arrow) {width: calc(33% - 50px)}    
+.covid_ev_wrap .covid_ev_section01  .three_flex br{display: none;}
+.covid_ev_wrap .covid_ev_section01  .three_flex .img{}	
+.covid_ev_wrap .covid_ev_section01  .three_flex .img img{width: 100%;}	
+	
+.covid_ev_wrap .border_box .inner{padding: 30px }		
+}
+
+@media screen and (max-width : 768px){
+.covid_ev_wrap .f32 {font-size: 20px;}
+.covid_ev_wrap .f22 {font-size: 16px;}
+.covid_ev_wrap .f20 {font-size: 16px;}
+.covid_ev_wrap .f18 {font-size: 15px;}
+.covid_ev_wrap .f26 {font-size: 18px;}
+.covid_ev_wrap .f24 {font-size: 18px;}
+.covid_ev_wrap .f28 {font-size: 20px;}
+.covid_ev_wrap .f16 {font-size: 14px;}
+.covid_ev_wrap .f30 {font-size: 22px}
+.covid_ev_wrap .f40 {font-size: 25px}
+.covid_ev_wrap .f60 {font-size: 26px}
+.covid_ev_wrap .f90 {font-size: 60px}   
+	
+	
+.covid_ev_wrap .covid_ev_header h2{font-size: 20px}	
+.covid_ev_wrap .covid_ev_header h2 strong{font-size: 40px}	
+	
+.covid_ev_wrap .border_box .inner{padding: 20px }	
+	
+	.covid_ev_wrap .covid_ev_section02 .img{width: 150px;margin: auto;height: auto;}	
+	.covid_ev_wrap .covid_ev_section02 .three_flex > div {margin-bottom: 30px}
+	.covid_ev_wrap .covid_ev_section02 .img img{width: 100%;position: relative;transform: none;left: auto;top: 0;}	
+	
+	.covid_ev_wrap .covid_evn_btn {font-size: 18px}
+    
+}
+
+    @media screen and (max-width : 640px){
+    .covid_ev_wrap .f32 {font-size: 18px !important;}
+	.covid_ev_wrap .f22 {font-size: 15px !important;}
+	.covid_ev_wrap .f20 {font-size: 15px !important;}
+	.covid_ev_wrap .f18 {font-size: 15px !important;}
+	.covid_ev_wrap .f26 {font-size: 16px !important;}
+	.covid_ev_wrap .f24 {font-size: 16px !important;}
+	.covid_ev_wrap .f28 {font-size: 18px !important;}
+	.covid_ev_wrap .f18 {font-size: 16px !important;}
+	.covid_ev_wrap .f16 {font-size: 14px !important;}
+	.covid_ev_wrap .f30 {font-size: 20px !important}
+	.covid_ev_wrap .f40 {font-size: 22px !important}
+	.covid_ev_wrap .f60 {font-size: 24px !important}
+     
+	.covid_ev_wrap .section{padding: 30px 0}	
+	.covid_ev_wrap .covid_ev_header h2{font-size: 18px}	
+	.covid_ev_wrap .covid_ev_header h2 strong{font-size: 30px}	
+		
+	.covid_ev_wrap .covid_ev_header ul{width: 100%;margin: 0}
+	.covid_ev_wrap .covid_ev_header ul li{flex-direction: column;margin-bottom: 20px}
+	.covid_ev_wrap .covid_ev_header ul li strong{margin-bottom: 10px;font-size: 14px;margin-right: 0}
+		
+	.covid_ev_wrap .three_flex{flex-direction: column;}	
+	.covid_ev_wrap .covid_ev_section01 .three_flex > div:not(.arrow){width: 100%;}
+	.covid_ev_wrap .covid_ev_section01 .three_flex > div .img{width: 120px;margin: auto;}
+	.covid_ev_wrap .border_box > div .img_tit {max-width: 300px;width: 100%;}
+		.covid_ev_wrap .three_flex .arrow{height: 35px;transform: rotate(90deg);margin: 20px auto;}	
+		.covid_ev_wrap .covid_ev_section01 .three_flex .img span{font-size: 14px;}
+		.covid_ev_wrap .three_flex .text span{font-size: 14px}
+		.covid_ev_wrap .covid_evn_btn{font-size: 14px;padding: 10px;max-width: 310px;text-align: center;width: 100%;}
+    }
+    
+    
+@media screen and (max-width : 480px){
+    }
