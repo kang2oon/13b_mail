@@ -122,7 +122,7 @@ a{text-decoration:none;color:inherit;}
 .covid_ev_wrap .covid_ev_section02 .img{height: 190px;position: relative;}
 .covid_ev_wrap .covid_ev_section02 .img img{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
 .covid_ev_wrap .covid_ev_section02 span{width: 130px}
-.covid_ev_wrap .covid_evn_btn{color: #fff;background: #f4310d;font-size: 24px;padding: 10px 40px;border-radius: 5px}
+.covid_ev_wrap .covid_evn_btn{color: #fff;background: #f4310d;font-size: 24px;padding: 15px 40px;border-radius: 5px}
 
 .covid_ev_wrap .covid_ev_footer {background: #003760}
 
@@ -208,6 +208,7 @@ a{text-decoration:none;color:inherit;}
 	.covid_ev_wrap .covid_ev_header ul{width: 100%;margin: 0}
 	.covid_ev_wrap .covid_ev_header ul li{flex-direction: column;margin-bottom: 20px}
 	.covid_ev_wrap .covid_ev_header ul li strong{margin-bottom: 10px;font-size: 14px;margin-right: 0}
+		{box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.32)}
 		
 	.covid_ev_wrap .three_flex{flex-direction: column;}	
 	.covid_ev_wrap .covid_ev_section01 .three_flex > div:not(.arrow){width: 100%;}
