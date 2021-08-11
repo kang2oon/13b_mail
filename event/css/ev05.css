@@ -128,7 +128,7 @@ a{text-decoration:none;color:inherit;}
 
 @media screen and (max-width : 1260px){
     
-.container {width: 100%;padding: 0 20px}    
+.container {width: calc(100% - 40px);margin: auto}    
  
 }
 
