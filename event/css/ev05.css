@@ -197,11 +197,14 @@ a{text-decoration:none;color:inherit;}
 	.covid_ev_wrap .f26 {font-size: 16px !important;}
 	.covid_ev_wrap .f24 {font-size: 16px !important;}
 	.covid_ev_wrap .f28 {font-size: 18px !important;}
-	.covid_ev_wrap .f18 {font-size: 16px !important;}
+	.covid_ev_wrap .f18 {font-size: 14px !important;}
 	.covid_ev_wrap .f16 {font-size: 14px !important;}
+	.covid_ev_wrap .f17 {font-size: 14px !important;}
 	.covid_ev_wrap .f30 {font-size: 20px !important}
 	.covid_ev_wrap .f40 {font-size: 22px !important}
 	.covid_ev_wrap .f60 {font-size: 24px !important}
+
+	.covid_ev_wrap 	.mt60 {margin-top: 30px;}
      
 	.covid_ev_wrap .section{padding: 30px 0}	
 	.covid_ev_wrap .covid_ev_header h2{font-size: 18px}	
@@ -220,6 +223,9 @@ a{text-decoration:none;color:inherit;}
 		.covid_ev_wrap .covid_ev_section01 .three_flex .img span{font-size: 14px;}
 		.covid_ev_wrap .three_flex .text span{font-size: 14px}
 		.covid_ev_wrap .covid_evn_btn{font-size: 14px;padding: 10px;max-width: 310px;text-align: center;width: 100%;}
+
+		.cvd_btn{display: block;width: 150px;text-align: center;margin-top: 5px;font-size: 12px;}
+		.covid_ev_wrap .three_flex > div > p{font-size: 14px;}
     }
     
     
