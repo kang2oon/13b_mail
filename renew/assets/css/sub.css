@@ -505,7 +505,7 @@ select.select_style {
 .password_wrap .pw_form input{width: calc(100% - 180px);height: 36px;border-radius: 3px;border: 1px solid #dcdcdc;padding: 10px;box-sizing: border-box;-webkit-appearance: none;-webkit-border-radius: 0;}
 .password_wrap .pw_form .bottom{background: #f8f8f8;padding: 30px}
 
-.password_wrap .btn_wrap {text-align: center;}
+.password_wrap .btn_wrap {text-align: center;margin-top: 30px;}
 .password_wrap .btn_wrap button,
 .password_wrap .btn_wrap a{font-size: 14px;padding: 7px 20px;border: 0;border-radius: 5px;font-weight: 500;margin-right: 10px;}
 .password_wrap .btn_wrap button:last-child,
