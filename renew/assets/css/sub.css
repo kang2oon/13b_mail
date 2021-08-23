@@ -506,11 +506,23 @@ select.select_style {
 .password_wrap .pw_form .bottom{background: #f8f8f8;padding: 30px}
 
 .password_wrap .btn_wrap {margin-top: 40px;text-align: center;}
-.password_wrap .btn_wrap button{font-size: 14px;padding: 7px 20px;border: 0;border-radius: 5px;font-weight: 500;margin-right: 10px}
-.password_wrap .btn_wrap button:last-child{margin-right: 0}
-.password_wrap .btn_wrap button span{margin-left: 10px}
+.password_wrap .btn_wrap button,
+.password_wrap .btn_wrap a{font-size: 14px;padding: 7px 20px;border: 0;border-radius: 5px;font-weight: 500;margin-right: 10px}
+.password_wrap .btn_wrap button:last-child,
+.password_wrap .btn_wrap a:last-child{margin-right: 0}
+.password_wrap .btn_wrap button span,
+.password_wrap .btn_wrap a span{margin-left: 10px}
 .password_wrap .btn_wrap .btn1 {background: var(--wbl-color-main);color: #fff}
 .password_wrap .btn_wrap .btn2 {border: 1px solid var(--wbl-color-main);color: var(--wbl-color-main);background: #fff;}
+
+.password_wrap .shadow{position: fixed;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.61);top: 0;left: 0;overflow: hidden;z-index: 9999;display: none}
+.password_wrap .clearfix:after{content: '';display: block;clear: both;}
+.password_wrap .popup{max-width: 450px;width: 90%; background: #fff;border-radius: 10px;position: fixed;left: 50%;top: 50%;transform: translate(-50%,-50%);padding: 30px 20px;z-index: 99999;display: none}
+.password_wrap .popup.on {display: block}
+.password_wrap .popup .popup_top{margin-bottom: 20px}
+.password_wrap .popup h3 {font-size: 20px;float: left;margin: 0;}
+.password_wrap .popup .close{float: right;display: block;background: url(../images/close_ico.png) no-repeat center;width: 16px;height: 16px;text-indent: -9999px;}
+body.not_scroll{position: absolute;width: 100%;height: 100%;overflow: hidden;}
 
   /* -------------------- 반응형 시작 --------------------  */
   @media screen and (min-width:1261px) {
@@ -815,6 +827,6 @@ select.select_style {
   .password_wrap .pw_form .bottom{padding: 20px}
   .password_wrap .blue_box{margin: 20px 0}
   .password_wrap .btn_wrap {margin-top: 20px}
-  .password_wrap .btn_wrap button {font-size: 12px;padding: 7px 10px;}
+  .password_wrap .btn_wrap button , .password_wrap .btn_wrap a{font-size: 12px;padding: 7px 5px;margin-right: 5px}
 
   }
