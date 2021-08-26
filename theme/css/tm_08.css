@@ -151,7 +151,7 @@ p {word-break: keep-all}
 #tm08  .tm08_section03 .txt_box{background: #fff;;margin-top: 80px;position: relative;border: 2px solid #4285f4;padding: 30px;border-radius: 20px;}
 #tm08  .tm08_section03 .txt_box:after{content: '';display: block;background: url(../images/tm_08/tm08_03_img06.png) no-repeat;width: 64px;height: 120px;position: absolute;right: 0;top: -60px}
 #tm08  .tm08_section03 .txt_box p {color: #3f3f3f}
-#tm08  .tm08_section03 .txt_box strong {box-shadow: inset 0 -20px 0 #f3fd1b;padding: 0 5px}
+#tm08  .tm08_section03 .txt_box strong {box-shadow: inset 0 -20px 0 #f3fd1b;}
 
 #tm08  .tm08_section03 .slick-dots{text-align: center;margin-top: 35px;}
 #tm08  .tm08_section03 .slick-dots li{display:inline-block;margin-right: 10px;}
