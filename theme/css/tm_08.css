@@ -156,7 +156,7 @@ p {word-break: keep-all}
 #tm08  .tm08_section03 .slick-dots{text-align: center;margin-top: 35px;}
 #tm08  .tm08_section03 .slick-dots li{display:inline-block;margin-right: 10px;}
 #tm08  .tm08_section03 .slick-dots li:last-child{margin-right: 0}
-#tm08  .tm08_section03 .slick-dots button{background: #4285f4;border: 0;width: 15px;height: 15px;border-radius: 50%;text-indent: -9999px;opacity: 0.4}
+#tm08  .tm08_section03 .slick-dots button{background: #4285f4;border: 0;width: 15px;height: 15px;border-radius: 50%;text-indent: -9999px;opacity: 0.4;cursor: pointer;}
 #tm08  .tm08_section03 .slick-dots .slick-active button {opacity: 1}
 
 .tm08_section04 {background: url(../images/tm_08/tm08_04_img01.png) #53b5da no-repeat top}
