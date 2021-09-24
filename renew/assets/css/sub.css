@@ -152,6 +152,10 @@ select.select_style {
   .main_section .condition_result {position: relative;border:1px solid var(--wbl-color-light-gray-lighten1);border-radius:10px;overflow:hidden;width:calc(25% - 15px); height:280px;}
   .main_section .condition_result .thumb{width:100%;height:161px;}
   .main_section .condition_result .thumb img {width: 100%;height: 100%;}
+
+  /* 기간만료 */
+.thumb.end:after {content: '';display: block;width: 100%;height: 100%;background: (0, 0, 0, 0.4);position: absolute;left: 0;top: 0;}
+.thumb.end::before{content: '기간만료';display: block;width: 100%;position: absolute;color: #fff;top: 50%;left: 0;transform: translateY(-50%);font-size: 16px;;}
   
   .main_section .condition_result .category{display:inline-block;margin: 10px 20px;font-size:var(--wbl-font-sz-ms1);border:1px solid var(--wbl-color-main);border-radius:15px;color:var(--wbl-color-main);padding:1px 13px;}
   .main_section .condition_result .title{font-size:var(--wbl-font-sz-ps1);margin:0 20px}
