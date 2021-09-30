@@ -53,6 +53,7 @@ select.select_style {
 .color_blue {color: #053c74}
 .color_main {color: var(--wbl-color-main)}
 .color_dark_gray{color: var(--wbl-color-dark-gray)}
+.color_red{color: var(--wbl-color-red)}
   
   /* table style */
   .table_style01 {}    
@@ -98,7 +99,7 @@ select.select_style {
   .main_section  #snb li a:focus {color:var(--wbl-color-main);font-weight: 500 }
   
   /* 서브 메뉴 하단 배너 */
-  .sub_banner .swiper-container{position: relative;}
+  .sub_banner .swiper-container{position: relative;overflow: hidden}
   .sub_banner .swiper-slide a {display: block;border-radius: 8px;overflow: hidden;}
   .sub_banner .swiper-slide a img {width: 100%;height: 100%;display: block}
   .sub_banner .page_function {position: relative;text-align: center;width: 100%;}
@@ -528,15 +529,36 @@ select.select_style {
 .password_wrap .popup .close{float: right;display: block;background: url(../images/close_ico.png) no-repeat center;width: 16px;height: 16px;text-indent: -9999px;}
 body.not_scroll{height:100%;height: 100%; overflow:hidden;position: absolute;}
 
+
+/* 가이드 */
+.guide_container{margin-bottom: 40px}
+.guide_container .tab_content{position: relative;margin-top: 30px;}
+.guide_container  .helf{position: absolute;right: 0;top:0;display: flex;align-items: center;border-radius: 50px}
+.guide_container  .helf.active{background: #ffeee9}
+.guide_container  .helf.active span{display: block}
+
+.guide_container  .helf a{width: 45px;height: 45px;background:url(../images/helf_ico.png) no-repeat center #ff3d00;font-size: 2.0rem;border-radius: 50%;text-indent: -999px;z-index: 9}
+.guide_container  .helf span{font-size: 14px;padding:10px 15px;display: none}
+.guide_wrap > div{display: flex;justify-content: space-between;margin-bottom: 30px;padding-bottom: 30px;border-bottom: 1px solid #e6e6e6;}
+.guide_wrap > div:last-child{margin-bottom: 0;padding-bottom: 0;border-bottom: 0;}
+.guide_wrap .img{width: 240px;border-radius: 10px;overflow: hidden;border: 1px solid #dcdcdc}
+.guide_wrap .txt{width: calc(100% - 280px);display: flex;flex-direction: column;position: relative;}
+.guide_wrap .img img{width: 100%;height: 100%;display: block;}
+.guide_wrap .btn_wrap {margin-top: auto;}
+.guide_wrap .txt .bold{font-size: 18px;margin-bottom: 10px;color: #000}
+.guide_wrap .txt .color_dark_gray{font-size: 14px;word-break: keep-all;}
+.guide_wrap .txt .btn{font-size: 14px;border-radius: 5px;padding: 3px 15px;border: 1px solid  var(--wbl-color-main);color:  var(--wbl-color-main);}
+.guide_wrap .txt .btn:hover,
+.guide_wrap .txt .btn:active,
+.guide_wrap .txt .btn:focus {background: var(--wbl-color-main);color: #fff}
+
+
   /* -------------------- 반응형 시작 --------------------  */
   @media screen and (min-width:1261px) {
   
   }
   
   @media screen and (max-width:1260px) {
-    
-  
-      
   /* 서브 메뉴*/
   .main_section .snb_wrap {width: 220px;margin: 0 30px 0 0}
   .main_section .sub_cont_wrap {width: calc(100% - 250px);}
@@ -550,9 +572,6 @@ body.not_scroll{height:100%;height: 100%; overflow:hidden;position: absolute;}
  .lb_sch_wrap .btn_list01 .check_btn .num{display: block;}  
  .lb_sch_wrap .btn_list .check_btn label{padding: 10px 0px}    
  .lb_result_wrap .tag > span {font-size: 8px;padding: 1px 5px;letter-spacing: -.5px}
-          
-      
-  
   
   }
   
@@ -611,15 +630,17 @@ body.not_scroll{height:100%;height: 100%; overflow:hidden;position: absolute;}
  .lb_sch_wrap .btn_list01 .check_btn:nth-child(8n){padding-right: 5px} 
  .lb_sch_wrap .btn_list01 .check_btn:nth-child(6n){padding-right: 0} 
  
+.myPage_attend_warp  .txt {word-break: keep-all}
       
-      
-   .myPage_attend_warp  .txt {word-break: keep-all}
-      
-      /* 워라밸 소개 */
-      .wb_intro .gray_box .img{width: 250px;}
-      .wb_intro .gray_box .txt{width: calc(100% - 280px)}
-      .wb_intro .gray_box .txt .btn{position: static;}
-  }
+/* 워라밸 소개 */
+.wb_intro .gray_box .img{width: 250px;}
+.wb_intro .gray_box .txt{width: calc(100% - 280px)}
+.wb_intro .gray_box .txt .btn{position: static;}
+	  
+/* 가이드 */  
+.guide_container .helf{display: none}
+	  
+}
   
   
   
@@ -702,8 +723,6 @@ body.not_scroll{height:100%;height: 100%; overflow:hidden;position: absolute;}
   .lb_sch_wrap .lb_sch .btn_style {width: 75px;padding: 7px;}          
   .lb_result_wrap .condition_result  .title{height: 1.4em;display: block; white-space: nowrap;}    
   .lb_result_wrap .condition_result{padding-bottom: 0 !important}    
-      
-      
  .lb_sch_wrap .btn_list01 .check_btn{width: 20%} 
  .lb_sch_wrap .btn_list01 .check_btn:nth-child(5n){padding-right: 0} 
  .lb_sch_wrap .btn_list01 .check_btn:nth-child(6n){padding-right: 5px} 
@@ -714,12 +733,17 @@ body.not_scroll{height:100%;height: 100%; overflow:hidden;position: absolute;}
   .ft_no_sch.fiter_top .fiter_list{float: left;width: auto;padding-top: 5px}    
       
       /*워라밸 소개*/
-        .wb_intro .wb_service > div{margin-right: 20px;width: calc(50% - 10px);margin-bottom: 30px;}
+      .wb_intro .wb_service > div{margin-right: 20px;width: calc(50% - 10px);margin-bottom: 30px;}
       .wb_intro .wb_service > div:nth-child(3n){margin-right: 20px}
       .wb_intro .wb_service > div:nth-child(2n){margin-right: 0}
       .wb_intro .wb_service > div:nth-child(7),
       .wb_intro .wb_service > div:nth-child(8){margin-bottom: 30px}
-      
+	  
+	  /* 가이드 */
+	  .guide_wrap .img{width: 200px;}
+	  .guide_wrap .txt{width: calc(100% - 230px)}
+	  .guide_wrap .txt .bold{font-size: 17px}
+	  .guide_wrap .txt .color_dark_gray{font-size: 13px;margin-bottom: 20px}
   }
   
   @media screen and (max-width:640px) {
@@ -737,7 +761,6 @@ body.not_scroll{height:100%;height: 100%; overflow:hidden;position: absolute;}
   .board_view .view_thumb{display: block;}    
   .board_view .view_thumb .img {width: 100%;margin-right: 0;height: auto;margin: 0;padding: 0;}
   .board_view .view_thumb .txt {width: 100%;margin-top: 20px}       
-      
   .main_section .condition_result_wrap .condition_result{width: 100%;margin-right: 0;}    
   .main_section .condition_result_wrap:not(.not_rw) .condition_result {width: 100%;} 
   .main_section .condition_result_wrap:not(.not_rw) > div:nth-child(3n) {margin-right: 0}    
@@ -756,7 +779,6 @@ body.not_scroll{height:100%;height: 100%; overflow:hidden;position: absolute;}
   .main_section .condition_result_wrap.not_rw .condition_result {width: 100%;}
   .main_section .condition_result_wrap.not_rw > div:nth-child(3n) {margin-right: 0}
   .main_section .condition_result_wrap.not_rw > div:nth-child(2n) {margin-right: 0}  
-      
       
   /* 정보창고 > 워라밸 정보*/
    .fiter_top .list_search {max-width: 221px;width: calc(100% - 90px);padding: 7px 5px;height: 35px}
@@ -831,5 +853,13 @@ body.not_scroll{height:100%;height: 100%; overflow:hidden;position: absolute;}
   .password_wrap .pw_form .bottom{padding: 20px}
   .password_wrap .blue_box{margin: 20px 0}
   .password_wrap .btn_wrap button , .password_wrap .btn_wrap a{font-size: 12px;padding: 7px 5px;margin-right: 5px}
+	  
+/* 가이드 */	  
+	  .guide_wrap > div{display: block}	  
+	  .guide_wrap .img{width:100%;margin-bottom: 20px}	  
+	  .guide_wrap .txt{width:100%;}	  
+	  
+	  .guide_wrap .txt .btn{display: inline-block;margin-bottom: 5px}
+	  
 
   }
