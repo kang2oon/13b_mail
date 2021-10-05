@@ -140,8 +140,8 @@ h3.line_tit:after{content: '';display: block;width: 150px;height: 3px;background
 .tm09_section03 .note ol li:last-child{margin-bottom: 0}
 .tm09_section03 .note ol li:before{content: '';display: block;background: url(../images/tm_09/tm_section03_check.png) no-repeat;width: 40px;height: 41px;position: absolute;left: 0;top: -6px;}
 
-.tm09_section04{position: relative;padding-top: 350px;padding-bottom: 100px;width: 949px;margin: auto}
-.tm09_section04:before{content: '';display: block;background: url(../images/tm_09/tm_section04_img.png) no-repeat;width: 700px;height: 618px;position: absolute;top: -150px;left: 50%;transform: translateX(-50%)}
+.tm09_section04{position: relative;padding-top: 400px;padding-bottom: 100px;width: 949px;margin: auto}
+.tm09_section04:before{content: '';display: block;background: url(../images/tm_09/tm_section04_img.png) no-repeat;width: 700px;height: 618px;position: absolute;top: -100px;left: 50%;transform: translateX(-50%)}
 .tm09_section04 .tm09_slider{}
 .tm09_section04 .item{width:536px;margin: 60px auto; }
 .tm09_section04 .item .tit{background: #1a1212;font-size: 30px;text-align: center;color: #fff;padding: 10px;}
