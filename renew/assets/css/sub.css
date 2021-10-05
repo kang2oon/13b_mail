@@ -6,6 +6,8 @@ select.select_style {
   appearance: none;
   }
   select.select_style::-ms-expand {display: none;} 
+html { height: 100%; position: fixed; overflow: hidden; }
+body { height: 100%; position: relative; overflow: auto; }
   
   /* 페이지 네비게이션 */
   .page_navi {position: relative;display: block;margin: 15px 0 ;padding: 0;text-align: left;color: #4e446b;font-weight: 100}
@@ -553,7 +555,6 @@ body.not_scroll{height:100%;height: 100%; overflow:hidden;position: absolute;}
 .guide_wrap .txt .btn:hover,
 .guide_wrap .txt .btn:active,
 .guide_wrap .txt .btn:focus {background: var(--wbl-color-main);color: #fff}
-
 
   /* -------------------- 반응형 시작 --------------------  */
   @media screen and (min-width:1261px) {
