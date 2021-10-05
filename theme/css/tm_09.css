@@ -147,7 +147,7 @@ h3.line_tit:after{content: '';display: block;width: 150px;height: 3px;background
 .tm09_section04 .item .tit{background: #1a1212;font-size: 30px;text-align: center;color: #fff;padding: 10px;}
 .tm09_section04 .txt {text-align: center;margin-top: 20px}
 .tm09_section04 .item img{border: 1px solid #dcdcdc;display: block;}
-.tm09_section04 .slick-arrow{width: 31px;height: 49px;text-indent: -9999px;border: 0;position: absolute;top: 50%;transform: translateY(-50%)}
+.tm09_section04 .slick-arrow{width: 31px;height: 49px;text-indent: -9999px;border: 0;position: absolute;top: 50%;transform: translateY(-50%);cursor: pointer;}
 .tm09_section04 .slick-prev{background: url(../images/tm_09/slider_prev.png) no-repeat;left: 0}
 .tm09_section04 .slick-next{background: url(../images/tm_09/slider_next.png) no-repeat;right: 0}
 
