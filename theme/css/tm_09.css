@@ -1,4 +1,4 @@
-*{font-family:'S-CoreDream-4Regular', 'Noto Sans KR', sans-serif;box-sizing:border-box;}
+#tm09{font-family:'S-CoreDream-4Regular', 'Noto Sans KR', sans-serif;box-sizing:border-box;}
 html,body{position:relative;width:100%;height:100%;margin:0;padding:0;color: #333;}
 .clearfix:before,.clearfix:after{content:"";display:block}.clearfix:after{clear:both;visibility:hidden;line-height:0;height:0}.clearfix{*zoom:1}
 img{max-width:100%;line-height:0;}
@@ -362,7 +362,7 @@ h3.line_tit:after{content: '';display: block;width: 150px;height: 3px;background
 	.tm09_section02 .meaning p {word-break: keep-all}
 	.tm09_section02 .bd_white_box img{width: 300px;bottom: -70px}
 	.tm09_section02 .bd_white_box .bg{padding-bottom: 250px}
-	
+	.tm09_section02 .tit h2{font-size: 18px;}
 	h3.line_tit{font-size: 22px }
 	.tm09_section03 .note{margin:20px auto}
 	h3.line_tit:before{display: none}
