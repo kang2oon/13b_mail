@@ -514,18 +514,17 @@
 			}
 		});
 
-		/* 
-		$(document).scroll(function() {
+		
+		/* (document).scroll(function() {
 			checkOffset();
 		});
 
 		function checkOffset() {
-			if ($('.help').offset().top + $('.help').height() >=
-				$('#footer').offset().top - 10)
-				$('.help').addClass('fixed');
-			if ($(document).scrollTop() + window.innerHeight < $('#footer').offset().top)
-				$('.help').removeClass('fixed'); 
-		} */
+    if($('.help').offset().top + $('.help').height()  >= $('#footer').offset().top - 10)
+        $('.help').css('position', 'absolute');
+    if($(document).scrollTop() + window.innerHeight < $('#footer').offset().top)
+        $('.help').css('position', 'fixed'); // restore when you scroll up
+} */
 	</script>
 
 </body></html>
