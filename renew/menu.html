@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <title>워라밸링크</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/kgoon.reset.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+</head>
+
+<body>
+    <div class="container fluid skip_navi">
+        <a href="#content">본문 바로가기</a>
+    </div>
+    <div id="header" class="container pd0 fluid clearfix">
+        <!-- 사이트맵 -->
+            <div class="menu_site mb_ms pop_ns" tabindex="0" style="display:none">
+                <div class="shadow"></div>
+                <div class="ms_inner">
+                    <div class="ms_top clearfix">
+                        <h2>사이트맵</h2>
+                    </div>
+                    <div class="pc_hide">
+                        <ul class="mb_log clearfix">
+                            <li class="login_btn"><a href="#">로그인</a></li>
+                            <li class="join_btn"><a href="#">회원가입</a></li>
+                        </ul>
+                    </div>
+                    <div class="pc_hide">
+                        <div class="bnr_mb"></div>
+                    </div>
+                    <ul id="siteMap" class="menu_wrap clearfix">
+                        
+                    </ul>
+                    <a href="#" class="close bnt_close">닫기</a>
+                </div>
+            </div>
+        <!-- //사이트맵 -->
+        <div class="mega_wrap" style="display:block">
+            <div class="shadow"></div>
+            <div class="mega_menu">
+                <div class="container clearfix">
+                    <ul id="gnbMega" class="menu_wrap clearfix">
+
+                    </ul>
+                    <div class="bnr_mega"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.ajax({
+				type: "GET",
+				dataType: "json",
+				url: "assets/menu.json",
+				success: function(obj){
+					var arrData = obj.menus;
+					megaMenu(arrData);
+                    siteMap(arrData);
+				}
+			});
+
+            function megaMenu(arrData){
+				var cnt = arrData.length;
+				var mgContent = "";
+				
+                for(var i=0; i<6; i++){
+
+                    var d2 = arrData[i].d2;
+                    var d2Cnt = d2.length;
+                    var d2Content ="";
+                    for(var j=0; j<d2Cnt; j++){
+                        d2Content += "<li><a href=\""+d2[j].link+"\" target=\""+d2[j].target+"\">"+d2[j].name+"</a></li>" 
+                    }
+
+					mgContent += "<li><div class=\"tit\">"+arrData[i].title+"</div>"
+                    mgContent += "<ul>"+d2Content+"</ul>"
+                    mgContent += "</li>"
+				}
+				$("#gnbMega").append(mgContent);
+			}
+
+            function siteMap(arrData){
+				var cnt = arrData.length;
+				var mgContent = "";
+				for(var i=0; i<cnt; i++){
+
+                    var d2 = arrData[i].d2;
+                    var d2Cnt = d2.length;
+                    var d2Content ="";
+                    for(var j=0; j<d2Cnt; j++){
+                        d2Content += "<li><a href=\""+d2[j].link+"\" target=\""+d2[j].target+"\">"+d2[j].name+"</a></li>" 
+                    }
+
+					mgContent += "<li><div class=\"tit\">"+arrData[i].title+"</div>"
+                    mgContent += "<ul>"+d2Content+"</ul>"
+                    mgContent += "</li>"
+				}
+				$("#siteMap").append(mgContent);
+			}
+        });
+    </script>
+</body></html>

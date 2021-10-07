@@ -1,0 +1,27 @@
+{"companys":[
+    {
+        "number":"6888200072",
+        "name":"경기도일자리재단",
+        "headimg":"https://www.jobaba.net/file/company/skfj1322343.jpg",
+        "owner":"제윤경",
+        "type":"비영리단체",
+        "stclass":"그 외 기타 협회 및 단체",
+        "ciimg":"https://www.jobaba.net/file/company/dskjfjdslf78.jpg",
+        "address":"경기 부천시 부천로136번길 27",
+        "site":"",
+        "swot":[
+            {
+                "strengths":"20년 굴지의 기업교육 서비스 대표 선두주자"
+            },
+            {
+                "weaknesses":"코로나19 여파로 인한 교육수요 위축"
+            },
+            {
+                "opportunities":"비대면 교육서비스 개발을 통한 시장 확대"
+            },
+            {
+                "threats":"여가 및 유흥 콘텐츠 증가에 따른 자기계발 욕구 저하"
+            }
+        ]
+    }
+]}
