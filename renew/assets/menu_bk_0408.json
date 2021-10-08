@@ -21,21 +21,6 @@
                 "name":"정책 참여",
                 "link":"/joinPolicy/",
                 "target":"_self"
-            },
-            {
-                "name":"법ㆍ제도 안내",
-                "link":"javascript:void(0)",
-                "target":"_self"
-            },
-            {
-                "name":"경기도 정책",
-                "link":"javascript:void(0)",
-                "target":"_self"
-            },
-            {
-                "name":"중앙정부 정책",
-                "link":"javascript:void(0)",
-                "target":"_self"
             }
         ]
     },{
@@ -61,7 +46,7 @@
                 "target":"_self"
             },
             {
-                "name":"경기가족친화기업 인증제도",
+                "name":"경기도 가족친화기업 인증제도",
                 "link":"javascript:void(0)",
                 "target":"_self"
             },
@@ -80,13 +65,52 @@
         "title":"우리동네 +",
         "d2":[
             {
-                "name":"일생활균형지원사업",
+                "name":"지역별 일생활균형지원사업",
                 "link":"javascript:void(0)",
                 "target":"_self"
             },
             {
-                "name":"가사서비스 기관",
+                "name":"우리동네 가사서비스 기관",
                 "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"우리동네 정보",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            }
+        ]
+    },{
+        "title":"정보창고",
+        "d2":[
+            {
+                "name":"법ㆍ제도 안내",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"경기도 정책",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"중앙정부 정책",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"워라밸 정보",
+                "link":"javascript:void(0)",
+                "target":"_self"
+            },
+            {
+                "name":"테마정보",
+                "link":"/thema/",
+                "target":"_self"
+            },
+            {
+                "name":"웹진",
+                "link":"/webzine/",
                 "target":"_self"
             }
         ]
@@ -119,41 +143,12 @@
                 "target":"_self"
             },
             {
-                "name":"테마정보",
-                "link":"/thema/",
-                "target":"_self"
-            },
-            {
-                "name":"웹진",
-                "link":"/webzine/",
-                "target":"_self"
-            },
-            {
                 "name":"FAQ",
                 "link":"/faq/",
                 "target":"_self"
             },
             {
                 "name":"이벤트",
-                "link":"javascript:void(0)",
-                "target":"_self"
-            }
-        ]
-    },{
-        "title":"맞춤 워라밸",
-        "d2":[
-            {
-                "name":"워라밸 자가진단",
-                "link":"javascript:void(0)",
-                "target":"_self"
-            },
-            {
-                "name":"맞춤정보",
-                "link":"javascript:void(0)",
-                "target":"_self"
-            },
-            {
-                "name":"관심정보",
                 "link":"javascript:void(0)",
                 "target":"_self"
             }
