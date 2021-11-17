@@ -19,7 +19,7 @@ a{text-decoration:none;color:inherit;}
 }
 
 .container{position:relative;width:1024px;margin:0 auto;}
-#ev06 {background: url(../images/ev06_bg.png) no-repeat;}
+#ev06 {background: url(../images/ev06_bg.png) no-repeat #b84a2f;}
 #ev06 .mt50 {margin-top: 50px}
 #ev06 .mt30 {margin-top: 30px}
 #ev06 .mt20 {margin-top: 20px}
@@ -53,7 +53,7 @@ a{text-decoration:none;color:inherit;}
 .ev06_section02 .ex_wrapper .slick-prev{background: url(../images/ev_prev.png) no-repeat;left: 0}
 .ev06_section02 .ex_wrapper .slick-next{background: url(../images/ev_next.png) no-repeat;right: 0}
 .ev06_section03 .ev_tit .ico{background: url(../images/ev06_tit_ico02.png) no-repeat center #69753b}
-.ev06_section03 {background: url(../images/ev06_section03_bg.png) no-repeat top}
+.ev06_section03 {background: url(../images/ev06_section03_bg.png) no-repeat top }
 .ev06_section03 ul{text-align: center;}
 .ev06_section03 ul li{font-size: 24px;margin-bottom: 1rem;color: #fff;font-family: 'IM_Hyemin-Bold','Noto Sans KR';}
 .ev06_section03 ul li span{color: #feb953;border-bottom: 2px solid }
